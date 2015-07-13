@@ -1,7 +1,7 @@
 # View Wireframes
 
 ## Navigation Bar
-![Nabar]
+![Navbar]
 
 ## Quiz Feed
 ![QuizFeed]

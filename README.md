@@ -77,3 +77,4 @@ Allow the user to search by quizzes names, authors, and there topics. The user s
 [phase-three]: ./docs/phases/phase3.md
 [phase-four]: ./docs/phases/phase4.md
 [phase-five]: ./docs/phases/phase5.md
+[phase-six]: ./docs/phases/phase6.md
