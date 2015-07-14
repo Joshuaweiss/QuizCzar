@@ -23,6 +23,17 @@ class User < ActiveRecord::Base
     SecureRandom.urlsafe_base64
   end
 
+  def self.find_by_credentials(email, password)
+    user = User.find_by(email: email)
+    return nil unless user && user.is_password?(password)
+
+    return user
+  end
+
+  def reset_session_token
+    this.session_token = User.new_session_token;
+  end
+
   def password=(password)
     @password = password;
     self.password_digest = Password.create(password);
