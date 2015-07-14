@@ -14,17 +14,17 @@
 
     <label>
       Name
-      <input type="string" name="user[name]">
+      <input type="string" name="user[name]" value="<%= @user.name %>">
     </label>
 
     <label>
       Email
-      <input type="string" name="user[email]">
+      <input type="string" name="user[email]" value="<%= @user.email %>">
     </label>
 
     <label>
       Password
-      <input type="password" name="user[password]">
+      <input type="password" name="user[password]" value="<%= @user.password %>">
     </label>
 
     <%= auth_token_input %>

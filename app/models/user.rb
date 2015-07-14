@@ -17,6 +17,8 @@ class User < ActiveRecord::Base
   validates :password, length: {minimum: 6, maximum: 20, allow_nil: true}
   before_validation :session_token_exists
 
+  has_many :quizzes
+
   attr_reader :password
 
   def self.new_session_token
@@ -31,7 +33,8 @@ class User < ActiveRecord::Base
   end
 
   def reset_session_token
-    this.session_token = User.new_session_token;
+    self.session_token = User.new_session_token;
+    self.save
   end
 
   def password=(password)

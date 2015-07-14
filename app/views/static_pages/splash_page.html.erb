@@ -2,7 +2,7 @@
   <nav class="splash-nav group">
     <a class="sign-in-link">
       Sign In
-      <div class="sign-in-form">
+      <div class="sign-in">
         <%= render "session/new" %>
       </div>
     </a>
@@ -13,5 +13,8 @@
 
 
 <script>
-  $('.sign-up-button').on("click", function(){ window.location =  "<%= new_user_url %>"});
+  $('.sign-up-button').on("click", function(event){
+    event.preventDefault()
+    window.location.href =  "<%= new_user_url %>"
+  });
 </script>
