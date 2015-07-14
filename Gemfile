@@ -27,6 +27,7 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'backbone-on-rails'
 
 
+
 # Use Unicorn as the app server
 # gem 'unicorn'
 
@@ -51,7 +52,6 @@ group :development, :test do
 
   gem "rspec-rails"
 
-    gem 'shoulda-matchers'
+  gem 'shoulda-matchers'
 
-  gem 'byebug'
 end

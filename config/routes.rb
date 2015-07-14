@@ -8,8 +8,8 @@ Rails.application.routes.draw do
 
   resources :users
 
-  resources :quizzes
-  resources :questions
-  resources :answers
+  namespace :api, defaults: {format: :json} do
+    resources :quizzes, only: [:index, :show]
+  end
 
 end
