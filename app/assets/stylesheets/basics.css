@@ -1,0 +1,15 @@
+html, body, h1, h2, h3 ,h4 ,h5, ul, section, figure, div {
+  margin: 0px;
+  border: 0px;
+  padding: 0px;
+}
+
+ul {
+  list-style: none;
+}
+
+group::after {
+  clear: both;
+  content: "";
+  display: block;
+}
