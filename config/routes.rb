@@ -8,4 +8,8 @@ Rails.application.routes.draw do
 
   resources :users
 
+  resources :quizzes
+  resources :questions
+  resources :answers
+
 end
