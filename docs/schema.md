@@ -10,10 +10,11 @@ password_digest | string    | not null
 session_token   | string    | not null, unique
 
 
-## quizs
+## quizzes
 column name     | data type | details
 ----------------|-----------|-------------
 id              | integer   | not null, primary key
+name            | string    | 
 user_id         | integer   | not null, foreign key (refrences users)
 
 
