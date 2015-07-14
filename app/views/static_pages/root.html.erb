@@ -1,15 +1,9 @@
-<section id="root-page" class="group">
+<section id="root"></section>
 
-  <%= render "navbar" %>
-  <section id="content"></section>
-
-</section>
 
 <script>
-
   $(document).ready(function(){
-    var $rootEl = $("#content")
+    var $rootEl = $("#root")
     QuizCzar.initialize($rootEl);
   });
-
 </script>

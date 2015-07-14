@@ -25242,3 +25242,1882 @@ Started GET "/assets/models/quiz.self-6a3e4e64e65825dd3d244d3357dd7646e76e51d3b0
 
 
 Started GET "/assets/application.self-b5567fb0cb73f9d4ecd4fa178bbc995d9efe2b53da5e5bf4ca587adb307de5b1.js?body=1" for ::1 at 2015-07-14 19:02:03 -0400
+
+
+Started GET "/" for ::1 at 2015-07-14 19:03:26 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "H92QvvnafycPc1ZVNjoBng"]]
+  Rendered static_pages/_navbar.html.erb (0.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 41ms (Views: 39.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/basics.self-1f59a9361b634146dbcf6a3a90f5d3685d27d67d44a36909fefe56deaab8dfe3.css?body=1" for ::1 at 2015-07-14 19:03:26 -0400
+
+
+Started GET "/assets/root.self-6d4c5cb9ec4c9426ab0b2f60cf604254009c1b8f48cd14bb2a1accd9708a20ef.css?body=1" for ::1 at 2015-07-14 19:03:26 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-14 19:03:26 -0400
+
+
+Started GET "/assets/splash_page.self-08d272039e8a8510215e26a14e658742ba26cf1a433f3e412ac2bc6aba0bef33.css?body=1" for ::1 at 2015-07-14 19:03:26 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-14 19:03:26 -0400
+
+
+Started GET "/assets/sign_up_form.self-620a7b6de063d63c988bac8a5f990b41a4537e6bd14678ed9338ad449356c463.css?body=1" for ::1 at 2015-07-14 19:03:26 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-14 19:03:26 -0400
+
+
+Started GET "/assets/jquery.serializejson.self-c480e85ec7f2b02efd59ab693b310ece9aaac9ce35b2b7f9fc817a27d5ee0a79.js?body=1" for ::1 at 2015-07-14 19:03:26 -0400
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-07-14 19:03:26 -0400
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-07-14 19:03:26 -0400
+
+
+Started GET "/assets/quiz_czar.self-47f7d45aec4ed5d32f8d49b443c1564a8beaa65c6b89b3435d28403884ed3fd7.js?body=1" for ::1 at 2015-07-14 19:03:26 -0400
+
+
+Started GET "/assets/models/quiz.self-6a3e4e64e65825dd3d244d3357dd7646e76e51d3b0ad2ba64ad2738657258041.js?body=1" for ::1 at 2015-07-14 19:03:26 -0400
+
+
+Started GET "/assets/application.self-b5567fb0cb73f9d4ecd4fa178bbc995d9efe2b53da5e5bf4ca587adb307de5b1.js?body=1" for ::1 at 2015-07-14 19:03:26 -0400
+
+
+Started GET "/" for ::1 at 2015-07-14 19:03:27 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "H92QvvnafycPc1ZVNjoBng"]]
+  Rendered static_pages/_navbar.html.erb (0.0ms)
+  Rendered static_pages/root.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 37ms (Views: 36.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/root.self-6d4c5cb9ec4c9426ab0b2f60cf604254009c1b8f48cd14bb2a1accd9708a20ef.css?body=1" for ::1 at 2015-07-14 19:03:27 -0400
+
+
+Started GET "/assets/basics.self-1f59a9361b634146dbcf6a3a90f5d3685d27d67d44a36909fefe56deaab8dfe3.css?body=1" for ::1 at 2015-07-14 19:03:27 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-14 19:03:27 -0400
+
+
+Started GET "/assets/splash_page.self-08d272039e8a8510215e26a14e658742ba26cf1a433f3e412ac2bc6aba0bef33.css?body=1" for ::1 at 2015-07-14 19:03:27 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-14 19:03:27 -0400
+
+
+Started GET "/assets/sign_up_form.self-620a7b6de063d63c988bac8a5f990b41a4537e6bd14678ed9338ad449356c463.css?body=1" for ::1 at 2015-07-14 19:03:27 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-14 19:03:27 -0400
+
+
+Started GET "/assets/jquery.serializejson.self-c480e85ec7f2b02efd59ab693b310ece9aaac9ce35b2b7f9fc817a27d5ee0a79.js?body=1" for ::1 at 2015-07-14 19:03:27 -0400
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-07-14 19:03:27 -0400
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-07-14 19:03:27 -0400
+
+
+Started GET "/assets/quiz_czar.self-47f7d45aec4ed5d32f8d49b443c1564a8beaa65c6b89b3435d28403884ed3fd7.js?body=1" for ::1 at 2015-07-14 19:03:27 -0400
+
+
+Started GET "/assets/models/quiz.self-6a3e4e64e65825dd3d244d3357dd7646e76e51d3b0ad2ba64ad2738657258041.js?body=1" for ::1 at 2015-07-14 19:03:27 -0400
+
+
+Started GET "/assets/application.self-b5567fb0cb73f9d4ecd4fa178bbc995d9efe2b53da5e5bf4ca587adb307de5b1.js?body=1" for ::1 at 2015-07-14 19:03:27 -0400
+
+
+Started GET "/" for ::1 at 2015-07-14 19:06:29 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "H92QvvnafycPc1ZVNjoBng"]]
+  Rendered static_pages/_navbar.html.erb (0.0ms)
+  Rendered static_pages/root.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 126ms (Views: 125.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/basics.self-1f59a9361b634146dbcf6a3a90f5d3685d27d67d44a36909fefe56deaab8dfe3.css?body=1" for ::1 at 2015-07-14 19:06:29 -0400
+
+
+Started GET "/assets/routers/router.self-1db2fc4da6eb055ba83fe361a2fb0ce4d4787fa4c0c895183fe8b121ecc4b2d8.js?body=1" for ::1 at 2015-07-14 19:06:29 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-14 19:06:29 -0400
+
+
+Started GET "/assets/root.self-6d4c5cb9ec4c9426ab0b2f60cf604254009c1b8f48cd14bb2a1accd9708a20ef.css?body=1" for ::1 at 2015-07-14 19:06:29 -0400
+
+
+Started GET "/assets/sign_up_form.self-620a7b6de063d63c988bac8a5f990b41a4537e6bd14678ed9338ad449356c463.css?body=1" for ::1 at 2015-07-14 19:06:29 -0400
+
+
+Started GET "/assets/splash_page.self-08d272039e8a8510215e26a14e658742ba26cf1a433f3e412ac2bc6aba0bef33.css?body=1" for ::1 at 2015-07-14 19:06:29 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-14 19:06:29 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-14 19:06:29 -0400
+
+
+Started GET "/assets/jquery.serializejson.self-c480e85ec7f2b02efd59ab693b310ece9aaac9ce35b2b7f9fc817a27d5ee0a79.js?body=1" for ::1 at 2015-07-14 19:06:29 -0400
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-07-14 19:06:29 -0400
+
+
+Started GET "/assets/quiz_czar.self-47f7d45aec4ed5d32f8d49b443c1564a8beaa65c6b89b3435d28403884ed3fd7.js?body=1" for ::1 at 2015-07-14 19:06:29 -0400
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-07-14 19:06:29 -0400
+
+
+Started GET "/assets/models/quiz.self-6a3e4e64e65825dd3d244d3357dd7646e76e51d3b0ad2ba64ad2738657258041.js?body=1" for ::1 at 2015-07-14 19:06:29 -0400
+
+
+Started GET "/assets/application.self-b5567fb0cb73f9d4ecd4fa178bbc995d9efe2b53da5e5bf4ca587adb307de5b1.js?body=1" for ::1 at 2015-07-14 19:06:29 -0400
+
+
+Started GET "/" for ::1 at 2015-07-14 19:06:32 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "H92QvvnafycPc1ZVNjoBng"]]
+  Rendered static_pages/_navbar.html.erb (0.1ms)
+  Rendered static_pages/root.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 43ms (Views: 41.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/basics.self-1f59a9361b634146dbcf6a3a90f5d3685d27d67d44a36909fefe56deaab8dfe3.css?body=1" for ::1 at 2015-07-14 19:06:32 -0400
+
+
+Started GET "/assets/sign_up_form.self-620a7b6de063d63c988bac8a5f990b41a4537e6bd14678ed9338ad449356c463.css?body=1" for ::1 at 2015-07-14 19:06:32 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-14 19:06:32 -0400
+
+
+Started GET "/assets/root.self-6d4c5cb9ec4c9426ab0b2f60cf604254009c1b8f48cd14bb2a1accd9708a20ef.css?body=1" for ::1 at 2015-07-14 19:06:32 -0400
+
+
+Started GET "/assets/splash_page.self-08d272039e8a8510215e26a14e658742ba26cf1a433f3e412ac2bc6aba0bef33.css?body=1" for ::1 at 2015-07-14 19:06:32 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-14 19:06:32 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-14 19:06:32 -0400
+
+
+Started GET "/assets/jquery.serializejson.self-c480e85ec7f2b02efd59ab693b310ece9aaac9ce35b2b7f9fc817a27d5ee0a79.js?body=1" for ::1 at 2015-07-14 19:06:32 -0400
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-07-14 19:06:32 -0400
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-07-14 19:06:32 -0400
+
+
+Started GET "/assets/quiz_czar.self-47f7d45aec4ed5d32f8d49b443c1564a8beaa65c6b89b3435d28403884ed3fd7.js?body=1" for ::1 at 2015-07-14 19:06:32 -0400
+
+
+Started GET "/assets/models/quiz.self-6a3e4e64e65825dd3d244d3357dd7646e76e51d3b0ad2ba64ad2738657258041.js?body=1" for ::1 at 2015-07-14 19:06:32 -0400
+
+
+Started GET "/assets/routers/router.self-1db2fc4da6eb055ba83fe361a2fb0ce4d4787fa4c0c895183fe8b121ecc4b2d8.js?body=1" for ::1 at 2015-07-14 19:06:32 -0400
+
+
+Started GET "/assets/application.self-b5567fb0cb73f9d4ecd4fa178bbc995d9efe2b53da5e5bf4ca587adb307de5b1.js?body=1" for ::1 at 2015-07-14 19:06:32 -0400
+
+
+Started GET "/" for ::1 at 2015-07-14 19:07:12 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "H92QvvnafycPc1ZVNjoBng"]]
+  Rendered static_pages/_navbar.html.erb (0.0ms)
+  Rendered static_pages/root.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 130ms (Views: 128.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/basics.self-1f59a9361b634146dbcf6a3a90f5d3685d27d67d44a36909fefe56deaab8dfe3.css?body=1" for ::1 at 2015-07-14 19:07:12 -0400
+
+
+Started GET "/assets/root.self-6d4c5cb9ec4c9426ab0b2f60cf604254009c1b8f48cd14bb2a1accd9708a20ef.css?body=1" for ::1 at 2015-07-14 19:07:12 -0400
+
+
+Started GET "/assets/sign_up_form.self-620a7b6de063d63c988bac8a5f990b41a4537e6bd14678ed9338ad449356c463.css?body=1" for ::1 at 2015-07-14 19:07:12 -0400
+
+
+Started GET "/assets/routers/router.self-34bf5dd81baaae08cfa9f18c4baca7147ed9e4e42446227a2c7f9bcb65b86634.js?body=1" for ::1 at 2015-07-14 19:07:12 -0400
+
+
+Started GET "/assets/splash_page.self-08d272039e8a8510215e26a14e658742ba26cf1a433f3e412ac2bc6aba0bef33.css?body=1" for ::1 at 2015-07-14 19:07:12 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-14 19:07:12 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-14 19:07:12 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-14 19:07:12 -0400
+
+
+Started GET "/assets/jquery.serializejson.self-c480e85ec7f2b02efd59ab693b310ece9aaac9ce35b2b7f9fc817a27d5ee0a79.js?body=1" for ::1 at 2015-07-14 19:07:12 -0400
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-07-14 19:07:12 -0400
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-07-14 19:07:12 -0400
+
+
+Started GET "/assets/quiz_czar.self-47f7d45aec4ed5d32f8d49b443c1564a8beaa65c6b89b3435d28403884ed3fd7.js?body=1" for ::1 at 2015-07-14 19:07:12 -0400
+
+
+Started GET "/assets/models/quiz.self-6a3e4e64e65825dd3d244d3357dd7646e76e51d3b0ad2ba64ad2738657258041.js?body=1" for ::1 at 2015-07-14 19:07:12 -0400
+
+
+Started GET "/assets/application.self-b5567fb0cb73f9d4ecd4fa178bbc995d9efe2b53da5e5bf4ca587adb307de5b1.js?body=1" for ::1 at 2015-07-14 19:07:12 -0400
+
+
+Started GET "/" for ::1 at 2015-07-14 19:07:23 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "H92QvvnafycPc1ZVNjoBng"]]
+  Rendered static_pages/_navbar.html.erb (0.0ms)
+  Rendered static_pages/root.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 122ms (Views: 121.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/basics.self-1f59a9361b634146dbcf6a3a90f5d3685d27d67d44a36909fefe56deaab8dfe3.css?body=1" for ::1 at 2015-07-14 19:07:24 -0400
+
+
+Started GET "/assets/splash_page.self-08d272039e8a8510215e26a14e658742ba26cf1a433f3e412ac2bc6aba0bef33.css?body=1" for ::1 at 2015-07-14 19:07:24 -0400
+
+
+Started GET "/assets/root.self-6d4c5cb9ec4c9426ab0b2f60cf604254009c1b8f48cd14bb2a1accd9708a20ef.css?body=1" for ::1 at 2015-07-14 19:07:24 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-14 19:07:24 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-14 19:07:24 -0400
+
+
+Started GET "/assets/sign_up_form.self-620a7b6de063d63c988bac8a5f990b41a4537e6bd14678ed9338ad449356c463.css?body=1" for ::1 at 2015-07-14 19:07:24 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-14 19:07:24 -0400
+
+
+Started GET "/assets/jquery.serializejson.self-c480e85ec7f2b02efd59ab693b310ece9aaac9ce35b2b7f9fc817a27d5ee0a79.js?body=1" for ::1 at 2015-07-14 19:07:24 -0400
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-07-14 19:07:24 -0400
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-07-14 19:07:24 -0400
+
+
+Started GET "/assets/quiz_czar.self-47f7d45aec4ed5d32f8d49b443c1564a8beaa65c6b89b3435d28403884ed3fd7.js?body=1" for ::1 at 2015-07-14 19:07:24 -0400
+
+
+Started GET "/assets/routers/router.self-01eb75cdf3649e72bd377d8f779aa10b8b903ff2902ce8174289edbd897ba9d8.js?body=1" for ::1 at 2015-07-14 19:07:24 -0400
+
+
+Started GET "/assets/models/quiz.self-6a3e4e64e65825dd3d244d3357dd7646e76e51d3b0ad2ba64ad2738657258041.js?body=1" for ::1 at 2015-07-14 19:07:24 -0400
+
+
+Started GET "/assets/application.self-b5567fb0cb73f9d4ecd4fa178bbc995d9efe2b53da5e5bf4ca587adb307de5b1.js?body=1" for ::1 at 2015-07-14 19:07:24 -0400
+
+
+Started GET "/" for ::1 at 2015-07-14 19:07:26 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "H92QvvnafycPc1ZVNjoBng"]]
+  Rendered static_pages/_navbar.html.erb (0.0ms)
+  Rendered static_pages/root.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 35ms (Views: 33.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/basics.self-1f59a9361b634146dbcf6a3a90f5d3685d27d67d44a36909fefe56deaab8dfe3.css?body=1" for ::1 at 2015-07-14 19:07:26 -0400
+
+
+Started GET "/assets/root.self-6d4c5cb9ec4c9426ab0b2f60cf604254009c1b8f48cd14bb2a1accd9708a20ef.css?body=1" for ::1 at 2015-07-14 19:07:26 -0400
+
+
+Started GET "/assets/splash_page.self-08d272039e8a8510215e26a14e658742ba26cf1a433f3e412ac2bc6aba0bef33.css?body=1" for ::1 at 2015-07-14 19:07:26 -0400
+
+
+Started GET "/assets/sign_up_form.self-620a7b6de063d63c988bac8a5f990b41a4537e6bd14678ed9338ad449356c463.css?body=1" for ::1 at 2015-07-14 19:07:26 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-14 19:07:26 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-14 19:07:26 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-14 19:07:26 -0400
+
+
+Started GET "/assets/jquery.serializejson.self-c480e85ec7f2b02efd59ab693b310ece9aaac9ce35b2b7f9fc817a27d5ee0a79.js?body=1" for ::1 at 2015-07-14 19:07:26 -0400
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-07-14 19:07:26 -0400
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-07-14 19:07:26 -0400
+
+
+Started GET "/assets/quiz_czar.self-47f7d45aec4ed5d32f8d49b443c1564a8beaa65c6b89b3435d28403884ed3fd7.js?body=1" for ::1 at 2015-07-14 19:07:26 -0400
+
+
+Started GET "/assets/models/quiz.self-6a3e4e64e65825dd3d244d3357dd7646e76e51d3b0ad2ba64ad2738657258041.js?body=1" for ::1 at 2015-07-14 19:07:26 -0400
+
+
+Started GET "/assets/routers/router.self-01eb75cdf3649e72bd377d8f779aa10b8b903ff2902ce8174289edbd897ba9d8.js?body=1" for ::1 at 2015-07-14 19:07:26 -0400
+
+
+Started GET "/assets/application.self-b5567fb0cb73f9d4ecd4fa178bbc995d9efe2b53da5e5bf4ca587adb307de5b1.js?body=1" for ::1 at 2015-07-14 19:07:26 -0400
+
+
+Started GET "/" for ::1 at 2015-07-14 19:07:38 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "H92QvvnafycPc1ZVNjoBng"]]
+  Rendered static_pages/_navbar.html.erb (0.0ms)
+  Rendered static_pages/root.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 110ms (Views: 108.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/routers/router.self-8326a5d79b69222e2603b50374c68b70121843825066748f9813c2eae52247af.js?body=1" for ::1 at 2015-07-14 19:07:38 -0400
+
+
+Started GET "/assets/basics.self-1f59a9361b634146dbcf6a3a90f5d3685d27d67d44a36909fefe56deaab8dfe3.css?body=1" for ::1 at 2015-07-14 19:07:38 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-14 19:07:38 -0400
+
+
+Started GET "/assets/sign_up_form.self-620a7b6de063d63c988bac8a5f990b41a4537e6bd14678ed9338ad449356c463.css?body=1" for ::1 at 2015-07-14 19:07:38 -0400
+
+
+Started GET "/assets/root.self-6d4c5cb9ec4c9426ab0b2f60cf604254009c1b8f48cd14bb2a1accd9708a20ef.css?body=1" for ::1 at 2015-07-14 19:07:38 -0400
+
+
+Started GET "/assets/splash_page.self-08d272039e8a8510215e26a14e658742ba26cf1a433f3e412ac2bc6aba0bef33.css?body=1" for ::1 at 2015-07-14 19:07:38 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-14 19:07:38 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-14 19:07:38 -0400
+
+
+Started GET "/assets/jquery.serializejson.self-c480e85ec7f2b02efd59ab693b310ece9aaac9ce35b2b7f9fc817a27d5ee0a79.js?body=1" for ::1 at 2015-07-14 19:07:38 -0400
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-07-14 19:07:38 -0400
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-07-14 19:07:38 -0400
+
+
+Started GET "/assets/quiz_czar.self-47f7d45aec4ed5d32f8d49b443c1564a8beaa65c6b89b3435d28403884ed3fd7.js?body=1" for ::1 at 2015-07-14 19:07:38 -0400
+
+
+Started GET "/assets/models/quiz.self-6a3e4e64e65825dd3d244d3357dd7646e76e51d3b0ad2ba64ad2738657258041.js?body=1" for ::1 at 2015-07-14 19:07:38 -0400
+
+
+Started GET "/assets/application.self-b5567fb0cb73f9d4ecd4fa178bbc995d9efe2b53da5e5bf4ca587adb307de5b1.js?body=1" for ::1 at 2015-07-14 19:07:38 -0400
+
+
+Started GET "/" for ::1 at 2015-07-14 19:07:57 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "H92QvvnafycPc1ZVNjoBng"]]
+  Rendered static_pages/_navbar.html.erb (0.0ms)
+  Rendered static_pages/root.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 54ms (Views: 52.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/basics.self-1f59a9361b634146dbcf6a3a90f5d3685d27d67d44a36909fefe56deaab8dfe3.css?body=1" for ::1 at 2015-07-14 19:07:57 -0400
+
+
+Started GET "/assets/root.self-6d4c5cb9ec4c9426ab0b2f60cf604254009c1b8f48cd14bb2a1accd9708a20ef.css?body=1" for ::1 at 2015-07-14 19:07:57 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-14 19:07:57 -0400
+
+
+Started GET "/assets/splash_page.self-08d272039e8a8510215e26a14e658742ba26cf1a433f3e412ac2bc6aba0bef33.css?body=1" for ::1 at 2015-07-14 19:07:57 -0400
+
+
+Started GET "/assets/sign_up_form.self-620a7b6de063d63c988bac8a5f990b41a4537e6bd14678ed9338ad449356c463.css?body=1" for ::1 at 2015-07-14 19:07:57 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-14 19:07:57 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-14 19:07:57 -0400
+
+
+Started GET "/assets/jquery.serializejson.self-c480e85ec7f2b02efd59ab693b310ece9aaac9ce35b2b7f9fc817a27d5ee0a79.js?body=1" for ::1 at 2015-07-14 19:07:57 -0400
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-07-14 19:07:57 -0400
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-07-14 19:07:57 -0400
+
+
+Started GET "/assets/quiz_czar.self-47f7d45aec4ed5d32f8d49b443c1564a8beaa65c6b89b3435d28403884ed3fd7.js?body=1" for ::1 at 2015-07-14 19:07:57 -0400
+
+
+Started GET "/assets/models/quiz.self-6a3e4e64e65825dd3d244d3357dd7646e76e51d3b0ad2ba64ad2738657258041.js?body=1" for ::1 at 2015-07-14 19:07:57 -0400
+
+
+Started GET "/assets/routers/router.self-8326a5d79b69222e2603b50374c68b70121843825066748f9813c2eae52247af.js?body=1" for ::1 at 2015-07-14 19:07:57 -0400
+
+
+Started GET "/assets/application.self-b5567fb0cb73f9d4ecd4fa178bbc995d9efe2b53da5e5bf4ca587adb307de5b1.js?body=1" for ::1 at 2015-07-14 19:07:57 -0400
+
+
+Started GET "/" for ::1 at 2015-07-14 19:09:24 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "H92QvvnafycPc1ZVNjoBng"]]
+  Rendered static_pages/_navbar.html.erb (0.0ms)
+  Rendered static_pages/root.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 117ms (Views: 115.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/basics.self-1f59a9361b634146dbcf6a3a90f5d3685d27d67d44a36909fefe56deaab8dfe3.css?body=1" for ::1 at 2015-07-14 19:09:24 -0400
+
+
+Started GET "/assets/root.self-6d4c5cb9ec4c9426ab0b2f60cf604254009c1b8f48cd14bb2a1accd9708a20ef.css?body=1" for ::1 at 2015-07-14 19:09:24 -0400
+
+
+Started GET "/assets/sign_up_form.self-620a7b6de063d63c988bac8a5f990b41a4537e6bd14678ed9338ad449356c463.css?body=1" for ::1 at 2015-07-14 19:09:24 -0400
+
+
+Started GET "/assets/splash_page.self-08d272039e8a8510215e26a14e658742ba26cf1a433f3e412ac2bc6aba0bef33.css?body=1" for ::1 at 2015-07-14 19:09:24 -0400
+
+
+Started GET "/assets/quiz_czar.self-fc0138f6c00c2fe830e15a87fbd5416d23222ab0345463696f96664c342c1ccd.js?body=1" for ::1 at 2015-07-14 19:09:24 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-14 19:09:24 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-14 19:09:24 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-14 19:09:25 -0400
+
+
+Started GET "/assets/jquery.serializejson.self-c480e85ec7f2b02efd59ab693b310ece9aaac9ce35b2b7f9fc817a27d5ee0a79.js?body=1" for ::1 at 2015-07-14 19:09:25 -0400
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-07-14 19:09:25 -0400
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-07-14 19:09:25 -0400
+
+
+Started GET "/assets/models/quiz.self-6a3e4e64e65825dd3d244d3357dd7646e76e51d3b0ad2ba64ad2738657258041.js?body=1" for ::1 at 2015-07-14 19:09:25 -0400
+
+
+Started GET "/assets/routers/router.self-34bf5dd81baaae08cfa9f18c4baca7147ed9e4e42446227a2c7f9bcb65b86634.js?body=1" for ::1 at 2015-07-14 19:09:25 -0400
+
+
+Started GET "/assets/application.self-b5567fb0cb73f9d4ecd4fa178bbc995d9efe2b53da5e5bf4ca587adb307de5b1.js?body=1" for ::1 at 2015-07-14 19:09:25 -0400
+
+
+Started GET "/" for ::1 at 2015-07-14 19:10:27 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "H92QvvnafycPc1ZVNjoBng"]]
+  Rendered static_pages/_navbar.html.erb (0.0ms)
+  Rendered static_pages/root.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 114ms (Views: 112.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/basics.self-1f59a9361b634146dbcf6a3a90f5d3685d27d67d44a36909fefe56deaab8dfe3.css?body=1" for ::1 at 2015-07-14 19:10:27 -0400
+
+
+Started GET "/assets/root.self-6d4c5cb9ec4c9426ab0b2f60cf604254009c1b8f48cd14bb2a1accd9708a20ef.css?body=1" for ::1 at 2015-07-14 19:10:27 -0400
+
+
+Started GET "/assets/sign_up_form.self-620a7b6de063d63c988bac8a5f990b41a4537e6bd14678ed9338ad449356c463.css?body=1" for ::1 at 2015-07-14 19:10:27 -0400
+
+
+Started GET "/assets/splash_page.self-08d272039e8a8510215e26a14e658742ba26cf1a433f3e412ac2bc6aba0bef33.css?body=1" for ::1 at 2015-07-14 19:10:27 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-14 19:10:27 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-14 19:10:27 -0400
+
+
+Started GET "/assets/quiz_czar.self-f4e9594a6e75cf5c5cec7ee53df60ee13de7de08e485763f93900fc59e22cd23.js?body=1" for ::1 at 2015-07-14 19:10:27 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-14 19:10:27 -0400
+
+
+Started GET "/assets/jquery.serializejson.self-c480e85ec7f2b02efd59ab693b310ece9aaac9ce35b2b7f9fc817a27d5ee0a79.js?body=1" for ::1 at 2015-07-14 19:10:27 -0400
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-07-14 19:10:27 -0400
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-07-14 19:10:27 -0400
+
+
+Started GET "/assets/models/quiz.self-6a3e4e64e65825dd3d244d3357dd7646e76e51d3b0ad2ba64ad2738657258041.js?body=1" for ::1 at 2015-07-14 19:10:27 -0400
+
+
+Started GET "/assets/routers/router.self-34bf5dd81baaae08cfa9f18c4baca7147ed9e4e42446227a2c7f9bcb65b86634.js?body=1" for ::1 at 2015-07-14 19:10:27 -0400
+
+
+Started GET "/assets/application.self-b5567fb0cb73f9d4ecd4fa178bbc995d9efe2b53da5e5bf4ca587adb307de5b1.js?body=1" for ::1 at 2015-07-14 19:10:27 -0400
+
+
+Started GET "/" for ::1 at 2015-07-14 19:10:45 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "H92QvvnafycPc1ZVNjoBng"]]
+  Rendered static_pages/_navbar.html.erb (0.0ms)
+  Rendered static_pages/root.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 44ms (Views: 42.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/basics.self-1f59a9361b634146dbcf6a3a90f5d3685d27d67d44a36909fefe56deaab8dfe3.css?body=1" for ::1 at 2015-07-14 19:10:45 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-14 19:10:45 -0400
+
+
+Started GET "/assets/splash_page.self-08d272039e8a8510215e26a14e658742ba26cf1a433f3e412ac2bc6aba0bef33.css?body=1" for ::1 at 2015-07-14 19:10:45 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-14 19:10:45 -0400
+
+
+Started GET "/assets/root.self-6d4c5cb9ec4c9426ab0b2f60cf604254009c1b8f48cd14bb2a1accd9708a20ef.css?body=1" for ::1 at 2015-07-14 19:10:45 -0400
+
+
+Started GET "/assets/sign_up_form.self-620a7b6de063d63c988bac8a5f990b41a4537e6bd14678ed9338ad449356c463.css?body=1" for ::1 at 2015-07-14 19:10:45 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-14 19:10:45 -0400
+
+
+Started GET "/assets/jquery.serializejson.self-c480e85ec7f2b02efd59ab693b310ece9aaac9ce35b2b7f9fc817a27d5ee0a79.js?body=1" for ::1 at 2015-07-14 19:10:45 -0400
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-07-14 19:10:45 -0400
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-07-14 19:10:45 -0400
+
+
+Started GET "/assets/quiz_czar.self-f4e9594a6e75cf5c5cec7ee53df60ee13de7de08e485763f93900fc59e22cd23.js?body=1" for ::1 at 2015-07-14 19:10:45 -0400
+
+
+Started GET "/assets/models/quiz.self-6a3e4e64e65825dd3d244d3357dd7646e76e51d3b0ad2ba64ad2738657258041.js?body=1" for ::1 at 2015-07-14 19:10:45 -0400
+
+
+Started GET "/assets/routers/router.self-34bf5dd81baaae08cfa9f18c4baca7147ed9e4e42446227a2c7f9bcb65b86634.js?body=1" for ::1 at 2015-07-14 19:10:45 -0400
+
+
+Started GET "/assets/application.self-b5567fb0cb73f9d4ecd4fa178bbc995d9efe2b53da5e5bf4ca587adb307de5b1.js?body=1" for ::1 at 2015-07-14 19:10:45 -0400
+
+
+Started GET "/" for ::1 at 2015-07-14 19:11:02 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "H92QvvnafycPc1ZVNjoBng"]]
+  Rendered static_pages/_navbar.html.erb (0.0ms)
+  Rendered static_pages/root.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 132ms (Views: 130.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/basics.self-1f59a9361b634146dbcf6a3a90f5d3685d27d67d44a36909fefe56deaab8dfe3.css?body=1" for ::1 at 2015-07-14 19:11:02 -0400
+
+
+Started GET "/assets/root.self-6d4c5cb9ec4c9426ab0b2f60cf604254009c1b8f48cd14bb2a1accd9708a20ef.css?body=1" for ::1 at 2015-07-14 19:11:02 -0400
+
+
+Started GET "/assets/sign_up_form.self-620a7b6de063d63c988bac8a5f990b41a4537e6bd14678ed9338ad449356c463.css?body=1" for ::1 at 2015-07-14 19:11:02 -0400
+
+
+Started GET "/assets/splash_page.self-08d272039e8a8510215e26a14e658742ba26cf1a433f3e412ac2bc6aba0bef33.css?body=1" for ::1 at 2015-07-14 19:11:02 -0400
+
+
+Started GET "/assets/quiz_czar.self-efb3042b30399553f75195c359a9d20588a3af43a0a76ace3ebee39519bd0add.js?body=1" for ::1 at 2015-07-14 19:11:02 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-14 19:11:02 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-14 19:11:02 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-14 19:11:02 -0400
+
+
+Started GET "/assets/jquery.serializejson.self-c480e85ec7f2b02efd59ab693b310ece9aaac9ce35b2b7f9fc817a27d5ee0a79.js?body=1" for ::1 at 2015-07-14 19:11:02 -0400
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-07-14 19:11:02 -0400
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-07-14 19:11:02 -0400
+
+
+Started GET "/assets/models/quiz.self-6a3e4e64e65825dd3d244d3357dd7646e76e51d3b0ad2ba64ad2738657258041.js?body=1" for ::1 at 2015-07-14 19:11:02 -0400
+
+
+Started GET "/assets/routers/router.self-34bf5dd81baaae08cfa9f18c4baca7147ed9e4e42446227a2c7f9bcb65b86634.js?body=1" for ::1 at 2015-07-14 19:11:02 -0400
+
+
+Started GET "/assets/application.self-b5567fb0cb73f9d4ecd4fa178bbc995d9efe2b53da5e5bf4ca587adb307de5b1.js?body=1" for ::1 at 2015-07-14 19:11:02 -0400
+
+
+Started GET "/" for ::1 at 2015-07-14 19:20:00 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "H92QvvnafycPc1ZVNjoBng"]]
+  Rendered static_pages/root.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 145ms (Views: 143.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/basics.self-1f59a9361b634146dbcf6a3a90f5d3685d27d67d44a36909fefe56deaab8dfe3.css?body=1" for ::1 at 2015-07-14 19:20:00 -0400
+
+
+Started GET "/assets/sign_up_form.self-620a7b6de063d63c988bac8a5f990b41a4537e6bd14678ed9338ad449356c463.css?body=1" for ::1 at 2015-07-14 19:20:00 -0400
+
+
+Started GET "/assets/root.self-6d4c5cb9ec4c9426ab0b2f60cf604254009c1b8f48cd14bb2a1accd9708a20ef.css?body=1" for ::1 at 2015-07-14 19:20:00 -0400
+
+
+Started GET "/assets/splash_page.self-08d272039e8a8510215e26a14e658742ba26cf1a433f3e412ac2bc6aba0bef33.css?body=1" for ::1 at 2015-07-14 19:20:00 -0400
+
+
+Started GET "/assets/quiz_czar.self-931bc13bcb81e44c26c395046dfc48cdee3f1c0e707447e97c5d5848d5e6f803.js?body=1" for ::1 at 2015-07-14 19:20:00 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-14 19:20:00 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-14 19:20:00 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-14 19:20:00 -0400
+
+
+Started GET "/assets/jquery.serializejson.self-c480e85ec7f2b02efd59ab693b310ece9aaac9ce35b2b7f9fc817a27d5ee0a79.js?body=1" for ::1 at 2015-07-14 19:20:00 -0400
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-07-14 19:20:00 -0400
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-07-14 19:20:00 -0400
+
+
+Started GET "/assets/models/quiz.self-6a3e4e64e65825dd3d244d3357dd7646e76e51d3b0ad2ba64ad2738657258041.js?body=1" for ::1 at 2015-07-14 19:20:00 -0400
+
+
+Started GET "/assets/routers/router.self-a631758cd331529ff43d122bc68f1d26ecfd141be5e35e6abc0c679617d2b008.js?body=1" for ::1 at 2015-07-14 19:20:00 -0400
+
+
+Started GET "/assets/application.self-b5567fb0cb73f9d4ecd4fa178bbc995d9efe2b53da5e5bf4ca587adb307de5b1.js?body=1" for ::1 at 2015-07-14 19:20:00 -0400
+
+
+Started GET "/" for ::1 at 2015-07-14 19:20:36 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "H92QvvnafycPc1ZVNjoBng"]]
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 121ms (Views: 120.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-07-14 19:20:37 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "H92QvvnafycPc1ZVNjoBng"]]
+  Rendered static_pages/root.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 41ms (Views: 40.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-07-14 19:20:37 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "H92QvvnafycPc1ZVNjoBng"]]
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 38ms (Views: 37.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-07-14 19:20:38 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "H92QvvnafycPc1ZVNjoBng"]]
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 44ms (Views: 42.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-07-14 19:20:38 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "H92QvvnafycPc1ZVNjoBng"]]
+  Rendered static_pages/root.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 54ms (Views: 53.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-07-14 19:20:39 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "H92QvvnafycPc1ZVNjoBng"]]
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 35ms (Views: 34.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-07-14 19:20:39 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "H92QvvnafycPc1ZVNjoBng"]]
+  Rendered static_pages/root.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 40ms (Views: 38.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-07-14 19:20:39 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "H92QvvnafycPc1ZVNjoBng"]]
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 37ms (Views: 36.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-07-14 19:20:39 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "H92QvvnafycPc1ZVNjoBng"]]
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 34ms (Views: 32.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2015-07-14 19:20:40 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "H92QvvnafycPc1ZVNjoBng"]]
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 38ms (Views: 37.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-07-14 19:20:40 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "H92QvvnafycPc1ZVNjoBng"]]
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 39ms (Views: 37.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-07-14 19:20:40 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "H92QvvnafycPc1ZVNjoBng"]]
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 41ms (Views: 40.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-07-14 19:21:49 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "H92QvvnafycPc1ZVNjoBng"]]
+  Rendered static_pages/root.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 39ms (Views: 38.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-07-14 19:21:52 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "H92QvvnafycPc1ZVNjoBng"]]
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 43ms (Views: 41.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-07-14 19:22:19 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "H92QvvnafycPc1ZVNjoBng"]]
+  Rendered static_pages/root.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 49ms (Views: 47.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/basics.self-1f59a9361b634146dbcf6a3a90f5d3685d27d67d44a36909fefe56deaab8dfe3.css?body=1" for ::1 at 2015-07-14 19:22:19 -0400
+
+
+Started GET "/assets/sign_up_form.self-620a7b6de063d63c988bac8a5f990b41a4537e6bd14678ed9338ad449356c463.css?body=1" for ::1 at 2015-07-14 19:22:19 -0400
+
+
+Started GET "/assets/root.self-6d4c5cb9ec4c9426ab0b2f60cf604254009c1b8f48cd14bb2a1accd9708a20ef.css?body=1" for ::1 at 2015-07-14 19:22:19 -0400
+
+
+Started GET "/assets/quiz_czar.self-1ec9822e0a358abc74b50418d91f30a8c7e9346a1fb16c4264369dbae7860453.js?body=1" for ::1 at 2015-07-14 19:22:19 -0400
+
+
+Started GET "/assets/splash_page.self-08d272039e8a8510215e26a14e658742ba26cf1a433f3e412ac2bc6aba0bef33.css?body=1" for ::1 at 2015-07-14 19:22:19 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-14 19:22:19 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-14 19:22:19 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-14 19:22:19 -0400
+
+
+Started GET "/assets/jquery.serializejson.self-c480e85ec7f2b02efd59ab693b310ece9aaac9ce35b2b7f9fc817a27d5ee0a79.js?body=1" for ::1 at 2015-07-14 19:22:19 -0400
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-07-14 19:22:19 -0400
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-07-14 19:22:19 -0400
+
+
+Started GET "/assets/models/quiz.self-6a3e4e64e65825dd3d244d3357dd7646e76e51d3b0ad2ba64ad2738657258041.js?body=1" for ::1 at 2015-07-14 19:22:19 -0400
+
+
+Started GET "/assets/routers/router.self-a631758cd331529ff43d122bc68f1d26ecfd141be5e35e6abc0c679617d2b008.js?body=1" for ::1 at 2015-07-14 19:22:19 -0400
+
+
+Started GET "/assets/application.self-b5567fb0cb73f9d4ecd4fa178bbc995d9efe2b53da5e5bf4ca587adb307de5b1.js?body=1" for ::1 at 2015-07-14 19:22:19 -0400
+
+
+Started GET "/" for ::1 at 2015-07-14 19:25:53 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "H92QvvnafycPc1ZVNjoBng"]]
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 118ms (Views: 117.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/basics.self-1f59a9361b634146dbcf6a3a90f5d3685d27d67d44a36909fefe56deaab8dfe3.css?body=1" for ::1 at 2015-07-14 19:25:53 -0400
+
+
+Started GET "/assets/root.self-6d4c5cb9ec4c9426ab0b2f60cf604254009c1b8f48cd14bb2a1accd9708a20ef.css?body=1" for ::1 at 2015-07-14 19:25:53 -0400
+
+
+Started GET "/assets/sign_up_form.self-620a7b6de063d63c988bac8a5f990b41a4537e6bd14678ed9338ad449356c463.css?body=1" for ::1 at 2015-07-14 19:25:53 -0400
+
+
+Started GET "/assets/splash_page.self-08d272039e8a8510215e26a14e658742ba26cf1a433f3e412ac2bc6aba0bef33.css?body=1" for ::1 at 2015-07-14 19:25:53 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-14 19:25:53 -0400
+
+
+Started GET "/assets/views/navbar.self-c6fa0ca421b9db4733b39ce923c89bc7cd1107efe067ca596808f79035265381.js?body=1" for ::1 at 2015-07-14 19:25:53 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-14 19:25:53 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-14 19:25:53 -0400
+
+
+Started GET "/assets/jquery.serializejson.self-c480e85ec7f2b02efd59ab693b310ece9aaac9ce35b2b7f9fc817a27d5ee0a79.js?body=1" for ::1 at 2015-07-14 19:25:53 -0400
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-07-14 19:25:53 -0400
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-07-14 19:25:53 -0400
+
+
+Started GET "/assets/quiz_czar.self-1ec9822e0a358abc74b50418d91f30a8c7e9346a1fb16c4264369dbae7860453.js?body=1" for ::1 at 2015-07-14 19:25:53 -0400
+
+
+Started GET "/assets/models/quiz.self-6a3e4e64e65825dd3d244d3357dd7646e76e51d3b0ad2ba64ad2738657258041.js?body=1" for ::1 at 2015-07-14 19:25:53 -0400
+
+
+Started GET "/assets/routers/router.self-a631758cd331529ff43d122bc68f1d26ecfd141be5e35e6abc0c679617d2b008.js?body=1" for ::1 at 2015-07-14 19:25:53 -0400
+
+
+Started GET "/assets/application.self-b5567fb0cb73f9d4ecd4fa178bbc995d9efe2b53da5e5bf4ca587adb307de5b1.js?body=1" for ::1 at 2015-07-14 19:25:53 -0400
+
+
+Started GET "/" for ::1 at 2015-07-14 19:25:55 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "H92QvvnafycPc1ZVNjoBng"]]
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 45ms (Views: 43.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/basics.self-1f59a9361b634146dbcf6a3a90f5d3685d27d67d44a36909fefe56deaab8dfe3.css?body=1" for ::1 at 2015-07-14 19:25:55 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-14 19:25:55 -0400
+
+
+Started GET "/assets/splash_page.self-08d272039e8a8510215e26a14e658742ba26cf1a433f3e412ac2bc6aba0bef33.css?body=1" for ::1 at 2015-07-14 19:25:55 -0400
+
+
+Started GET "/assets/sign_up_form.self-620a7b6de063d63c988bac8a5f990b41a4537e6bd14678ed9338ad449356c463.css?body=1" for ::1 at 2015-07-14 19:25:55 -0400
+
+
+Started GET "/assets/root.self-6d4c5cb9ec4c9426ab0b2f60cf604254009c1b8f48cd14bb2a1accd9708a20ef.css?body=1" for ::1 at 2015-07-14 19:25:55 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-14 19:25:55 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-14 19:25:55 -0400
+
+
+Started GET "/assets/jquery.serializejson.self-c480e85ec7f2b02efd59ab693b310ece9aaac9ce35b2b7f9fc817a27d5ee0a79.js?body=1" for ::1 at 2015-07-14 19:25:55 -0400
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-07-14 19:25:55 -0400
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-07-14 19:25:55 -0400
+
+
+Started GET "/assets/quiz_czar.self-1ec9822e0a358abc74b50418d91f30a8c7e9346a1fb16c4264369dbae7860453.js?body=1" for ::1 at 2015-07-14 19:25:55 -0400
+
+
+Started GET "/assets/models/quiz.self-6a3e4e64e65825dd3d244d3357dd7646e76e51d3b0ad2ba64ad2738657258041.js?body=1" for ::1 at 2015-07-14 19:25:55 -0400
+
+
+Started GET "/assets/views/navbar.self-c6fa0ca421b9db4733b39ce923c89bc7cd1107efe067ca596808f79035265381.js?body=1" for ::1 at 2015-07-14 19:25:55 -0400
+
+
+Started GET "/assets/routers/router.self-a631758cd331529ff43d122bc68f1d26ecfd141be5e35e6abc0c679617d2b008.js?body=1" for ::1 at 2015-07-14 19:25:55 -0400
+
+
+Started GET "/assets/application.self-b5567fb0cb73f9d4ecd4fa178bbc995d9efe2b53da5e5bf4ca587adb307de5b1.js?body=1" for ::1 at 2015-07-14 19:25:55 -0400
+
+
+Started GET "/" for ::1 at 2015-07-14 19:28:17 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "H92QvvnafycPc1ZVNjoBng"]]
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 163ms (Views: 161.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/navbar.self-8ed6be93795c227a450b07d43c50f89f58988bd36d713983bd8b75ed76b54ed3.js?body=1" for ::1 at 2015-07-14 19:28:18 -0400
+
+
+Started GET "/assets/basics.self-1f59a9361b634146dbcf6a3a90f5d3685d27d67d44a36909fefe56deaab8dfe3.css?body=1" for ::1 at 2015-07-14 19:28:18 -0400
+
+
+Started GET "/assets/sign_up_form.self-620a7b6de063d63c988bac8a5f990b41a4537e6bd14678ed9338ad449356c463.css?body=1" for ::1 at 2015-07-14 19:28:18 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-14 19:28:18 -0400
+
+
+Started GET "/assets/splash_page.self-08d272039e8a8510215e26a14e658742ba26cf1a433f3e412ac2bc6aba0bef33.css?body=1" for ::1 at 2015-07-14 19:28:18 -0400
+
+
+Started GET "/assets/root.self-6d4c5cb9ec4c9426ab0b2f60cf604254009c1b8f48cd14bb2a1accd9708a20ef.css?body=1" for ::1 at 2015-07-14 19:28:18 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-14 19:28:18 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-14 19:28:18 -0400
+
+
+Started GET "/assets/jquery.serializejson.self-c480e85ec7f2b02efd59ab693b310ece9aaac9ce35b2b7f9fc817a27d5ee0a79.js?body=1" for ::1 at 2015-07-14 19:28:18 -0400
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-07-14 19:28:18 -0400
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-07-14 19:28:18 -0400
+
+
+Started GET "/assets/quiz_czar.self-1ec9822e0a358abc74b50418d91f30a8c7e9346a1fb16c4264369dbae7860453.js?body=1" for ::1 at 2015-07-14 19:28:18 -0400
+
+
+Started GET "/assets/models/quiz.self-6a3e4e64e65825dd3d244d3357dd7646e76e51d3b0ad2ba64ad2738657258041.js?body=1" for ::1 at 2015-07-14 19:28:18 -0400
+
+
+Started GET "/assets/views/navbar.self-c6fa0ca421b9db4733b39ce923c89bc7cd1107efe067ca596808f79035265381.js?body=1" for ::1 at 2015-07-14 19:28:18 -0400
+
+
+Started GET "/assets/routers/router.self-a631758cd331529ff43d122bc68f1d26ecfd141be5e35e6abc0c679617d2b008.js?body=1" for ::1 at 2015-07-14 19:28:18 -0400
+
+
+Started GET "/assets/application.self-b5567fb0cb73f9d4ecd4fa178bbc995d9efe2b53da5e5bf4ca587adb307de5b1.js?body=1" for ::1 at 2015-07-14 19:28:18 -0400
+
+
+Started GET "/" for ::1 at 2015-07-14 19:28:19 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "H92QvvnafycPc1ZVNjoBng"]]
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 41ms (Views: 40.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/basics.self-1f59a9361b634146dbcf6a3a90f5d3685d27d67d44a36909fefe56deaab8dfe3.css?body=1" for ::1 at 2015-07-14 19:28:20 -0400
+
+
+Started GET "/assets/root.self-6d4c5cb9ec4c9426ab0b2f60cf604254009c1b8f48cd14bb2a1accd9708a20ef.css?body=1" for ::1 at 2015-07-14 19:28:20 -0400
+
+
+Started GET "/assets/splash_page.self-08d272039e8a8510215e26a14e658742ba26cf1a433f3e412ac2bc6aba0bef33.css?body=1" for ::1 at 2015-07-14 19:28:20 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-14 19:28:20 -0400
+
+
+Started GET "/assets/sign_up_form.self-620a7b6de063d63c988bac8a5f990b41a4537e6bd14678ed9338ad449356c463.css?body=1" for ::1 at 2015-07-14 19:28:20 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-14 19:28:20 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-14 19:28:20 -0400
+
+
+Started GET "/assets/jquery.serializejson.self-c480e85ec7f2b02efd59ab693b310ece9aaac9ce35b2b7f9fc817a27d5ee0a79.js?body=1" for ::1 at 2015-07-14 19:28:20 -0400
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-07-14 19:28:20 -0400
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-07-14 19:28:20 -0400
+
+
+Started GET "/assets/quiz_czar.self-1ec9822e0a358abc74b50418d91f30a8c7e9346a1fb16c4264369dbae7860453.js?body=1" for ::1 at 2015-07-14 19:28:20 -0400
+
+
+Started GET "/assets/navbar.self-8ed6be93795c227a450b07d43c50f89f58988bd36d713983bd8b75ed76b54ed3.js?body=1" for ::1 at 2015-07-14 19:28:20 -0400
+
+
+Started GET "/assets/models/quiz.self-6a3e4e64e65825dd3d244d3357dd7646e76e51d3b0ad2ba64ad2738657258041.js?body=1" for ::1 at 2015-07-14 19:28:20 -0400
+
+
+Started GET "/assets/views/navbar.self-c6fa0ca421b9db4733b39ce923c89bc7cd1107efe067ca596808f79035265381.js?body=1" for ::1 at 2015-07-14 19:28:20 -0400
+
+
+Started GET "/assets/routers/router.self-a631758cd331529ff43d122bc68f1d26ecfd141be5e35e6abc0c679617d2b008.js?body=1" for ::1 at 2015-07-14 19:28:20 -0400
+
+
+Started GET "/assets/application.self-b5567fb0cb73f9d4ecd4fa178bbc995d9efe2b53da5e5bf4ca587adb307de5b1.js?body=1" for ::1 at 2015-07-14 19:28:20 -0400
+
+
+Started GET "/" for ::1 at 2015-07-14 19:28:22 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "H92QvvnafycPc1ZVNjoBng"]]
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 48ms (Views: 47.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/basics.self-1f59a9361b634146dbcf6a3a90f5d3685d27d67d44a36909fefe56deaab8dfe3.css?body=1" for ::1 at 2015-07-14 19:28:22 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-14 19:28:22 -0400
+
+
+Started GET "/assets/splash_page.self-08d272039e8a8510215e26a14e658742ba26cf1a433f3e412ac2bc6aba0bef33.css?body=1" for ::1 at 2015-07-14 19:28:22 -0400
+
+
+Started GET "/assets/root.self-6d4c5cb9ec4c9426ab0b2f60cf604254009c1b8f48cd14bb2a1accd9708a20ef.css?body=1" for ::1 at 2015-07-14 19:28:22 -0400
+
+
+Started GET "/assets/sign_up_form.self-620a7b6de063d63c988bac8a5f990b41a4537e6bd14678ed9338ad449356c463.css?body=1" for ::1 at 2015-07-14 19:28:22 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-14 19:28:22 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-14 19:28:22 -0400
+
+
+Started GET "/assets/jquery.serializejson.self-c480e85ec7f2b02efd59ab693b310ece9aaac9ce35b2b7f9fc817a27d5ee0a79.js?body=1" for ::1 at 2015-07-14 19:28:22 -0400
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-07-14 19:28:22 -0400
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-07-14 19:28:22 -0400
+
+
+Started GET "/assets/quiz_czar.self-1ec9822e0a358abc74b50418d91f30a8c7e9346a1fb16c4264369dbae7860453.js?body=1" for ::1 at 2015-07-14 19:28:22 -0400
+
+
+Started GET "/assets/navbar.self-8ed6be93795c227a450b07d43c50f89f58988bd36d713983bd8b75ed76b54ed3.js?body=1" for ::1 at 2015-07-14 19:28:22 -0400
+
+
+Started GET "/assets/models/quiz.self-6a3e4e64e65825dd3d244d3357dd7646e76e51d3b0ad2ba64ad2738657258041.js?body=1" for ::1 at 2015-07-14 19:28:22 -0400
+
+
+Started GET "/assets/views/navbar.self-c6fa0ca421b9db4733b39ce923c89bc7cd1107efe067ca596808f79035265381.js?body=1" for ::1 at 2015-07-14 19:28:22 -0400
+
+
+Started GET "/assets/routers/router.self-a631758cd331529ff43d122bc68f1d26ecfd141be5e35e6abc0c679617d2b008.js?body=1" for ::1 at 2015-07-14 19:28:22 -0400
+
+
+Started GET "/assets/application.self-b5567fb0cb73f9d4ecd4fa178bbc995d9efe2b53da5e5bf4ca587adb307de5b1.js?body=1" for ::1 at 2015-07-14 19:28:22 -0400
+
+
+Started GET "/" for ::1 at 2015-07-14 19:28:24 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "H92QvvnafycPc1ZVNjoBng"]]
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 53ms (Views: 52.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/basics.self-1f59a9361b634146dbcf6a3a90f5d3685d27d67d44a36909fefe56deaab8dfe3.css?body=1" for ::1 at 2015-07-14 19:28:24 -0400
+
+
+Started GET "/assets/root.self-6d4c5cb9ec4c9426ab0b2f60cf604254009c1b8f48cd14bb2a1accd9708a20ef.css?body=1" for ::1 at 2015-07-14 19:28:24 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-14 19:28:24 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-14 19:28:24 -0400
+
+
+Started GET "/assets/sign_up_form.self-620a7b6de063d63c988bac8a5f990b41a4537e6bd14678ed9338ad449356c463.css?body=1" for ::1 at 2015-07-14 19:28:24 -0400
+
+
+Started GET "/assets/splash_page.self-08d272039e8a8510215e26a14e658742ba26cf1a433f3e412ac2bc6aba0bef33.css?body=1" for ::1 at 2015-07-14 19:28:24 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-14 19:28:24 -0400
+
+
+Started GET "/assets/jquery.serializejson.self-c480e85ec7f2b02efd59ab693b310ece9aaac9ce35b2b7f9fc817a27d5ee0a79.js?body=1" for ::1 at 2015-07-14 19:28:24 -0400
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-07-14 19:28:24 -0400
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-07-14 19:28:24 -0400
+
+
+Started GET "/assets/quiz_czar.self-1ec9822e0a358abc74b50418d91f30a8c7e9346a1fb16c4264369dbae7860453.js?body=1" for ::1 at 2015-07-14 19:28:24 -0400
+
+
+Started GET "/assets/navbar.self-8ed6be93795c227a450b07d43c50f89f58988bd36d713983bd8b75ed76b54ed3.js?body=1" for ::1 at 2015-07-14 19:28:24 -0400
+
+
+Started GET "/assets/models/quiz.self-6a3e4e64e65825dd3d244d3357dd7646e76e51d3b0ad2ba64ad2738657258041.js?body=1" for ::1 at 2015-07-14 19:28:24 -0400
+
+
+Started GET "/assets/views/navbar.self-c6fa0ca421b9db4733b39ce923c89bc7cd1107efe067ca596808f79035265381.js?body=1" for ::1 at 2015-07-14 19:28:24 -0400
+
+
+Started GET "/assets/routers/router.self-a631758cd331529ff43d122bc68f1d26ecfd141be5e35e6abc0c679617d2b008.js?body=1" for ::1 at 2015-07-14 19:28:24 -0400
+
+
+Started GET "/assets/application.self-b5567fb0cb73f9d4ecd4fa178bbc995d9efe2b53da5e5bf4ca587adb307de5b1.js?body=1" for ::1 at 2015-07-14 19:28:24 -0400
+
+
+Started GET "/" for ::1 at 2015-07-14 19:28:24 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "H92QvvnafycPc1ZVNjoBng"]]
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 43ms (Views: 42.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/basics.self-1f59a9361b634146dbcf6a3a90f5d3685d27d67d44a36909fefe56deaab8dfe3.css?body=1" for ::1 at 2015-07-14 19:28:24 -0400
+
+
+Started GET "/assets/root.self-6d4c5cb9ec4c9426ab0b2f60cf604254009c1b8f48cd14bb2a1accd9708a20ef.css?body=1" for ::1 at 2015-07-14 19:28:24 -0400
+
+
+Started GET "/assets/sign_up_form.self-620a7b6de063d63c988bac8a5f990b41a4537e6bd14678ed9338ad449356c463.css?body=1" for ::1 at 2015-07-14 19:28:24 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-14 19:28:24 -0400
+
+
+Started GET "/assets/splash_page.self-08d272039e8a8510215e26a14e658742ba26cf1a433f3e412ac2bc6aba0bef33.css?body=1" for ::1 at 2015-07-14 19:28:24 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-14 19:28:24 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-14 19:28:24 -0400
+
+
+Started GET "/assets/jquery.serializejson.self-c480e85ec7f2b02efd59ab693b310ece9aaac9ce35b2b7f9fc817a27d5ee0a79.js?body=1" for ::1 at 2015-07-14 19:28:24 -0400
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-07-14 19:28:24 -0400
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-07-14 19:28:24 -0400
+
+
+Started GET "/assets/quiz_czar.self-1ec9822e0a358abc74b50418d91f30a8c7e9346a1fb16c4264369dbae7860453.js?body=1" for ::1 at 2015-07-14 19:28:24 -0400
+
+
+Started GET "/assets/navbar.self-8ed6be93795c227a450b07d43c50f89f58988bd36d713983bd8b75ed76b54ed3.js?body=1" for ::1 at 2015-07-14 19:28:24 -0400
+
+
+Started GET "/assets/models/quiz.self-6a3e4e64e65825dd3d244d3357dd7646e76e51d3b0ad2ba64ad2738657258041.js?body=1" for ::1 at 2015-07-14 19:28:24 -0400
+
+
+Started GET "/assets/views/navbar.self-c6fa0ca421b9db4733b39ce923c89bc7cd1107efe067ca596808f79035265381.js?body=1" for ::1 at 2015-07-14 19:28:24 -0400
+
+
+Started GET "/assets/routers/router.self-a631758cd331529ff43d122bc68f1d26ecfd141be5e35e6abc0c679617d2b008.js?body=1" for ::1 at 2015-07-14 19:28:24 -0400
+
+
+Started GET "/assets/application.self-b5567fb0cb73f9d4ecd4fa178bbc995d9efe2b53da5e5bf4ca587adb307de5b1.js?body=1" for ::1 at 2015-07-14 19:28:24 -0400
+
+
+Started GET "/" for ::1 at 2015-07-14 19:28:24 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "H92QvvnafycPc1ZVNjoBng"]]
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 44ms (Views: 42.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/basics.self-1f59a9361b634146dbcf6a3a90f5d3685d27d67d44a36909fefe56deaab8dfe3.css?body=1" for ::1 at 2015-07-14 19:28:25 -0400
+
+
+Started GET "/assets/root.self-6d4c5cb9ec4c9426ab0b2f60cf604254009c1b8f48cd14bb2a1accd9708a20ef.css?body=1" for ::1 at 2015-07-14 19:28:25 -0400
+
+
+Started GET "/assets/sign_up_form.self-620a7b6de063d63c988bac8a5f990b41a4537e6bd14678ed9338ad449356c463.css?body=1" for ::1 at 2015-07-14 19:28:25 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-14 19:28:25 -0400
+
+
+Started GET "/assets/splash_page.self-08d272039e8a8510215e26a14e658742ba26cf1a433f3e412ac2bc6aba0bef33.css?body=1" for ::1 at 2015-07-14 19:28:25 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-14 19:28:25 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-14 19:28:25 -0400
+
+
+Started GET "/assets/jquery.serializejson.self-c480e85ec7f2b02efd59ab693b310ece9aaac9ce35b2b7f9fc817a27d5ee0a79.js?body=1" for ::1 at 2015-07-14 19:28:25 -0400
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-07-14 19:28:25 -0400
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-07-14 19:28:25 -0400
+
+
+Started GET "/assets/quiz_czar.self-1ec9822e0a358abc74b50418d91f30a8c7e9346a1fb16c4264369dbae7860453.js?body=1" for ::1 at 2015-07-14 19:28:25 -0400
+
+
+Started GET "/assets/navbar.self-8ed6be93795c227a450b07d43c50f89f58988bd36d713983bd8b75ed76b54ed3.js?body=1" for ::1 at 2015-07-14 19:28:25 -0400
+
+
+Started GET "/assets/models/quiz.self-6a3e4e64e65825dd3d244d3357dd7646e76e51d3b0ad2ba64ad2738657258041.js?body=1" for ::1 at 2015-07-14 19:28:25 -0400
+
+
+Started GET "/assets/views/navbar.self-c6fa0ca421b9db4733b39ce923c89bc7cd1107efe067ca596808f79035265381.js?body=1" for ::1 at 2015-07-14 19:28:25 -0400
+
+
+Started GET "/assets/routers/router.self-a631758cd331529ff43d122bc68f1d26ecfd141be5e35e6abc0c679617d2b008.js?body=1" for ::1 at 2015-07-14 19:28:25 -0400
+
+
+Started GET "/assets/application.self-b5567fb0cb73f9d4ecd4fa178bbc995d9efe2b53da5e5bf4ca587adb307de5b1.js?body=1" for ::1 at 2015-07-14 19:28:25 -0400
+
+
+Started GET "/" for ::1 at 2015-07-14 19:28:41 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "H92QvvnafycPc1ZVNjoBng"]]
+  Rendered static_pages/root.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 129ms (Views: 128.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/basics.self-1f59a9361b634146dbcf6a3a90f5d3685d27d67d44a36909fefe56deaab8dfe3.css?body=1" for ::1 at 2015-07-14 19:28:41 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-14 19:28:41 -0400
+
+
+Started GET "/assets/splash_page.self-08d272039e8a8510215e26a14e658742ba26cf1a433f3e412ac2bc6aba0bef33.css?body=1" for ::1 at 2015-07-14 19:28:41 -0400
+
+
+Started GET "/assets/root.self-6d4c5cb9ec4c9426ab0b2f60cf604254009c1b8f48cd14bb2a1accd9708a20ef.css?body=1" for ::1 at 2015-07-14 19:28:41 -0400
+
+
+Started GET "/assets/navbar.self-a889b3f308cc69efd791826e75c242f224b52386b0b3c3f344dd2b9e68676b49.js?body=1" for ::1 at 2015-07-14 19:28:41 -0400
+
+
+Started GET "/assets/sign_up_form.self-620a7b6de063d63c988bac8a5f990b41a4537e6bd14678ed9338ad449356c463.css?body=1" for ::1 at 2015-07-14 19:28:41 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-14 19:28:41 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-14 19:28:41 -0400
+
+
+Started GET "/assets/jquery.serializejson.self-c480e85ec7f2b02efd59ab693b310ece9aaac9ce35b2b7f9fc817a27d5ee0a79.js?body=1" for ::1 at 2015-07-14 19:28:41 -0400
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-07-14 19:28:41 -0400
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-07-14 19:28:41 -0400
+
+
+Started GET "/assets/quiz_czar.self-1ec9822e0a358abc74b50418d91f30a8c7e9346a1fb16c4264369dbae7860453.js?body=1" for ::1 at 2015-07-14 19:28:41 -0400
+
+
+Started GET "/assets/models/quiz.self-6a3e4e64e65825dd3d244d3357dd7646e76e51d3b0ad2ba64ad2738657258041.js?body=1" for ::1 at 2015-07-14 19:28:41 -0400
+
+
+Started GET "/assets/views/navbar.self-c6fa0ca421b9db4733b39ce923c89bc7cd1107efe067ca596808f79035265381.js?body=1" for ::1 at 2015-07-14 19:28:41 -0400
+
+
+Started GET "/assets/routers/router.self-a631758cd331529ff43d122bc68f1d26ecfd141be5e35e6abc0c679617d2b008.js?body=1" for ::1 at 2015-07-14 19:28:41 -0400
+
+
+Started GET "/assets/application.self-b5567fb0cb73f9d4ecd4fa178bbc995d9efe2b53da5e5bf4ca587adb307de5b1.js?body=1" for ::1 at 2015-07-14 19:28:41 -0400
+
+
+Started GET "/" for ::1 at 2015-07-14 19:28:42 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "H92QvvnafycPc1ZVNjoBng"]]
+  Rendered static_pages/root.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 43ms (Views: 41.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/basics.self-1f59a9361b634146dbcf6a3a90f5d3685d27d67d44a36909fefe56deaab8dfe3.css?body=1" for ::1 at 2015-07-14 19:28:42 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-14 19:28:42 -0400
+
+
+Started GET "/assets/splash_page.self-08d272039e8a8510215e26a14e658742ba26cf1a433f3e412ac2bc6aba0bef33.css?body=1" for ::1 at 2015-07-14 19:28:42 -0400
+
+
+Started GET "/assets/sign_up_form.self-620a7b6de063d63c988bac8a5f990b41a4537e6bd14678ed9338ad449356c463.css?body=1" for ::1 at 2015-07-14 19:28:42 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-14 19:28:42 -0400
+
+
+Started GET "/assets/root.self-6d4c5cb9ec4c9426ab0b2f60cf604254009c1b8f48cd14bb2a1accd9708a20ef.css?body=1" for ::1 at 2015-07-14 19:28:42 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-14 19:28:42 -0400
+
+
+Started GET "/assets/jquery.serializejson.self-c480e85ec7f2b02efd59ab693b310ece9aaac9ce35b2b7f9fc817a27d5ee0a79.js?body=1" for ::1 at 2015-07-14 19:28:42 -0400
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-07-14 19:28:42 -0400
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-07-14 19:28:42 -0400
+
+
+Started GET "/assets/quiz_czar.self-1ec9822e0a358abc74b50418d91f30a8c7e9346a1fb16c4264369dbae7860453.js?body=1" for ::1 at 2015-07-14 19:28:42 -0400
+
+
+Started GET "/assets/navbar.self-a889b3f308cc69efd791826e75c242f224b52386b0b3c3f344dd2b9e68676b49.js?body=1" for ::1 at 2015-07-14 19:28:42 -0400
+
+
+Started GET "/assets/models/quiz.self-6a3e4e64e65825dd3d244d3357dd7646e76e51d3b0ad2ba64ad2738657258041.js?body=1" for ::1 at 2015-07-14 19:28:42 -0400
+
+
+Started GET "/assets/views/navbar.self-c6fa0ca421b9db4733b39ce923c89bc7cd1107efe067ca596808f79035265381.js?body=1" for ::1 at 2015-07-14 19:28:42 -0400
+
+
+Started GET "/assets/routers/router.self-a631758cd331529ff43d122bc68f1d26ecfd141be5e35e6abc0c679617d2b008.js?body=1" for ::1 at 2015-07-14 19:28:42 -0400
+
+
+Started GET "/assets/application.self-b5567fb0cb73f9d4ecd4fa178bbc995d9efe2b53da5e5bf4ca587adb307de5b1.js?body=1" for ::1 at 2015-07-14 19:28:42 -0400
+
+
+Started GET "/" for ::1 at 2015-07-14 19:28:43 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "H92QvvnafycPc1ZVNjoBng"]]
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 45ms (Views: 44.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/basics.self-1f59a9361b634146dbcf6a3a90f5d3685d27d67d44a36909fefe56deaab8dfe3.css?body=1" for ::1 at 2015-07-14 19:28:43 -0400
+
+
+Started GET "/assets/root.self-6d4c5cb9ec4c9426ab0b2f60cf604254009c1b8f48cd14bb2a1accd9708a20ef.css?body=1" for ::1 at 2015-07-14 19:28:43 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-14 19:28:43 -0400
+
+
+Started GET "/assets/sign_up_form.self-620a7b6de063d63c988bac8a5f990b41a4537e6bd14678ed9338ad449356c463.css?body=1" for ::1 at 2015-07-14 19:28:43 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-14 19:28:43 -0400
+
+
+Started GET "/assets/splash_page.self-08d272039e8a8510215e26a14e658742ba26cf1a433f3e412ac2bc6aba0bef33.css?body=1" for ::1 at 2015-07-14 19:28:43 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-14 19:28:43 -0400
+
+
+Started GET "/assets/jquery.serializejson.self-c480e85ec7f2b02efd59ab693b310ece9aaac9ce35b2b7f9fc817a27d5ee0a79.js?body=1" for ::1 at 2015-07-14 19:28:43 -0400
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-07-14 19:28:43 -0400
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-07-14 19:28:43 -0400
+
+
+Started GET "/assets/quiz_czar.self-1ec9822e0a358abc74b50418d91f30a8c7e9346a1fb16c4264369dbae7860453.js?body=1" for ::1 at 2015-07-14 19:28:43 -0400
+
+
+Started GET "/assets/navbar.self-a889b3f308cc69efd791826e75c242f224b52386b0b3c3f344dd2b9e68676b49.js?body=1" for ::1 at 2015-07-14 19:28:43 -0400
+
+
+Started GET "/assets/models/quiz.self-6a3e4e64e65825dd3d244d3357dd7646e76e51d3b0ad2ba64ad2738657258041.js?body=1" for ::1 at 2015-07-14 19:28:43 -0400
+
+
+Started GET "/assets/views/navbar.self-c6fa0ca421b9db4733b39ce923c89bc7cd1107efe067ca596808f79035265381.js?body=1" for ::1 at 2015-07-14 19:28:43 -0400
+
+
+Started GET "/assets/routers/router.self-a631758cd331529ff43d122bc68f1d26ecfd141be5e35e6abc0c679617d2b008.js?body=1" for ::1 at 2015-07-14 19:28:43 -0400
+
+
+Started GET "/assets/application.self-b5567fb0cb73f9d4ecd4fa178bbc995d9efe2b53da5e5bf4ca587adb307de5b1.js?body=1" for ::1 at 2015-07-14 19:28:43 -0400
+
+
+Started GET "/" for ::1 at 2015-07-14 19:28:44 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "H92QvvnafycPc1ZVNjoBng"]]
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 50ms (Views: 48.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/basics.self-1f59a9361b634146dbcf6a3a90f5d3685d27d67d44a36909fefe56deaab8dfe3.css?body=1" for ::1 at 2015-07-14 19:28:44 -0400
+
+
+Started GET "/assets/root.self-6d4c5cb9ec4c9426ab0b2f60cf604254009c1b8f48cd14bb2a1accd9708a20ef.css?body=1" for ::1 at 2015-07-14 19:28:44 -0400
+
+
+Started GET "/assets/sign_up_form.self-620a7b6de063d63c988bac8a5f990b41a4537e6bd14678ed9338ad449356c463.css?body=1" for ::1 at 2015-07-14 19:28:44 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-14 19:28:44 -0400
+
+
+Started GET "/assets/splash_page.self-08d272039e8a8510215e26a14e658742ba26cf1a433f3e412ac2bc6aba0bef33.css?body=1" for ::1 at 2015-07-14 19:28:44 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-14 19:28:44 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-14 19:28:44 -0400
+
+
+Started GET "/assets/jquery.serializejson.self-c480e85ec7f2b02efd59ab693b310ece9aaac9ce35b2b7f9fc817a27d5ee0a79.js?body=1" for ::1 at 2015-07-14 19:28:44 -0400
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-07-14 19:28:44 -0400
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-07-14 19:28:44 -0400
+
+
+Started GET "/assets/quiz_czar.self-1ec9822e0a358abc74b50418d91f30a8c7e9346a1fb16c4264369dbae7860453.js?body=1" for ::1 at 2015-07-14 19:28:44 -0400
+
+
+Started GET "/assets/navbar.self-a889b3f308cc69efd791826e75c242f224b52386b0b3c3f344dd2b9e68676b49.js?body=1" for ::1 at 2015-07-14 19:28:44 -0400
+
+
+Started GET "/assets/models/quiz.self-6a3e4e64e65825dd3d244d3357dd7646e76e51d3b0ad2ba64ad2738657258041.js?body=1" for ::1 at 2015-07-14 19:28:44 -0400
+
+
+Started GET "/assets/views/navbar.self-c6fa0ca421b9db4733b39ce923c89bc7cd1107efe067ca596808f79035265381.js?body=1" for ::1 at 2015-07-14 19:28:44 -0400
+
+
+Started GET "/assets/routers/router.self-a631758cd331529ff43d122bc68f1d26ecfd141be5e35e6abc0c679617d2b008.js?body=1" for ::1 at 2015-07-14 19:28:44 -0400
+
+
+Started GET "/assets/application.self-b5567fb0cb73f9d4ecd4fa178bbc995d9efe2b53da5e5bf4ca587adb307de5b1.js?body=1" for ::1 at 2015-07-14 19:28:44 -0400
+
+
+Started GET "/" for ::1 at 2015-07-14 19:29:01 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "H92QvvnafycPc1ZVNjoBng"]]
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 124ms (Views: 123.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/sign_up_form.self-620a7b6de063d63c988bac8a5f990b41a4537e6bd14678ed9338ad449356c463.css?body=1" for ::1 at 2015-07-14 19:29:01 -0400
+
+
+Started GET "/assets/splash_page.self-08d272039e8a8510215e26a14e658742ba26cf1a433f3e412ac2bc6aba0bef33.css?body=1" for ::1 at 2015-07-14 19:29:01 -0400
+
+
+Started GET "/assets/quiz_czar.self-472d266f815c0f89c6bc2d4c7e702d735df412cc8e1a9e183a9bec80f6791c05.js?body=1" for ::1 at 2015-07-14 19:29:01 -0400
+
+
+Started GET "/assets/root.self-6d4c5cb9ec4c9426ab0b2f60cf604254009c1b8f48cd14bb2a1accd9708a20ef.css?body=1" for ::1 at 2015-07-14 19:29:01 -0400
+
+
+Started GET "/assets/basics.self-1f59a9361b634146dbcf6a3a90f5d3685d27d67d44a36909fefe56deaab8dfe3.css?body=1" for ::1 at 2015-07-14 19:29:01 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-14 19:29:01 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-14 19:29:01 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-14 19:29:01 -0400
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-07-14 19:29:01 -0400
+
+
+Started GET "/assets/jquery.serializejson.self-c480e85ec7f2b02efd59ab693b310ece9aaac9ce35b2b7f9fc817a27d5ee0a79.js?body=1" for ::1 at 2015-07-14 19:29:01 -0400
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-07-14 19:29:01 -0400
+
+
+Started GET "/assets/navbar.self-a889b3f308cc69efd791826e75c242f224b52386b0b3c3f344dd2b9e68676b49.js?body=1" for ::1 at 2015-07-14 19:29:01 -0400
+
+
+Started GET "/assets/views/navbar.self-c6fa0ca421b9db4733b39ce923c89bc7cd1107efe067ca596808f79035265381.js?body=1" for ::1 at 2015-07-14 19:29:01 -0400
+
+
+Started GET "/assets/models/quiz.self-6a3e4e64e65825dd3d244d3357dd7646e76e51d3b0ad2ba64ad2738657258041.js?body=1" for ::1 at 2015-07-14 19:29:01 -0400
+
+
+Started GET "/assets/routers/router.self-a631758cd331529ff43d122bc68f1d26ecfd141be5e35e6abc0c679617d2b008.js?body=1" for ::1 at 2015-07-14 19:29:01 -0400
+
+
+Started GET "/assets/application.self-b5567fb0cb73f9d4ecd4fa178bbc995d9efe2b53da5e5bf4ca587adb307de5b1.js?body=1" for ::1 at 2015-07-14 19:29:01 -0400
+
+
+Started GET "/" for ::1 at 2015-07-14 19:29:02 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "H92QvvnafycPc1ZVNjoBng"]]
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 46ms (Views: 44.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-14 19:29:02 -0400
+
+
+Started GET "/assets/root.self-6d4c5cb9ec4c9426ab0b2f60cf604254009c1b8f48cd14bb2a1accd9708a20ef.css?body=1" for ::1 at 2015-07-14 19:29:02 -0400
+
+
+Started GET "/assets/sign_up_form.self-620a7b6de063d63c988bac8a5f990b41a4537e6bd14678ed9338ad449356c463.css?body=1" for ::1 at 2015-07-14 19:29:02 -0400
+
+
+Started GET "/assets/basics.self-1f59a9361b634146dbcf6a3a90f5d3685d27d67d44a36909fefe56deaab8dfe3.css?body=1" for ::1 at 2015-07-14 19:29:02 -0400
+
+
+Started GET "/assets/splash_page.self-08d272039e8a8510215e26a14e658742ba26cf1a433f3e412ac2bc6aba0bef33.css?body=1" for ::1 at 2015-07-14 19:29:02 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-14 19:29:02 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-14 19:29:02 -0400
+
+
+Started GET "/assets/jquery.serializejson.self-c480e85ec7f2b02efd59ab693b310ece9aaac9ce35b2b7f9fc817a27d5ee0a79.js?body=1" for ::1 at 2015-07-14 19:29:02 -0400
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-07-14 19:29:02 -0400
+
+
+Started GET "/assets/quiz_czar.self-472d266f815c0f89c6bc2d4c7e702d735df412cc8e1a9e183a9bec80f6791c05.js?body=1" for ::1 at 2015-07-14 19:29:02 -0400
+
+
+Started GET "/assets/navbar.self-a889b3f308cc69efd791826e75c242f224b52386b0b3c3f344dd2b9e68676b49.js?body=1" for ::1 at 2015-07-14 19:29:02 -0400
+
+
+Started GET "/assets/models/quiz.self-6a3e4e64e65825dd3d244d3357dd7646e76e51d3b0ad2ba64ad2738657258041.js?body=1" for ::1 at 2015-07-14 19:29:02 -0400
+
+
+Started GET "/assets/routers/router.self-a631758cd331529ff43d122bc68f1d26ecfd141be5e35e6abc0c679617d2b008.js?body=1" for ::1 at 2015-07-14 19:29:02 -0400
+
+
+Started GET "/assets/views/navbar.self-c6fa0ca421b9db4733b39ce923c89bc7cd1107efe067ca596808f79035265381.js?body=1" for ::1 at 2015-07-14 19:29:02 -0400
+
+
+Started GET "/assets/application.self-b5567fb0cb73f9d4ecd4fa178bbc995d9efe2b53da5e5bf4ca587adb307de5b1.js?body=1" for ::1 at 2015-07-14 19:29:02 -0400
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-07-14 19:29:02 -0400
+
+
+Started GET "/" for ::1 at 2015-07-14 19:29:35 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "H92QvvnafycPc1ZVNjoBng"]]
+  Rendered static_pages/root.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 115ms (Views: 113.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/basics.self-1f59a9361b634146dbcf6a3a90f5d3685d27d67d44a36909fefe56deaab8dfe3.css?body=1" for ::1 at 2015-07-14 19:29:35 -0400
+
+
+Started GET "/assets/sign_up_form.self-620a7b6de063d63c988bac8a5f990b41a4537e6bd14678ed9338ad449356c463.css?body=1" for ::1 at 2015-07-14 19:29:35 -0400
+
+
+Started GET "/assets/root.self-6d4c5cb9ec4c9426ab0b2f60cf604254009c1b8f48cd14bb2a1accd9708a20ef.css?body=1" for ::1 at 2015-07-14 19:29:35 -0400
+
+
+Started GET "/assets/splash_page.self-08d272039e8a8510215e26a14e658742ba26cf1a433f3e412ac2bc6aba0bef33.css?body=1" for ::1 at 2015-07-14 19:29:35 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-14 19:29:35 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-14 19:29:36 -0400
+
+
+Started GET "/assets/jquery.serializejson.self-c480e85ec7f2b02efd59ab693b310ece9aaac9ce35b2b7f9fc817a27d5ee0a79.js?body=1" for ::1 at 2015-07-14 19:29:36 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-14 19:29:36 -0400
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-07-14 19:29:36 -0400
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-07-14 19:29:36 -0400
+
+
+Started GET "/assets/quiz_czar.self-931bc13bcb81e44c26c395046dfc48cdee3f1c0e707447e97c5d5848d5e6f803.js?body=1" for ::1 at 2015-07-14 19:29:36 -0400
+
+
+Started GET "/assets/navbar.self-a889b3f308cc69efd791826e75c242f224b52386b0b3c3f344dd2b9e68676b49.js?body=1" for ::1 at 2015-07-14 19:29:36 -0400
+
+
+Started GET "/assets/models/quiz.self-6a3e4e64e65825dd3d244d3357dd7646e76e51d3b0ad2ba64ad2738657258041.js?body=1" for ::1 at 2015-07-14 19:29:36 -0400
+
+
+Started GET "/assets/views/navbar.self-c6fa0ca421b9db4733b39ce923c89bc7cd1107efe067ca596808f79035265381.js?body=1" for ::1 at 2015-07-14 19:29:36 -0400
+
+
+Started GET "/assets/routers/router.self-a631758cd331529ff43d122bc68f1d26ecfd141be5e35e6abc0c679617d2b008.js?body=1" for ::1 at 2015-07-14 19:29:36 -0400
+
+
+Started GET "/assets/application.self-b5567fb0cb73f9d4ecd4fa178bbc995d9efe2b53da5e5bf4ca587adb307de5b1.js?body=1" for ::1 at 2015-07-14 19:29:36 -0400
+
+
+Started GET "/" for ::1 at 2015-07-14 19:29:45 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "H92QvvnafycPc1ZVNjoBng"]]
+  Rendered static_pages/root.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 148ms (Views: 146.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/basics.self-1f59a9361b634146dbcf6a3a90f5d3685d27d67d44a36909fefe56deaab8dfe3.css?body=1" for ::1 at 2015-07-14 19:29:46 -0400
+
+
+Started GET "/assets/quiz_czar.self-74e091e6148dfadcf0f19a941645eee3dca272c6f69177b793b81252c0e28d12.js?body=1" for ::1 at 2015-07-14 19:29:46 -0400
+
+
+Started GET "/assets/sign_up_form.self-620a7b6de063d63c988bac8a5f990b41a4537e6bd14678ed9338ad449356c463.css?body=1" for ::1 at 2015-07-14 19:29:46 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-14 19:29:46 -0400
+
+
+Started GET "/assets/splash_page.self-08d272039e8a8510215e26a14e658742ba26cf1a433f3e412ac2bc6aba0bef33.css?body=1" for ::1 at 2015-07-14 19:29:46 -0400
+
+
+Started GET "/assets/root.self-6d4c5cb9ec4c9426ab0b2f60cf604254009c1b8f48cd14bb2a1accd9708a20ef.css?body=1" for ::1 at 2015-07-14 19:29:46 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-14 19:29:46 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-14 19:29:46 -0400
+
+
+Started GET "/assets/jquery.serializejson.self-c480e85ec7f2b02efd59ab693b310ece9aaac9ce35b2b7f9fc817a27d5ee0a79.js?body=1" for ::1 at 2015-07-14 19:29:46 -0400
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-07-14 19:29:46 -0400
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-07-14 19:29:46 -0400
+
+
+Started GET "/assets/navbar.self-a889b3f308cc69efd791826e75c242f224b52386b0b3c3f344dd2b9e68676b49.js?body=1" for ::1 at 2015-07-14 19:29:46 -0400
+
+
+Started GET "/assets/models/quiz.self-6a3e4e64e65825dd3d244d3357dd7646e76e51d3b0ad2ba64ad2738657258041.js?body=1" for ::1 at 2015-07-14 19:29:46 -0400
+
+
+Started GET "/assets/views/navbar.self-c6fa0ca421b9db4733b39ce923c89bc7cd1107efe067ca596808f79035265381.js?body=1" for ::1 at 2015-07-14 19:29:46 -0400
+
+
+Started GET "/assets/routers/router.self-a631758cd331529ff43d122bc68f1d26ecfd141be5e35e6abc0c679617d2b008.js?body=1" for ::1 at 2015-07-14 19:29:46 -0400
+
+
+Started GET "/assets/application.self-b5567fb0cb73f9d4ecd4fa178bbc995d9efe2b53da5e5bf4ca587adb307de5b1.js?body=1" for ::1 at 2015-07-14 19:29:46 -0400
+
+
+Started GET "/" for ::1 at 2015-07-14 19:30:11 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "H92QvvnafycPc1ZVNjoBng"]]
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 114ms (Views: 112.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/root.self-6d4c5cb9ec4c9426ab0b2f60cf604254009c1b8f48cd14bb2a1accd9708a20ef.css?body=1" for ::1 at 2015-07-14 19:30:11 -0400
+
+
+Started GET "/assets/basics.self-1f59a9361b634146dbcf6a3a90f5d3685d27d67d44a36909fefe56deaab8dfe3.css?body=1" for ::1 at 2015-07-14 19:30:11 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-14 19:30:11 -0400
+
+
+Started GET "/assets/sign_up_form.self-620a7b6de063d63c988bac8a5f990b41a4537e6bd14678ed9338ad449356c463.css?body=1" for ::1 at 2015-07-14 19:30:11 -0400
+
+
+Started GET "/assets/splash_page.self-08d272039e8a8510215e26a14e658742ba26cf1a433f3e412ac2bc6aba0bef33.css?body=1" for ::1 at 2015-07-14 19:30:11 -0400
+
+
+Started GET "/assets/quiz_czar.self-997b11296ca018937abf3b7330e9a1a563491f9664b85e957f15b42e079976a2.js?body=1" for ::1 at 2015-07-14 19:30:11 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-14 19:30:11 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-14 19:30:11 -0400
+
+
+Started GET "/assets/jquery.serializejson.self-c480e85ec7f2b02efd59ab693b310ece9aaac9ce35b2b7f9fc817a27d5ee0a79.js?body=1" for ::1 at 2015-07-14 19:30:11 -0400
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-07-14 19:30:11 -0400
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-07-14 19:30:12 -0400
+
+
+Started GET "/assets/navbar.self-a889b3f308cc69efd791826e75c242f224b52386b0b3c3f344dd2b9e68676b49.js?body=1" for ::1 at 2015-07-14 19:30:12 -0400
+
+
+Started GET "/assets/models/quiz.self-6a3e4e64e65825dd3d244d3357dd7646e76e51d3b0ad2ba64ad2738657258041.js?body=1" for ::1 at 2015-07-14 19:30:12 -0400
+
+
+Started GET "/assets/views/navbar.self-c6fa0ca421b9db4733b39ce923c89bc7cd1107efe067ca596808f79035265381.js?body=1" for ::1 at 2015-07-14 19:30:12 -0400
+
+
+Started GET "/assets/routers/router.self-a631758cd331529ff43d122bc68f1d26ecfd141be5e35e6abc0c679617d2b008.js?body=1" for ::1 at 2015-07-14 19:30:12 -0400
+
+
+Started GET "/assets/application.self-b5567fb0cb73f9d4ecd4fa178bbc995d9efe2b53da5e5bf4ca587adb307de5b1.js?body=1" for ::1 at 2015-07-14 19:30:12 -0400
+
+
+Started GET "/" for ::1 at 2015-07-14 19:30:12 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "H92QvvnafycPc1ZVNjoBng"]]
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 43ms (Views: 41.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/basics.self-1f59a9361b634146dbcf6a3a90f5d3685d27d67d44a36909fefe56deaab8dfe3.css?body=1" for ::1 at 2015-07-14 19:30:12 -0400
+
+
+Started GET "/assets/root.self-6d4c5cb9ec4c9426ab0b2f60cf604254009c1b8f48cd14bb2a1accd9708a20ef.css?body=1" for ::1 at 2015-07-14 19:30:12 -0400
+
+
+Started GET "/assets/sign_up_form.self-620a7b6de063d63c988bac8a5f990b41a4537e6bd14678ed9338ad449356c463.css?body=1" for ::1 at 2015-07-14 19:30:12 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-14 19:30:12 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-14 19:30:12 -0400
+
+
+Started GET "/assets/splash_page.self-08d272039e8a8510215e26a14e658742ba26cf1a433f3e412ac2bc6aba0bef33.css?body=1" for ::1 at 2015-07-14 19:30:12 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-14 19:30:12 -0400
+
+
+Started GET "/assets/jquery.serializejson.self-c480e85ec7f2b02efd59ab693b310ece9aaac9ce35b2b7f9fc817a27d5ee0a79.js?body=1" for ::1 at 2015-07-14 19:30:12 -0400
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-07-14 19:30:12 -0400
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-07-14 19:30:12 -0400
+
+
+Started GET "/assets/quiz_czar.self-997b11296ca018937abf3b7330e9a1a563491f9664b85e957f15b42e079976a2.js?body=1" for ::1 at 2015-07-14 19:30:12 -0400
+
+
+Started GET "/assets/navbar.self-a889b3f308cc69efd791826e75c242f224b52386b0b3c3f344dd2b9e68676b49.js?body=1" for ::1 at 2015-07-14 19:30:12 -0400
+
+
+Started GET "/assets/models/quiz.self-6a3e4e64e65825dd3d244d3357dd7646e76e51d3b0ad2ba64ad2738657258041.js?body=1" for ::1 at 2015-07-14 19:30:12 -0400
+
+
+Started GET "/assets/views/navbar.self-c6fa0ca421b9db4733b39ce923c89bc7cd1107efe067ca596808f79035265381.js?body=1" for ::1 at 2015-07-14 19:30:12 -0400
+
+
+Started GET "/assets/routers/router.self-a631758cd331529ff43d122bc68f1d26ecfd141be5e35e6abc0c679617d2b008.js?body=1" for ::1 at 2015-07-14 19:30:12 -0400
+
+
+Started GET "/assets/application.self-b5567fb0cb73f9d4ecd4fa178bbc995d9efe2b53da5e5bf4ca587adb307de5b1.js?body=1" for ::1 at 2015-07-14 19:30:12 -0400
+
+
+Started GET "/" for ::1 at 2015-07-14 19:30:27 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "H92QvvnafycPc1ZVNjoBng"]]
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 138ms (Views: 136.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/basics.self-1f59a9361b634146dbcf6a3a90f5d3685d27d67d44a36909fefe56deaab8dfe3.css?body=1" for ::1 at 2015-07-14 19:30:27 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-14 19:30:27 -0400
+
+
+Started GET "/assets/quiz_czar.self-7d4dd5e87dc0f66f5551ce77aedb0edf92cdd43bfbeb9e5232dd6b75706b85f9.js?body=1" for ::1 at 2015-07-14 19:30:27 -0400
+
+
+Started GET "/assets/splash_page.self-08d272039e8a8510215e26a14e658742ba26cf1a433f3e412ac2bc6aba0bef33.css?body=1" for ::1 at 2015-07-14 19:30:27 -0400
+
+
+Started GET "/assets/root.self-6d4c5cb9ec4c9426ab0b2f60cf604254009c1b8f48cd14bb2a1accd9708a20ef.css?body=1" for ::1 at 2015-07-14 19:30:27 -0400
+
+
+Started GET "/assets/sign_up_form.self-620a7b6de063d63c988bac8a5f990b41a4537e6bd14678ed9338ad449356c463.css?body=1" for ::1 at 2015-07-14 19:30:27 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-14 19:30:27 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-14 19:30:27 -0400
+
+
+Started GET "/assets/jquery.serializejson.self-c480e85ec7f2b02efd59ab693b310ece9aaac9ce35b2b7f9fc817a27d5ee0a79.js?body=1" for ::1 at 2015-07-14 19:30:27 -0400
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-07-14 19:30:27 -0400
+
+
+Started GET "/assets/views/navbar.self-84c6657cf8d48da8aac8ab88301681f2e4619529c44144cd83f676617ea78583.js?body=1" for ::1 at 2015-07-14 19:30:27 -0400
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-07-14 19:30:27 -0400
+
+
+Started GET "/assets/navbar.self-a889b3f308cc69efd791826e75c242f224b52386b0b3c3f344dd2b9e68676b49.js?body=1" for ::1 at 2015-07-14 19:30:27 -0400
+
+
+Started GET "/assets/models/quiz.self-6a3e4e64e65825dd3d244d3357dd7646e76e51d3b0ad2ba64ad2738657258041.js?body=1" for ::1 at 2015-07-14 19:30:27 -0400
+
+
+Started GET "/assets/routers/router.self-a631758cd331529ff43d122bc68f1d26ecfd141be5e35e6abc0c679617d2b008.js?body=1" for ::1 at 2015-07-14 19:30:27 -0400
+
+
+Started GET "/assets/application.self-b5567fb0cb73f9d4ecd4fa178bbc995d9efe2b53da5e5bf4ca587adb307de5b1.js?body=1" for ::1 at 2015-07-14 19:30:27 -0400
