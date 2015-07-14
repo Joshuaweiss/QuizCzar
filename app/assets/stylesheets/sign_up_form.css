@@ -1,0 +1,13 @@
+.sign-up-form {
+  position: absolute;
+  display: block;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%);
+  width: 500px;
+}
+
+.sign-up-form input {
+  display: block;
+  margin: 15px
+}

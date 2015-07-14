@@ -7035,3 +7035,894 @@ RuntimeError - :
 
 
 Started POST "/__better_errors/7fb69468e4795aef/variables" for ::1 at 2015-07-14 11:47:30 -0400
+
+
+Started GET "/users/new" for ::1 at 2015-07-14 11:50:35 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 96ms (Views: 95.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/sign-up-form.self-da31b23cee7c5c234a09007935a74774cdb58ce1d9481c9e255ff050b602b5ca.css?body=1" for ::1 at 2015-07-14 11:50:36 -0400
+
+
+Started GET "/assets/basics.self-1f59a9361b634146dbcf6a3a90f5d3685d27d67d44a36909fefe56deaab8dfe3.css?body=1" for ::1 at 2015-07-14 11:50:36 -0400
+
+
+Started GET "/assets/splash_page.self-08d272039e8a8510215e26a14e658742ba26cf1a433f3e412ac2bc6aba0bef33.css?body=1" for ::1 at 2015-07-14 11:50:36 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-14 11:50:36 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-14 11:50:36 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-14 11:50:36 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2015-07-14 11:50:36 -0400
+
+
+Started GET "/users/new" for ::1 at 2015-07-14 11:50:43 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 43ms (Views: 43.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/basics.self-1f59a9361b634146dbcf6a3a90f5d3685d27d67d44a36909fefe56deaab8dfe3.css?body=1" for ::1 at 2015-07-14 11:50:43 -0400
+
+
+Started GET "/assets/sign-up-form.self-8b9917e75835285c42a6f836cfcd3be014e68f88ec10467b489761b62f679762.css?body=1" for ::1 at 2015-07-14 11:50:43 -0400
+
+
+Started GET "/assets/splash_page.self-08d272039e8a8510215e26a14e658742ba26cf1a433f3e412ac2bc6aba0bef33.css?body=1" for ::1 at 2015-07-14 11:50:43 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-14 11:50:43 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-14 11:50:43 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-14 11:50:43 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2015-07-14 11:50:43 -0400
+
+
+Started GET "/users/new" for ::1 at 2015-07-14 11:50:44 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 19ms (Views: 18.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/basics.self-1f59a9361b634146dbcf6a3a90f5d3685d27d67d44a36909fefe56deaab8dfe3.css?body=1" for ::1 at 2015-07-14 11:50:44 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-14 11:50:44 -0400
+
+
+Started GET "/assets/splash_page.self-08d272039e8a8510215e26a14e658742ba26cf1a433f3e412ac2bc6aba0bef33.css?body=1" for ::1 at 2015-07-14 11:50:44 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-14 11:50:44 -0400
+
+
+Started GET "/assets/sign-up-form.self-8b9917e75835285c42a6f836cfcd3be014e68f88ec10467b489761b62f679762.css?body=1" for ::1 at 2015-07-14 11:50:44 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-14 11:50:44 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2015-07-14 11:50:44 -0400
+
+
+Started GET "/users/new" for ::1 at 2015-07-14 11:50:55 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 49ms (Views: 48.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/sign-up-form.self-5bc66ebbdb93df0f2bf6938c79708e2c2bf4618c461f8dcb6bbd738a3716c489.css?body=1" for ::1 at 2015-07-14 11:50:55 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-14 11:50:55 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-14 11:50:55 -0400
+
+
+Started GET "/assets/splash_page.self-08d272039e8a8510215e26a14e658742ba26cf1a433f3e412ac2bc6aba0bef33.css?body=1" for ::1 at 2015-07-14 11:50:55 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-14 11:50:55 -0400
+
+
+Started GET "/assets/basics.self-1f59a9361b634146dbcf6a3a90f5d3685d27d67d44a36909fefe56deaab8dfe3.css?body=1" for ::1 at 2015-07-14 11:50:55 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2015-07-14 11:50:55 -0400
+
+
+Started GET "/users/new" for ::1 at 2015-07-14 11:50:56 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 21ms (Views: 20.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/basics.self-1f59a9361b634146dbcf6a3a90f5d3685d27d67d44a36909fefe56deaab8dfe3.css?body=1" for ::1 at 2015-07-14 11:50:56 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-14 11:50:56 -0400
+
+
+Started GET "/assets/splash_page.self-08d272039e8a8510215e26a14e658742ba26cf1a433f3e412ac2bc6aba0bef33.css?body=1" for ::1 at 2015-07-14 11:50:56 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-14 11:50:56 -0400
+
+
+Started GET "/assets/sign-up-form.self-5bc66ebbdb93df0f2bf6938c79708e2c2bf4618c461f8dcb6bbd738a3716c489.css?body=1" for ::1 at 2015-07-14 11:50:56 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-14 11:50:56 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2015-07-14 11:50:56 -0400
+
+
+Started GET "/users/new" for ::1 at 2015-07-14 11:50:56 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 18ms (Views: 17.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/sign-up-form.self-5bc66ebbdb93df0f2bf6938c79708e2c2bf4618c461f8dcb6bbd738a3716c489.css?body=1" for ::1 at 2015-07-14 11:50:56 -0400
+
+
+Started GET "/assets/basics.self-1f59a9361b634146dbcf6a3a90f5d3685d27d67d44a36909fefe56deaab8dfe3.css?body=1" for ::1 at 2015-07-14 11:50:56 -0400
+
+
+Started GET "/assets/splash_page.self-08d272039e8a8510215e26a14e658742ba26cf1a433f3e412ac2bc6aba0bef33.css?body=1" for ::1 at 2015-07-14 11:50:56 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-14 11:50:56 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-14 11:50:56 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-14 11:50:56 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2015-07-14 11:50:56 -0400
+
+
+Started GET "/users/new" for ::1 at 2015-07-14 11:50:59 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 20ms (Views: 20.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/basics.self-1f59a9361b634146dbcf6a3a90f5d3685d27d67d44a36909fefe56deaab8dfe3.css?body=1" for ::1 at 2015-07-14 11:50:59 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-14 11:50:59 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-14 11:50:59 -0400
+
+
+Started GET "/assets/splash_page.self-08d272039e8a8510215e26a14e658742ba26cf1a433f3e412ac2bc6aba0bef33.css?body=1" for ::1 at 2015-07-14 11:50:59 -0400
+
+
+Started GET "/assets/sign-up-form.self-5bc66ebbdb93df0f2bf6938c79708e2c2bf4618c461f8dcb6bbd738a3716c489.css?body=1" for ::1 at 2015-07-14 11:50:59 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-14 11:50:59 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2015-07-14 11:50:59 -0400
+
+
+Started GET "/users/new" for ::1 at 2015-07-14 11:51:27 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 90ms (Views: 90.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/sign_up_form.self-5bc66ebbdb93df0f2bf6938c79708e2c2bf4618c461f8dcb6bbd738a3716c489.css?body=1" for ::1 at 2015-07-14 11:51:27 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-14 11:51:27 -0400
+
+
+Started GET "/assets/basics.self-1f59a9361b634146dbcf6a3a90f5d3685d27d67d44a36909fefe56deaab8dfe3.css?body=1" for ::1 at 2015-07-14 11:51:27 -0400
+
+
+Started GET "/assets/splash_page.self-08d272039e8a8510215e26a14e658742ba26cf1a433f3e412ac2bc6aba0bef33.css?body=1" for ::1 at 2015-07-14 11:51:27 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-14 11:51:27 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-14 11:51:27 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2015-07-14 11:51:27 -0400
+
+
+Started GET "/users/new" for ::1 at 2015-07-14 11:51:27 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 17ms (Views: 17.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/basics.self-1f59a9361b634146dbcf6a3a90f5d3685d27d67d44a36909fefe56deaab8dfe3.css?body=1" for ::1 at 2015-07-14 11:51:27 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-14 11:51:27 -0400
+
+
+Started GET "/assets/sign_up_form.self-5bc66ebbdb93df0f2bf6938c79708e2c2bf4618c461f8dcb6bbd738a3716c489.css?body=1" for ::1 at 2015-07-14 11:51:27 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-14 11:51:27 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-14 11:51:27 -0400
+
+
+Started GET "/assets/splash_page.self-08d272039e8a8510215e26a14e658742ba26cf1a433f3e412ac2bc6aba0bef33.css?body=1" for ::1 at 2015-07-14 11:51:27 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2015-07-14 11:51:27 -0400
+
+
+Started GET "/users/new" for ::1 at 2015-07-14 11:51:28 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 19ms (Views: 19.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/sign_up_form.self-5bc66ebbdb93df0f2bf6938c79708e2c2bf4618c461f8dcb6bbd738a3716c489.css?body=1" for ::1 at 2015-07-14 11:51:28 -0400
+
+
+Started GET "/assets/basics.self-1f59a9361b634146dbcf6a3a90f5d3685d27d67d44a36909fefe56deaab8dfe3.css?body=1" for ::1 at 2015-07-14 11:51:28 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-14 11:51:28 -0400
+
+
+Started GET "/assets/splash_page.self-08d272039e8a8510215e26a14e658742ba26cf1a433f3e412ac2bc6aba0bef33.css?body=1" for ::1 at 2015-07-14 11:51:28 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-14 11:51:28 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-14 11:51:28 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2015-07-14 11:51:28 -0400
+
+
+Started GET "/users/new" for ::1 at 2015-07-14 11:51:28 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 19ms (Views: 19.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/basics.self-1f59a9361b634146dbcf6a3a90f5d3685d27d67d44a36909fefe56deaab8dfe3.css?body=1" for ::1 at 2015-07-14 11:51:28 -0400
+
+
+Started GET "/assets/splash_page.self-08d272039e8a8510215e26a14e658742ba26cf1a433f3e412ac2bc6aba0bef33.css?body=1" for ::1 at 2015-07-14 11:51:28 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-14 11:51:28 -0400
+
+
+Started GET "/assets/sign_up_form.self-5bc66ebbdb93df0f2bf6938c79708e2c2bf4618c461f8dcb6bbd738a3716c489.css?body=1" for ::1 at 2015-07-14 11:51:28 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-14 11:51:28 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-14 11:51:28 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2015-07-14 11:51:28 -0400
+
+
+Started GET "/users/new" for ::1 at 2015-07-14 11:51:28 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 19ms (Views: 18.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/sign_up_form.self-5bc66ebbdb93df0f2bf6938c79708e2c2bf4618c461f8dcb6bbd738a3716c489.css?body=1" for ::1 at 2015-07-14 11:51:28 -0400
+
+
+Started GET "/assets/basics.self-1f59a9361b634146dbcf6a3a90f5d3685d27d67d44a36909fefe56deaab8dfe3.css?body=1" for ::1 at 2015-07-14 11:51:28 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-14 11:51:28 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-14 11:51:28 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-14 11:51:28 -0400
+
+
+Started GET "/assets/splash_page.self-08d272039e8a8510215e26a14e658742ba26cf1a433f3e412ac2bc6aba0bef33.css?body=1" for ::1 at 2015-07-14 11:51:28 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2015-07-14 11:51:28 -0400
+
+
+Started GET "/users/new" for ::1 at 2015-07-14 11:51:29 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 18ms (Views: 17.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/basics.self-1f59a9361b634146dbcf6a3a90f5d3685d27d67d44a36909fefe56deaab8dfe3.css?body=1" for ::1 at 2015-07-14 11:51:29 -0400
+
+
+Started GET "/assets/sign_up_form.self-5bc66ebbdb93df0f2bf6938c79708e2c2bf4618c461f8dcb6bbd738a3716c489.css?body=1" for ::1 at 2015-07-14 11:51:29 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-14 11:51:29 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-14 11:51:29 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-14 11:51:29 -0400
+
+
+Started GET "/assets/splash_page.self-08d272039e8a8510215e26a14e658742ba26cf1a433f3e412ac2bc6aba0bef33.css?body=1" for ::1 at 2015-07-14 11:51:29 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2015-07-14 11:51:29 -0400
+
+
+Started GET "/users/new" for ::1 at 2015-07-14 11:51:29 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 17ms (Views: 16.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/sign_up_form.self-5bc66ebbdb93df0f2bf6938c79708e2c2bf4618c461f8dcb6bbd738a3716c489.css?body=1" for ::1 at 2015-07-14 11:51:29 -0400
+
+
+Started GET "/assets/basics.self-1f59a9361b634146dbcf6a3a90f5d3685d27d67d44a36909fefe56deaab8dfe3.css?body=1" for ::1 at 2015-07-14 11:51:29 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-14 11:51:29 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-14 11:51:29 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-14 11:51:29 -0400
+
+
+Started GET "/assets/splash_page.self-08d272039e8a8510215e26a14e658742ba26cf1a433f3e412ac2bc6aba0bef33.css?body=1" for ::1 at 2015-07-14 11:51:29 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2015-07-14 11:51:29 -0400
+
+
+Started GET "/users/new" for ::1 at 2015-07-14 11:51:30 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 18ms (Views: 17.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/basics.self-1f59a9361b634146dbcf6a3a90f5d3685d27d67d44a36909fefe56deaab8dfe3.css?body=1" for ::1 at 2015-07-14 11:51:30 -0400
+
+
+Started GET "/assets/sign_up_form.self-5bc66ebbdb93df0f2bf6938c79708e2c2bf4618c461f8dcb6bbd738a3716c489.css?body=1" for ::1 at 2015-07-14 11:51:30 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-14 11:51:30 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-14 11:51:30 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-14 11:51:30 -0400
+
+
+Started GET "/assets/splash_page.self-08d272039e8a8510215e26a14e658742ba26cf1a433f3e412ac2bc6aba0bef33.css?body=1" for ::1 at 2015-07-14 11:51:30 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2015-07-14 11:51:30 -0400
+
+
+Started GET "/users/new" for ::1 at 2015-07-14 11:51:47 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 36ms (Views: 35.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/sign_up_form.self-2873900e4062ffc2d5f34ed24a37df1b63d1d8e8c78113c4f51e3456d829788f.css?body=1" for ::1 at 2015-07-14 11:51:47 -0400
+
+
+Started GET "/assets/basics.self-1f59a9361b634146dbcf6a3a90f5d3685d27d67d44a36909fefe56deaab8dfe3.css?body=1" for ::1 at 2015-07-14 11:51:47 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-14 11:51:47 -0400
+
+
+Started GET "/assets/splash_page.self-08d272039e8a8510215e26a14e658742ba26cf1a433f3e412ac2bc6aba0bef33.css?body=1" for ::1 at 2015-07-14 11:51:47 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-14 11:51:47 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-14 11:51:47 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2015-07-14 11:51:47 -0400
+
+
+Started GET "/users/new" for ::1 at 2015-07-14 11:52:00 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 39ms (Views: 39.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/sign_up_form.self-911023a07dcc85f113659986e3477a62b72c25c196129c5d8ef14c6270eb71ea.css?body=1" for ::1 at 2015-07-14 11:52:00 -0400
+
+
+Started GET "/assets/splash_page.self-08d272039e8a8510215e26a14e658742ba26cf1a433f3e412ac2bc6aba0bef33.css?body=1" for ::1 at 2015-07-14 11:52:00 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-14 11:52:00 -0400
+
+
+Started GET "/assets/basics.self-1f59a9361b634146dbcf6a3a90f5d3685d27d67d44a36909fefe56deaab8dfe3.css?body=1" for ::1 at 2015-07-14 11:52:00 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-14 11:52:00 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-14 11:52:00 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2015-07-14 11:52:00 -0400
+
+
+Started GET "/users/new" for ::1 at 2015-07-14 11:52:10 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 36ms (Views: 36.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/sign_up_form.self-f6d96a801ae2e8728e08f2d5896dd1283bd45e79ceadb9acc7bd904cf9704444.css?body=1" for ::1 at 2015-07-14 11:52:10 -0400
+
+
+Started GET "/assets/basics.self-1f59a9361b634146dbcf6a3a90f5d3685d27d67d44a36909fefe56deaab8dfe3.css?body=1" for ::1 at 2015-07-14 11:52:10 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-14 11:52:10 -0400
+
+
+Started GET "/assets/splash_page.self-08d272039e8a8510215e26a14e658742ba26cf1a433f3e412ac2bc6aba0bef33.css?body=1" for ::1 at 2015-07-14 11:52:10 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-14 11:52:10 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-14 11:52:10 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2015-07-14 11:52:10 -0400
+
+
+Started GET "/users/new" for ::1 at 2015-07-14 11:52:31 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 43ms (Views: 42.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/basics.self-1f59a9361b634146dbcf6a3a90f5d3685d27d67d44a36909fefe56deaab8dfe3.css?body=1" for ::1 at 2015-07-14 11:52:31 -0400
+
+
+Started GET "/assets/sign_up_form.self-3c04089f1d485fbc08cd57bf75a77d551fb0a307a0e9c32919ff65956a7ac4dc.css?body=1" for ::1 at 2015-07-14 11:52:31 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-14 11:52:31 -0400
+
+
+Started GET "/assets/splash_page.self-08d272039e8a8510215e26a14e658742ba26cf1a433f3e412ac2bc6aba0bef33.css?body=1" for ::1 at 2015-07-14 11:52:31 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-14 11:52:31 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-14 11:52:31 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2015-07-14 11:52:31 -0400
+
+
+Started GET "/users/new" for ::1 at 2015-07-14 11:52:32 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 18ms (Views: 18.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/basics.self-1f59a9361b634146dbcf6a3a90f5d3685d27d67d44a36909fefe56deaab8dfe3.css?body=1" for ::1 at 2015-07-14 11:52:32 -0400
+
+
+Started GET "/assets/sign_up_form.self-3c04089f1d485fbc08cd57bf75a77d551fb0a307a0e9c32919ff65956a7ac4dc.css?body=1" for ::1 at 2015-07-14 11:52:32 -0400
+
+
+Started GET "/assets/splash_page.self-08d272039e8a8510215e26a14e658742ba26cf1a433f3e412ac2bc6aba0bef33.css?body=1" for ::1 at 2015-07-14 11:52:32 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-14 11:52:32 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-14 11:52:32 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-14 11:52:32 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2015-07-14 11:52:32 -0400
+
+
+Started GET "/users/new" for ::1 at 2015-07-14 11:52:34 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 21ms (Views: 20.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/basics.self-1f59a9361b634146dbcf6a3a90f5d3685d27d67d44a36909fefe56deaab8dfe3.css?body=1" for ::1 at 2015-07-14 11:52:34 -0400
+
+
+Started GET "/assets/sign_up_form.self-3c04089f1d485fbc08cd57bf75a77d551fb0a307a0e9c32919ff65956a7ac4dc.css?body=1" for ::1 at 2015-07-14 11:52:34 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-14 11:52:34 -0400
+
+
+Started GET "/assets/splash_page.self-08d272039e8a8510215e26a14e658742ba26cf1a433f3e412ac2bc6aba0bef33.css?body=1" for ::1 at 2015-07-14 11:52:34 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-14 11:52:34 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-14 11:52:34 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2015-07-14 11:52:34 -0400
+
+
+Started GET "/users/new" for ::1 at 2015-07-14 11:52:37 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 39ms (Views: 39.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/sign_up_form.self-df05c27f3782f22a7b7b6cc37a3981ef1184454d57fcd293a05c6da5b68b27c0.css?body=1" for ::1 at 2015-07-14 11:52:37 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-14 11:52:37 -0400
+
+
+Started GET "/assets/splash_page.self-08d272039e8a8510215e26a14e658742ba26cf1a433f3e412ac2bc6aba0bef33.css?body=1" for ::1 at 2015-07-14 11:52:37 -0400
+
+
+Started GET "/assets/basics.self-1f59a9361b634146dbcf6a3a90f5d3685d27d67d44a36909fefe56deaab8dfe3.css?body=1" for ::1 at 2015-07-14 11:52:37 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-14 11:52:37 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-14 11:52:37 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2015-07-14 11:52:37 -0400
+
+
+Started GET "/users/new" for ::1 at 2015-07-14 11:53:09 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 41ms (Views: 40.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/sign_up_form.self-41edb321fa2a85d8c18d7c2b6d4a7eb23cbf73dc6cf285ead94ca7cd2d70a53b.css?body=1" for ::1 at 2015-07-14 11:53:09 -0400
+
+
+Started GET "/assets/basics.self-1f59a9361b634146dbcf6a3a90f5d3685d27d67d44a36909fefe56deaab8dfe3.css?body=1" for ::1 at 2015-07-14 11:53:09 -0400
+
+
+Started GET "/assets/splash_page.self-08d272039e8a8510215e26a14e658742ba26cf1a433f3e412ac2bc6aba0bef33.css?body=1" for ::1 at 2015-07-14 11:53:09 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-14 11:53:09 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-14 11:53:09 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-14 11:53:09 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2015-07-14 11:53:09 -0400
+
+
+Started GET "/users/new" for ::1 at 2015-07-14 11:53:13 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 41ms (Views: 41.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/basics.self-1f59a9361b634146dbcf6a3a90f5d3685d27d67d44a36909fefe56deaab8dfe3.css?body=1" for ::1 at 2015-07-14 11:53:13 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-14 11:53:13 -0400
+
+
+Started GET "/assets/splash_page.self-08d272039e8a8510215e26a14e658742ba26cf1a433f3e412ac2bc6aba0bef33.css?body=1" for ::1 at 2015-07-14 11:53:13 -0400
+
+
+Started GET "/assets/sign_up_form.self-cfee6de20d298388eeb24a1fef8c11ee1bbb2cd11db3aa293d8588ac83c7d157.css?body=1" for ::1 at 2015-07-14 11:53:13 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-14 11:53:13 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-14 11:53:13 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2015-07-14 11:53:13 -0400
+
+
+Started GET "/users/new" for ::1 at 2015-07-14 11:53:44 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 51ms (Views: 51.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/sign_up_form.self-31e0fb7d7367a0a0a54a56944165234f7dfc78ef7c67164e8674b496e53ff535.css?body=1" for ::1 at 2015-07-14 11:53:44 -0400
+
+
+Started GET "/assets/basics.self-1f59a9361b634146dbcf6a3a90f5d3685d27d67d44a36909fefe56deaab8dfe3.css?body=1" for ::1 at 2015-07-14 11:53:44 -0400
+
+
+Started GET "/assets/splash_page.self-08d272039e8a8510215e26a14e658742ba26cf1a433f3e412ac2bc6aba0bef33.css?body=1" for ::1 at 2015-07-14 11:53:44 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-14 11:53:44 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-14 11:53:44 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-14 11:53:44 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2015-07-14 11:53:44 -0400
+
+
+Started GET "/users/new" for ::1 at 2015-07-14 11:54:01 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 44ms (Views: 43.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/sign_up_form.self-10fc1f88c35f44937bf38eba6a43a573911de389ff55f8c246582fd6a890efc9.css?body=1" for ::1 at 2015-07-14 11:54:01 -0400
+
+
+Started GET "/assets/splash_page.self-08d272039e8a8510215e26a14e658742ba26cf1a433f3e412ac2bc6aba0bef33.css?body=1" for ::1 at 2015-07-14 11:54:01 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-14 11:54:01 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-14 11:54:01 -0400
+
+
+Started GET "/assets/basics.self-1f59a9361b634146dbcf6a3a90f5d3685d27d67d44a36909fefe56deaab8dfe3.css?body=1" for ::1 at 2015-07-14 11:54:01 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-14 11:54:01 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2015-07-14 11:54:01 -0400
+
+
+Started GET "/users/new" for ::1 at 2015-07-14 11:54:16 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 42ms (Views: 41.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/sign_up_form.self-6e8dcec508e4430130985c1b41444fed081f94db99fb2e9a170c3aeb3ac30dbd.css?body=1" for ::1 at 2015-07-14 11:54:16 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-14 11:54:16 -0400
+
+
+Started GET "/assets/basics.self-1f59a9361b634146dbcf6a3a90f5d3685d27d67d44a36909fefe56deaab8dfe3.css?body=1" for ::1 at 2015-07-14 11:54:16 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-14 11:54:16 -0400
+
+
+Started GET "/assets/splash_page.self-08d272039e8a8510215e26a14e658742ba26cf1a433f3e412ac2bc6aba0bef33.css?body=1" for ::1 at 2015-07-14 11:54:16 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-14 11:54:16 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2015-07-14 11:54:16 -0400
+
+
+Started GET "/users/new" for ::1 at 2015-07-14 11:54:16 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 29ms (Views: 28.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/basics.self-1f59a9361b634146dbcf6a3a90f5d3685d27d67d44a36909fefe56deaab8dfe3.css?body=1" for ::1 at 2015-07-14 11:54:16 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-14 11:54:16 -0400
+
+
+Started GET "/assets/sign_up_form.self-6e8dcec508e4430130985c1b41444fed081f94db99fb2e9a170c3aeb3ac30dbd.css?body=1" for ::1 at 2015-07-14 11:54:16 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-14 11:54:16 -0400
+
+
+Started GET "/assets/splash_page.self-08d272039e8a8510215e26a14e658742ba26cf1a433f3e412ac2bc6aba0bef33.css?body=1" for ::1 at 2015-07-14 11:54:16 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-14 11:54:16 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2015-07-14 11:54:16 -0400
+
+
+Started GET "/users/new" for ::1 at 2015-07-14 11:54:30 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 39ms (Views: 39.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/basics.self-1f59a9361b634146dbcf6a3a90f5d3685d27d67d44a36909fefe56deaab8dfe3.css?body=1" for ::1 at 2015-07-14 11:54:30 -0400
+
+
+Started GET "/assets/sign_up_form.self-6e0ff9bc30c88ace73f05c82f46d5f0c1507e6de69b557a82417dc617e9ace22.css?body=1" for ::1 at 2015-07-14 11:54:30 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-14 11:54:30 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-14 11:54:30 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-14 11:54:30 -0400
+
+
+Started GET "/assets/splash_page.self-08d272039e8a8510215e26a14e658742ba26cf1a433f3e412ac2bc6aba0bef33.css?body=1" for ::1 at 2015-07-14 11:54:30 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2015-07-14 11:54:30 -0400
+
+
+Started GET "/users/new" for ::1 at 2015-07-14 11:54:41 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 40ms (Views: 40.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/sign_up_form.self-f554bed9e5f79b4fd5c2c5eef5521c89d890bd6a9290bafc3377c8e74fbaf6d7.css?body=1" for ::1 at 2015-07-14 11:54:41 -0400
+
+
+Started GET "/assets/splash_page.self-08d272039e8a8510215e26a14e658742ba26cf1a433f3e412ac2bc6aba0bef33.css?body=1" for ::1 at 2015-07-14 11:54:41 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-14 11:54:41 -0400
+
+
+Started GET "/assets/basics.self-1f59a9361b634146dbcf6a3a90f5d3685d27d67d44a36909fefe56deaab8dfe3.css?body=1" for ::1 at 2015-07-14 11:54:41 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-14 11:54:41 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-14 11:54:41 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2015-07-14 11:54:41 -0400
+
+
+Started GET "/users/new" for ::1 at 2015-07-14 11:54:44 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 22ms (Views: 21.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-14 11:54:44 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-14 11:54:44 -0400
+
+
+Started GET "/assets/basics.self-1f59a9361b634146dbcf6a3a90f5d3685d27d67d44a36909fefe56deaab8dfe3.css?body=1" for ::1 at 2015-07-14 11:54:44 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-14 11:54:44 -0400
+
+
+Started GET "/assets/splash_page.self-08d272039e8a8510215e26a14e658742ba26cf1a433f3e412ac2bc6aba0bef33.css?body=1" for ::1 at 2015-07-14 11:54:44 -0400
+
+
+Started GET "/assets/sign_up_form.self-6e0ff9bc30c88ace73f05c82f46d5f0c1507e6de69b557a82417dc617e9ace22.css?body=1" for ::1 at 2015-07-14 11:54:44 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2015-07-14 11:54:44 -0400
+
+
+Started GET "/users/new" for ::1 at 2015-07-14 11:55:02 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 53ms (Views: 52.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/sign_up_form.self-d0bde9dc613fd84e1c70e9f260711dfe1a40d5626acb4172abb6bd8faa347f75.css?body=1" for ::1 at 2015-07-14 11:55:02 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-14 11:55:02 -0400
+
+
+Started GET "/assets/basics.self-1f59a9361b634146dbcf6a3a90f5d3685d27d67d44a36909fefe56deaab8dfe3.css?body=1" for ::1 at 2015-07-14 11:55:02 -0400
+
+
+Started GET "/assets/splash_page.self-08d272039e8a8510215e26a14e658742ba26cf1a433f3e412ac2bc6aba0bef33.css?body=1" for ::1 at 2015-07-14 11:55:02 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-14 11:55:02 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-14 11:55:02 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2015-07-14 11:55:02 -0400
+
+
+Started GET "/users/new" for ::1 at 2015-07-14 11:55:16 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 42ms (Views: 42.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/sign_up_form.self-dc02700c7b87530edcf784bf39587002e8774539adc3d1c1b9dfd64839686ce1.css?body=1" for ::1 at 2015-07-14 11:55:16 -0400
+
+
+Started GET "/assets/splash_page.self-08d272039e8a8510215e26a14e658742ba26cf1a433f3e412ac2bc6aba0bef33.css?body=1" for ::1 at 2015-07-14 11:55:16 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-14 11:55:16 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-14 11:55:16 -0400
+
+
+Started GET "/assets/basics.self-1f59a9361b634146dbcf6a3a90f5d3685d27d67d44a36909fefe56deaab8dfe3.css?body=1" for ::1 at 2015-07-14 11:55:16 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-14 11:55:16 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2015-07-14 11:55:16 -0400
