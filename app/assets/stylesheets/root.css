@@ -1,0 +1,37 @@
+#root-page {
+  display: block;
+  background-color: red;
+}
+
+#navbar {
+  display: block;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
+  width: 200px;
+
+  float:left;
+  background-color: blue;
+}
+
+.bar-items > logo {
+  display: block;
+  background-color: red;
+  margin: 0px 0px;
+  padding: 15px;
+}
+
+.bar-items > li{
+  display: block;
+  background-color: orange;
+  margin: 0px 0px;
+  padding: 15px;
+}
+
+
+#content {
+  display: block;
+  float: left;
+  background-color: green;
+}
