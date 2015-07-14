@@ -13,5 +13,11 @@
 }
 
 .sign-in-form {
+  background-color: white;
+  padding: 30px;
+}
 
+.sign-in-form input {
+  display: block;
+  margin: 20px;
 }
