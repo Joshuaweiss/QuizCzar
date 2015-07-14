@@ -1,4 +1,5 @@
 .splash-image {
+  position: relative;
   background-color: grey;
   height: 500px;
   padding: 20px;
@@ -20,4 +21,14 @@
 .sign-in-form input {
   display: block;
   margin: 20px;
+}
+
+.sign-up-button {
+  display: block;
+  position: absolute;
+  width: 200px;
+  height: 40px;
+  bottom: 50px;
+  left: 50%;
+  transform: translate(-50%);
 }
