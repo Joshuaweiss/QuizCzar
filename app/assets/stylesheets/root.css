@@ -49,3 +49,11 @@
 .bar-items > li:hover{
   background-color: rgb(255, 138, 0);
 }
+
+
+
+
+.page-header {
+  font-size: 25px;
+  padding: 30px 30px 50px 35px;
+}

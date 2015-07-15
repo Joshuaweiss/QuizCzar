@@ -1,0 +1,15 @@
+.question-thumbs {
+  background-color: blue;
+  width: 200px;
+  padding: 20px;
+}
+
+.question-thumbs > li {
+  margin: 20px;
+  height: 60px;
+  background-color: yellow;
+}
+
+.question-thumbs > li:hover {
+  background-color: orange;
+}

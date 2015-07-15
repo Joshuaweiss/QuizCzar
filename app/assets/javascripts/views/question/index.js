@@ -1,5 +1,6 @@
 QuizCzar.Views.QuestionsIndex = Backbone.CompositeView.extend({
   tagName: "ul",
+  className: "question-thumbs",
   render: function(){
     var ul = this.$el;
     ul.empty();
