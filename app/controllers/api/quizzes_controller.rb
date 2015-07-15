@@ -7,7 +7,7 @@ class Api::QuizzesController < ApplicationController
   end
 
   def show
-
+    @quiz = Quiz.includes(questions: :answers).find(params[:id])
   end
 
 end
