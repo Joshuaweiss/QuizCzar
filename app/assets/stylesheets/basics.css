@@ -13,14 +13,18 @@ ul {
 }
 
 group::after {
-  clear: both;
-  content: "";
-  display: block;
+  clear: both !important;
+  content: "" !important;
+  display: block !important;
 }
 
 
 .unstyled {
-  border: 0;
-  margin: 0;
-  padding: 0;
+  border: none;
+  overflow: auto;
+  outline: none;
+
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
 }
