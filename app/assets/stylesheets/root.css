@@ -55,5 +55,6 @@
 
 .page-header {
   font-size: 25px;
+  display: block;
   padding: 30px 30px 50px 35px;
 }
