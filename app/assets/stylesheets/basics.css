@@ -5,6 +5,7 @@ html, body, h1, h2, h3 ,h4 ,h5, ul, section, figure, div, a {
   text-decoration: none;
   font: inherit;
   color: inherit;
+  background-color: transparent;
 }
 
 ul {
