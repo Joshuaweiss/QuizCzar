@@ -1,5 +1,5 @@
 QuizCzar.Collections.Quizzes = Backbone.Collection.extend({
-  url: "/quizzes",
+  url: "/api/quizzes",
   model: QuizCzar.Models.Quiz
 });
 
