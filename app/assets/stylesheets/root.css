@@ -1,6 +1,7 @@
 #root-page {
   display: block;
   background-color: red;
+
 }
 
 #navbar {
@@ -9,8 +10,7 @@
   left: 0px;
   top: 0px;
   bottom: 0px;
-  width: 200px;
-
+  width: 220px;
   float:left;
   background-color: blue;
 }

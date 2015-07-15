@@ -1,6 +1,10 @@
 <section id="root"></section>
 
 
+<script id="signout-button" type="template">
+  <%= button_to "Sign Out", {controller: :sessions, action: 'destroy'}, method: :delete %>
+</script>
+
 <script>
   $(document).ready(function(){
     var $rootEl = $("#root")
