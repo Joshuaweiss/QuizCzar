@@ -16,6 +16,7 @@
 //= require underscore
 //= require backbone
 //= require quiz_czar
+//= require_tree ./utils
 //= require_tree ../templates
 //= require_tree ./models
 //= require_tree ./collections

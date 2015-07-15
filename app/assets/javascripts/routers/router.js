@@ -12,9 +12,17 @@ QuizCzar.Routers.Router = Backbone.Router.extend({
       this._swap_views(view);
     },
     newQuiz: function() {
-      var quiz = new QuizCzar.Models.Quiz();
-      var view = new QuizCzar.Views.QuizForm({model: quiz});
-      this._swap_views(view);
+      // var quiz = new QuizCzar.Models.Quiz();
+      var router = this;
+      var quiz = new QuizCzar.Models.Quiz({id: 1})
+
+      quiz.fetch({
+        success: function() {
+          var view = new QuizCzar.Views.QuizForm({model: quiz});
+          router._swap_views(view);
+        }
+      })
+
     },
     _swap_views: function(view) {
       this._currentView && this._currentView.remove();
