@@ -1,6 +1,11 @@
+html {
+  font-family: sans-serif;
+  rgb(50, 50, 50)
+}
+
 #root {
   display: block;
-  background-color: purple;
+  background-color: rgb(246, 246, 246);
   position: fixed;
   top: 0;
   bottom: 0;
@@ -16,7 +21,14 @@
   float: left;
   height: 100%;
   width: 220px;
-  background-color: blue;
+  background-color: #1caff6;
+  color: white;
+}
+
+#navbar logo{
+  color: rgb(50, 50, 50);
+  background-color: #f7eac8;
+  border-bottom: 1px solid white;
 }
 
 #content {
@@ -25,21 +37,20 @@
   display: block;
   position: relative;
   float: left;
-  background-color: green;
-  padding: 30px 22px;
+  padding: 30px 25px;
+  box-shadow: -1px 0 10px rgba(0, 0, 0, 0.42);
+  min-height: 1000px;
 }
 
 
 .bar-items > logo {
   display: block;
-  background-color: red;
   margin: 0px 0px;
   padding: 15px;
 }
 
 .bar-items > li{
   display: block;
-  background-color: orange;
   margin: 0px 0px;
 }
 
@@ -49,14 +60,14 @@
 }
 
 .bar-items > li:hover{
-  background-color: rgb(255, 138, 0);
+  background-color: #5cc4f6;
 }
 
 
 
 
 .page-header {
-  font-size: 25px;
+  font-size: 33px;
   display: block;
-  padding: 0px 30px 50px 0px;
+  padding: 0px 80px 80px 20px;
 }

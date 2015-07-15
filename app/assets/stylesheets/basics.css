@@ -8,16 +8,17 @@ html, body, h1, h2, h3 ,h4 ,h5, ul, section, figure, div, a {
   background-color: transparent;
 }
 
+
+
 ul {
   list-style: none;
 }
 
-group::after {
-  clear: both !important;
-  content: "" !important;
-  display: block !important;
+.group::after {
+  clear: both;
+  content: "";
+  display: block;
 }
-
 
 .unstyled {
   border: none;
