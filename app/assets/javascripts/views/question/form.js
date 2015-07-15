@@ -1,7 +1,7 @@
 QuizCzar.Views.QuestionForm = Backbone.View.extend({
   template: JST["question/form"],
   tagName: "form",
-  className: "question-form"
+  className: "question-form",
   initialize: function() {
   },
   render: function() {

@@ -21,10 +21,12 @@
 
 #content {
   margin-left: 220px;
+  width: 880px;
   display: block;
   position: relative;
   float: left;
   background-color: green;
+  padding: 30px 22px;
 }
 
 
@@ -56,5 +58,5 @@
 .page-header {
   font-size: 25px;
   display: block;
-  padding: 30px 30px 50px 35px;
+  padding: 0px 30px 50px 0px;
 }

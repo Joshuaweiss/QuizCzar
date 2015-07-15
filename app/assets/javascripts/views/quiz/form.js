@@ -1,6 +1,7 @@
 QuizCzar.Views.QuizForm = Backbone.CompositeView.extend({
   template: JST["quiz/form"],
   tagName: "form",
+  className: "quiz-form group",
   events: {
     "click .quiz-cards li" : "chooseQuestion"
   },

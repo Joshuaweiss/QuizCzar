@@ -1,15 +1,26 @@
 .question-thumbs {
   background-color: blue;
   width: 200px;
-  padding: 20px;
+  padding: 0px;
+  float: left;
 }
 
 .question-thumbs > li {
-  margin: 20px;
+  margin: 0px 0px 20px;
   height: 60px;
   background-color: yellow;
 }
 
 .question-thumbs > li:hover {
   background-color: orange;
+}
+
+.question-form {
+  background-color: pink;
+  height: 500px;
+  margin-left: 260px;
+}
+
+.question-display {
+
 }
