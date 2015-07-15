@@ -1,7 +1,10 @@
-html, body, h1, h2, h3 ,h4 ,h5, ul, section, figure, div {
+html, body, h1, h2, h3 ,h4 ,h5, ul, section, figure, div, a {
   margin: 0px;
   border: 0px;
   padding: 0px;
+  text-decoration: none;
+  font: inherit;
+  color: inherit;
 }
 
 ul {

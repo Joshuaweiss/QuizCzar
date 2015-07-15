@@ -7,7 +7,9 @@ QuizCzar.Routers.Router = Backbone.Router.extend({
       "quizzes/new" : "newQuiz"
     },
     recentQuizzes: function() {
-
+      QuizCzar.myQuizzes.fetch();
+      var view = new QuizCzar.Views.QuizIndex({collection: QuizCzar.myQuizzes});
+      this._swap_views(view);
     },
     newQuiz: function() {
       var quiz = new QuizCzar.Models.Quiz();

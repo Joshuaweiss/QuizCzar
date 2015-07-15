@@ -1,11 +1,18 @@
-#root-page {
+#root {
   display: block;
-  background-color: red;
+  background-color: purple;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 #navbar {
   display: block;
-  position: fixed;
+  position: absolute;
+  top: 0;
+  bottom: 0;
   float: left;
   height: 100%;
   width: 220px;
@@ -16,7 +23,7 @@
   margin-left: 220px;
   display: block;
   position: relative;
-  /*float: left;*/
+  float: left;
   background-color: green;
 }
 
@@ -32,5 +39,13 @@
   display: block;
   background-color: orange;
   margin: 0px 0px;
+}
+
+.bar-items > li > a{
+  display: block;
   padding: 15px;
+}
+
+.bar-items > li:hover{
+  background-color: rgb(255, 138, 0);
 }
