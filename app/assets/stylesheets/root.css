@@ -1,19 +1,25 @@
 #root-page {
   display: block;
   background-color: red;
-
 }
 
 #navbar {
   display: block;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  bottom: 0px;
+  position: fixed;
+  float: left;
+  height: 100%;
   width: 220px;
-  float:left;
   background-color: blue;
 }
+
+#content {
+  margin-left: 220px;
+  display: block;
+  position: relative;
+  /*float: left;*/
+  background-color: green;
+}
+
 
 .bar-items > logo {
   display: block;
@@ -27,11 +33,4 @@
   background-color: orange;
   margin: 0px 0px;
   padding: 15px;
-}
-
-
-#content {
-  display: block;
-  float: left;
-  background-color: green;
 }
