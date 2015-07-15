@@ -4,7 +4,10 @@ QuizCzar.Views.QuestionsIndex = Backbone.CompositeView.extend({
     var ul = this.$el;
     ul.empty();
     this.collection.each(function(question) {
-      ul.append(new QuizCzar.Views.QuestionThumb({model: question}));
+      var subview = new QuizCzar.Views.QuestionThumb({model: question});
+      ul.append(subview.render().$el);
     });
+
+    return this;
   }
 })
