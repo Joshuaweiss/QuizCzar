@@ -1,5 +1,7 @@
+
+
 html {
-  font-family: sans-serif;
+  font-family: 'Lato', sans-serif;
   rgb(50, 50, 50)
 }
 
@@ -21,14 +23,18 @@ html {
   float: left;
   height: 100%;
   width: 220px;
-  background-color: #1caff6;
-  color: white;
+  background-color: #f5f5f5;
+  color: rgb(38, 38, 38);
 }
 
 #navbar logo{
   color: rgb(50, 50, 50);
-  background-color: #f7eac8;
+  background-color: #75a7db;
   border-bottom: 1px solid white;
+  color: white;
+  display: block;
+  margin: 0px 0px;
+  padding: 15px;
 }
 
 #content {
@@ -38,16 +44,10 @@ html {
   position: relative;
   float: left;
   padding: 30px 25px;
-  box-shadow: -2px 0 10px #585858;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.16);
   min-height: 1000px;
 }
 
-
-.bar-items > logo {
-  display: block;
-  margin: 0px 0px;
-  padding: 15px;
-}
 
 .bar-items > li{
   display: block;
@@ -60,7 +60,7 @@ html {
 }
 
 .bar-items > li:hover{
-  background-color: #5cc4f6;
+  background-color: #e7e7e7;
 }
 
 
@@ -69,5 +69,5 @@ html {
 .page-header {
   font-size: 33px;
   display: block;
-  padding: 0px 80px 80px 20px;
+  padding: 0px 80px 55px 0px;
 }
