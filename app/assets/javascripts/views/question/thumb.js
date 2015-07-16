@@ -1,6 +1,7 @@
 QuizCzar.Views.QuestionThumb = Backbone.View.extend({
   template: JST["question/thumb"],
   tagName: "li",
+  className: "question-thumb",
   initialize: function () {
     this.listenTo(this.model, "sync", this.render);
   },

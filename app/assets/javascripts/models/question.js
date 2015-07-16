@@ -11,6 +11,7 @@ QuizCzar.Models.Question = Backbone.Model.extend({
     return {question: _.clone(this.attributes)};
   },
   answers: function() {
-    return this._answers = this._answers || new QuizCzar.Collections.Answers();
+    return this._answers = this._answers ||
+           new QuizCzar.Collections.Answers({question: this});
   }
 });

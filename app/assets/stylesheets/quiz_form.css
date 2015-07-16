@@ -15,14 +15,14 @@
   background-color: rgb(241, 241, 241);
 }
 
-.question-form {
+.card-form {
   border: 1px solid rgb(143, 143, 143);
   position: relative;
   margin-left: 260px;
   margin-right: 130px;
 }
 
-.answers > textarea {
+.answers textarea {
   box-sizing: border-box;
   display: block;
   float: left;
@@ -35,20 +35,28 @@
   resize: none;
 }
 
-.answers > textarea:focus {
+.question-thumbs .add-question-button {
+  background-color: rgb(180, 233, 175);
+}
+
+.question-thumbs .add-question-button:hover {
+  background-color: rgb(171, 221, 167);
+}
+
+.answers  textarea:focus {
   background-color: rgb(245, 245, 245);
 }
 
-.answers > textarea:nth-child(1) {
+.answers  textarea:nth-child(1) {
   background-color: rgb(180, 233, 175);
   border-right: 1px dotted rgb(60, 60, 60);
 }
 
-.answers > textarea:nth-child(1):focus {
+.answers  textarea:nth-child(1):focus {
   background-color: rgb(172, 227, 167);
 }
 
-.answers > textarea:nth-child(3) {
+.answers  textarea:nth-child(3) {
   border-right: 1px dotted rgb(60, 60, 60);
 }
 
