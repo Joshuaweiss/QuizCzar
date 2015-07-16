@@ -18,7 +18,8 @@ class Answer < ActiveRecord::Base
   has_one :user, through: :question
 
   def fourOrLess()
-    if !self.id && question.answers.length >= 4
+    debugger;
+    if !self.id && self.question.answers.length >= 4
       errors.add(:answers, "too many answers");
     end
   end

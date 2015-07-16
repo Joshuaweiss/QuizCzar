@@ -10,4 +10,25 @@ class Api::QuizzesController < ApplicationController
     @quiz = Quiz.includes(questions: :answers).find(params[:id])
   end
 
+  def update
+    @quiz = Quiz.find(params[:id])
+    unless current_user?(@quiz.user)
+      render json: {}, status: 401
+      return
+    end
+
+    if @quiz.update(quiz_params)
+      render json: @quiz
+    else
+      render json: {}, status: :unprocessable_entity
+    end
+
+  end
+
+  private
+
+  def quiz_params
+    params.require(:quiz).permit(:name)
+  end
+
 end

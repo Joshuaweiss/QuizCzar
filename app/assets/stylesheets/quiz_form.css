@@ -43,6 +43,17 @@
   padding: 15px;
 }
 
+.quiz-name-edit {
+  font-size: 30px;
+  width: 500px;
+}
+
+.quiz-name-edit:hover {
+  font-size: 30px;
+  width: 500px;
+  color: rgb(92, 92, 92);
+}
+
 .card-form {
   border: 1px solid rgb(143, 143, 143);
   position: relative;

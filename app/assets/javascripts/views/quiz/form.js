@@ -3,13 +3,18 @@ QuizCzar.Views.QuizForm = Backbone.CompositeView.extend({
   tagName: "form",
   className: "quiz-form group",
   events: {
-    "click .quiz-cards .question-thumb a" : "chooseQuestion"
+    "click .quiz-cards .question-thumb a" : "chooseQuestion",
+    "input .quiz-name-edit" : "changeName"
   },
   initialize: function() {
     this.addSubview(".quiz-cards", new QuizCzar.Views.QuestionsThumbIndex({collection: this.model.questions()}));
     if (this.model.questions().first()) {
       this.chooseQuestion({id: this.model.questions().first().id})
     }
+  },
+  changeName: function() {
+    this.model.set({name: this.$(".quiz-name-edit").val()});
+    this.model.save();
   },
   chooseQuestion: function(event){
     var question;

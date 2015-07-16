@@ -7,6 +7,7 @@ class Api::QuestionsController < ApplicationController
     @question = Question.includes(:quiz, quiz: :user).find(params[:id])
     unless (current_user?(@question.user))
       render json: {}, status: 401
+      return
     end
   end
 
