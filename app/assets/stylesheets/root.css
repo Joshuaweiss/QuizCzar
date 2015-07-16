@@ -5,7 +5,7 @@ html {
 
 #root {
   display: block;
-  background-color: rgb(246, 246, 246);
+  background-color: rgb(255, 255, 255);
   position: fixed;
   top: 0;
   bottom: 0;
@@ -38,7 +38,7 @@ html {
   position: relative;
   float: left;
   padding: 30px 25px;
-  box-shadow: -1px 0 10px rgba(0, 0, 0, 0.42);
+  box-shadow: -2px 0 10px #585858;
   min-height: 1000px;
 }
 

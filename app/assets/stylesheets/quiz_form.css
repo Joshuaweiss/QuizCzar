@@ -8,17 +8,19 @@
   margin: 0px 0px 20px;
   height: 30px;
   padding: 15px;
-  background-color: #1fda9a;
+  background-color: rgb(126, 182, 233);
 }
 
 .question-thumbs > li:hover {
-  background-color: orange;
+  background-color: rgb(89, 149, 204);
 }
 
 .question-form {
-  border: 2px solid black;
+  border: 0px solid rgb(205, 205, 205);
+  background-color: rgb(235, 235, 235);
   position: relative;
   margin-left: 260px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.41)
 }
 
 .answers {
@@ -34,12 +36,28 @@
   font-size: 40px;
   height: 140px;
   background: transparent;
-  border: 1px solid black;
+  border: 2px solid transparent;
   resize: none;
 }
 
 .answers > textarea:focus {
-  border: 1px solid rgb(41, 49, 255);
+  border: 2px solid rgba(0, 0, 0, 0.15);
+}
+
+.answers > textarea:nth-child(1) {
+  background-color: rgb(126, 182, 233);
+}
+
+.answers > textarea:nth-child(2) {
+  background-color: rgb(233, 126, 129);
+}
+
+.answers > textarea:nth-child(3) {
+  background-color: rgb(135, 233, 126);
+}
+
+.answers > textarea:nth-child(4) {
+  background-color: rgb(233, 206, 126);
 }
 
 .question-display {
@@ -50,11 +68,11 @@
   font-size: 40px;
   resize: none;
   background: transparent;
-  border: 1px solid black;
+  border: 2px solid transparent;
   outline: none;
   padding: 15px 20px;
 }
 
 .question-display:focus{
-  border: 1px solid rgb(41, 49, 255);
+  border: 2px solid rgb(205, 205, 205);
 }
