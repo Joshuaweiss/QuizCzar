@@ -1,13 +1,16 @@
 QuizCzar.Models.Question = Backbone.Model.extend({
   urlRoot: "/api/questions",
-  set: function(data) {
+  parse: function(data) {
     if (data.answers) {
-      this._answers = new QuizCzar.Collections.Answers(data.answers);
+      this.answers().set(data.answers, {parse: true});
     }
     delete data.answers;
-    Backbone.Model.prototype.set.call(this, data);
+    return data;
+  },
+  toJSON: function() {
+    return {question: _.clone(this.attributes)};
   },
   answers: function() {
-    return this._answers = this._answers || _([]);
+    return this._answers = this._answers || new QuizCzar.Collections.Answers();
   }
 });

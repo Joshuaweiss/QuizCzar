@@ -1,13 +1,9 @@
 QuizCzar.Views.AnswerForm = Backbone.View.extend({
+  template: JST["answer/form"],
   tagName: "textarea",
   className: "unstyled",
-  events: {
-    "input" : "submit"
-  },
-  submit: function(){
-    this.model.set({answer: this.$el.val()});
-    ////error if not saved
-    this.model.save();
+  attributes: {
+    name: "answer[answer]"
   },
   render: function() {
     this.$el.html(this.model.escape("answer"));

@@ -19,8 +19,8 @@ QuizCzar.Views.QuestionForm = Backbone.CompositeView.extend({
       this.addSubview(".answers", answerView);
     }
   },
-  submit: function(){
-    this.model.set({question: this.$(".question-display").val() });
+  submit(){
+    this.model.set({name: this.$(".question-display").val() })
     //// Set not saved message on error
     this.model.save({},{});
   },

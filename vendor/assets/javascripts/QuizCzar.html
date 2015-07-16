@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)http://localhost:3000/#quizzes/new -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>QuizCzar</title>
+  <link href="./QuizCzar_files/css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" media="all" href="http://localhost:3000/assets/basics.self-b75912093e2f292758b659130a8e4858f5d84ff5ad3e8ee0b1fa74d028582ee8.css?body=1">
+<link rel="stylesheet" media="all" href="http://localhost:3000/assets/quiz_form.self-1f67eb014602f9d53b84336f3ae28d67a180d1ddb66022a5bb0d8d9cb9bfe04b.css?body=1">
+<link rel="stylesheet" media="all" href="http://localhost:3000/assets/root.self-1ae885c0da1d95eff5f977a997df56c798e3b4d9284f627723b4597372350387.css?body=1">
+<link rel="stylesheet" media="all" href="http://localhost:3000/assets/sign_up_form.self-620a7b6de063d63c988bac8a5f990b41a4537e6bd14678ed9338ad449356c463.css?body=1">
+<link rel="stylesheet" media="all" href="http://localhost:3000/assets/splash_page.self-08d272039e8a8510215e26a14e658742ba26cf1a433f3e412ac2bc6aba0bef33.css?body=1">
+<link rel="stylesheet" media="all" href="http://localhost:3000/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1">
+  <script src="./QuizCzar_files/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js"></script>
+<script src="./QuizCzar_files/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js"></script>
+<script src="./QuizCzar_files/jquery.serializejson.self-c480e85ec7f2b02efd59ab693b310ece9aaac9ce35b2b7f9fc817a27d5ee0a79.js"></script>
+<script src="./QuizCzar_files/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js"></script>
+<script src="./QuizCzar_files/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js"></script>
+<script src="./QuizCzar_files/quiz_czar.self-7d4dd5e87dc0f66f5551ce77aedb0edf92cdd43bfbeb9e5232dd6b75706b85f9.js"></script>
+<script src="./QuizCzar_files/composite_view.self-1e801f98c008c62d4967d1f5f4b05dec43ef723cd5333b8ca22b8892bfc81354.js"></script>
+<script src="./QuizCzar_files/form.self-6622787ff41b7b8e27b0e60c1e2bd4b03d527340b700cff6a4dedbfdb862d9ee.js"></script>
+<script src="./QuizCzar_files/navbar.self-fc35973c598a8ed5de17128bf6f3efbd58b9ae170a7b62dc8787d1e77766930f.js"></script>
+<script src="./QuizCzar_files/form.self-75471b1e16dd92220522a23d0ee32039ccf6728d116262cb36cae9f900911f5d.js"></script>
+<script src="./QuizCzar_files/thumb.self-11aa45f93955a28fbde66ac741f182be83d347fad81364c2c6d12cce09a8cf6f.js"></script>
+<script src="./QuizCzar_files/form.self-b5dfe2d0634cac00b59b1fea51ff319a038051c389a38b9695c26b5da288dac4.js"></script>
+<script src="./QuizCzar_files/index.self-12a838a633d895b70f7143e0222441482058226ece042ac2ef474c4316943294.js"></script>
+<script src="./QuizCzar_files/answer.self-e6e3ce45f2d028fadea83e9f7d3504a6642e59a152b0ae5c136658a0ab6647c7.js"></script>
+<script src="./QuizCzar_files/question.self-f9a5082662913d65cc1e70df98af157ea50c735b095c1d9a56b38091c57cd036.js"></script>
+<script src="./QuizCzar_files/quiz.self-e2bd2f8805d719d5dc5b47d525fe70a22b12772deb4f0ede5f115e855cb5b079.js"></script>
+<script src="./QuizCzar_files/answers.self-a86cf8955d497e1d7b59ac346c45175a0da94d9e0d0e8b4736ab63466be12cbb.js"></script>
+<script src="./QuizCzar_files/questions.self-3a4cb2805b632e8a3ce18f2e07224430f911565d9ee0a1825b9a3f7ff49c5bf4.js"></script>
+<script src="./QuizCzar_files/quizzes.self-0e45bc0edd5e29f311e214a40c8f79ba5895832b53db29399c65d8aca77ba618.js"></script>
+<script src="./QuizCzar_files/form.self-8174f34b8e7a725397828fef582ebb2d9494e28af538c248717204aba16d78c3.js"></script>
+<script src="./QuizCzar_files/navbar.self-76b711992bf92f2a6482ad4048828e9a1e8e6348390f79577ca4df4b12248808.js"></script>
+<script src="./QuizCzar_files/form.self-7e60103e0d1a510a96f005a68b3f986d05d2497e62326dff33e09a1b419a4b42.js"></script>
+<script src="./QuizCzar_files/index.self-3de8167a2874f9528d20d9079d21021161d85af132dfd4a6eaa3f3892cb56720.js"></script>
+<script src="./QuizCzar_files/thumb.self-db5419b2e554d998ab722bfe073d541cb51c5c1bee29f91a48ba2e855f7c3bf1.js"></script>
+<script src="./QuizCzar_files/form.self-0cb5eb24ba3c608297098dfda2d777d2f2bd1722e56c8ccb94dcc6c4e9b93d95.js"></script>
+<script src="./QuizCzar_files/index.self-e3fd85a3ffb036075a56ca890dc37892091c18ece14f28480e377a5b03462ce5.js"></script>
+<script src="./QuizCzar_files/router.self-a8d59d39bb2183afa519dc72ee73d0c7365424d3e889fcbbfd3d76be00f804cd.js"></script>
+<script src="./QuizCzar_files/application.self-55d2f88127dcaaa99d5c6a5261f9015880991431c520781213525a199c900f0d.js"></script>
+  <meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="H4xeomGPKoBv3tPQSfxQQiB9fWvCz3VjGQLF7SNbCAbPqeHb/bgce0OeivYdWJf20U4GF0guDrnHTRFKNhzUng==">
+</head>
+<body>
+
+<section id="root" class="group"><div><nav id="navbar">
+  <ul class="bar-items">
+    <logo>
+      QuizCzar
+    </logo>
+    <li><a href="http://localhost:3000/#">Recent Quizzes</a></li>
+    <li><a>Search Quizzes</a></li>
+    <li><a href="./QuizCzar_files/QuizCzar.html">Make Quiz</a></li>
+    <li class="signout">
+  <a rel="nofollow" data-method="delete" href="http://localhost:3000/session">Sign Out</a>
+</li>
+  </ul>
+</nav>
+</div><section id="content"><form class="quiz-form group"><h1 class="page-header">Music Theory</h1>
+
+<div class="quiz-cards"><ul class="question-thumbs"><li data-id="1">B Major
+</li><li data-id="2">A Major
+</li></ul></div>
+<div class="card-form"><form class="question-form"><textarea class="question-display unstyled" type="text" name="question[question]">B Major</textarea>
+
+<section class="answers group"><textarea name="answer[answer]" class="unstyled">5 Sharps</textarea><textarea name="answer[answer]" class="unstyled">1 Sharps</textarea><textarea name="answer[answer]" class="unstyled">3 Sharps</textarea><textarea name="answer[answer]" class="unstyled">3 flats</textarea></section>
+</form></div>
+</form></section></section>
+
+
+<script id="signout-button" type="template">
+  <a rel="nofollow" data-method="delete" href="/session">Sign Out</a>
+</script>
+
+<script>
+  $(document).ready(function(){
+    var $rootEl = $("#root")
+    QuizCzar.initialize($rootEl);
+  });
+</script>
+
+
+
+
+</body></html>

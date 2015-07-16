@@ -1,9 +1,6 @@
 QuizCzar.Views.QuestionThumb = Backbone.View.extend({
   template: JST["question/thumb"],
   tagName: "li",
-  initialize: function () {
-    this.listenTo(this.model, "sync", this.render);
-  },
   attributes: function(){
     return {
       'data-id': this.model.id
