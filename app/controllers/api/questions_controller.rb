@@ -16,7 +16,7 @@ class Api::QuestionsController < ApplicationController
     redirect_to(root_url) unless current_user?(@question.user)
 
     if @question.save
-      render json:{}
+      render json: @question
     else
       render json: @question.errors, status: :unprocessable_entity
     end
@@ -24,7 +24,7 @@ class Api::QuestionsController < ApplicationController
 
   def update
     if @question.update(question_params)
-      render json:{}
+      render json:@question
     else
       render json: @question.errors, status: :unprocessable_entity
     end

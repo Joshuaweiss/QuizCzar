@@ -11,12 +11,12 @@ QuizCzar.Views.AnswerFormsIndex = Backbone.CompositeView.extend({
     }
 
     answers.each(function(answer){
-      view.addSubview("ul", new QuizCzar.Views.AnswerForm({model: answer}));
+      view.addSubview("", new QuizCzar.Views.AnswerForm({model: answer}));
     })
 
   },
+  className: "group",
   render: function() {
-    this.$el.html($("<ul>"));
     this.attachSubviews();
   }
 })

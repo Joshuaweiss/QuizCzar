@@ -1,5 +1,7 @@
 QuizCzar.Views.Navbar = Backbone.View.extend({
   template: JST["navbar"],
+  tagName: "nav",
+  id: "navbar",
   events: {
     "click .signout" : "logout"
   },

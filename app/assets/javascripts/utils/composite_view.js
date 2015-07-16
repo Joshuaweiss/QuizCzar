@@ -17,10 +17,18 @@ Backbone.CompositeView = Backbone.View.extend({
   },
 
   attachSubview: function (selector, subview, prepend) {
-    if (prepend) {
-      this.$(selector).prepend(subview.$el);
+    if (selector === "") {
+      if (prepend) {
+        this.$el.prepend(subview.$el);
+      } else {
+        this.$el.append(subview.$el);
+      }
     } else {
-      this.$(selector).append(subview.$el);
+      if (prepend) {
+        this.$(selector).prepend(subview.$el);
+      } else {
+        this.$(selector).append(subview.$el);
+      }
     }
     // Bind events in case `subview` has previously been removed from
     // DOM.
@@ -45,7 +53,12 @@ Backbone.CompositeView = Backbone.View.extend({
 
     var view = this;
     this.subviews().each(function (selectorSubviews, selector) {
-      view.$(selector).empty();
+      if(selector === "") {
+        view.$el.empty();
+      } else {
+        view.$(selector).empty();
+      }
+
       selectorSubviews.each(function (subview) {
         view.attachSubview(selector, subview);
       });
@@ -97,7 +110,7 @@ Backbone.CompositeView = Backbone.View.extend({
     // of subviews for the sel.
     this._subviews = this._subviews || {};
 
-    if (selector) {
+    if (selector || selector === "") {
       this._subviews[selector] = this._subviews[selector] || _([]);
       return this._subviews[selector];
     } else {
