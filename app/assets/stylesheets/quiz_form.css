@@ -4,15 +4,43 @@
   float: left;
 }
 
-.question-thumbs > li {
+.question-thumbs > li > a{
+  display: block;
+  float: left;
+  height: 60px;
+  width: 155px;
+  padding: 15px 0 0 15px;
+  box-sizing: border-box;
+}
+
+.question-thumbs > li{
   margin: 0px 0px 20px;
-  height: 30px;
-  padding: 15px;
   border: 1px solid rgb(143, 143, 143);
 }
 
 .question-thumbs > li:hover {
   background-color: rgb(241, 241, 241);
+}
+
+
+.delete-question {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  width: 40px;
+  height: 60px;
+  float: right;
+  background: transparent;
+}
+
+.delete-question:hover {
+  background: rgb(201, 201, 201);
+}
+
+.question-thumbs .add-question-button {
+  background-color: rgb(180, 233, 175);
+  height: 30px;
+  padding: 15px;
 }
 
 .card-form {
@@ -36,28 +64,24 @@
   resize: none;
 }
 
-.question-thumbs .add-question-button {
-  background-color: rgb(180, 233, 175);
-}
-
 .question-thumbs .add-question-button:hover {
   background-color: rgb(171, 221, 167);
 }
 
-.answers  textarea:focus {
+.answers textarea:focus {
   background-color: rgb(245, 245, 245);
 }
 
-.answers  textarea:nth-child(1) {
+.answers textarea:nth-child(1) {
   background-color: rgb(180, 233, 175);
   border-right: 1px dotted rgb(60, 60, 60);
 }
 
-.answers  textarea:nth-child(1):focus {
+.answers textarea:nth-child(1):focus {
   background-color: rgb(172, 227, 167);
 }
 
-.answers  textarea:nth-child(3) {
+.answers textarea:nth-child(3) {
   border-right: 1px dotted rgb(60, 60, 60);
 }
 

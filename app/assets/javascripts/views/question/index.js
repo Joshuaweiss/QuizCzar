@@ -4,6 +4,9 @@ QuizCzar.Views.QuestionsThumbIndex = Backbone.CompositeView.extend({
   events: {
     "click .add-question-button" : "addQuestion"
   },
+  initialize: function() {
+    this.listenTo(this.collection, "remove", this.render);
+  },
   addQuestion: function(event){
     event.preventDefault;
     var question = new QuizCzar.Models.Question({
@@ -21,7 +24,7 @@ QuizCzar.Views.QuestionsThumbIndex = Backbone.CompositeView.extend({
     var ul = this.$el;
     ul.empty();
 
-    var addButton = $('<li class="add-question-button">+ Add a Question</button>');
+    var addButton = $('<li class="add-question-button">+ Add a Question</li>');
     ul.append(addButton);
 
     this.collection.each(function(question) {

@@ -17,7 +17,7 @@ class User < ActiveRecord::Base
   validates :password, length: {minimum: 6, maximum: 20, allow_nil: true}
   before_validation :session_token_exists
 
-  has_many :quizzes
+  has_many :quizzes, dependent: :destroy
 
   attr_reader :password
 

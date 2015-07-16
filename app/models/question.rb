@@ -12,7 +12,7 @@ class Question < ActiveRecord::Base
   validates :question, :quiz_id, presence: true
 
   belongs_to :quiz
-  has_many :answers
+  has_many :answers, dependent: :destroy
   has_one :user, through: :quiz
 
 end

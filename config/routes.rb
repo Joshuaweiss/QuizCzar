@@ -10,7 +10,7 @@ Rails.application.routes.draw do
 
   namespace :api, defaults: {format: :json} do
     resources :quizzes, only: [:index, :show]
-    resources :questions, only: [:update, :create]
+    resources :questions, only: [:update, :create, :destroy]
     resources :answers, only: [:update, :create]
   end
 

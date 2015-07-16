@@ -12,6 +12,6 @@ class Quiz < ActiveRecord::Base
   validates :name, :user_id, presence: true
 
   belongs_to :user
-  has_many :questions
+  has_many :questions, dependent: :destroy
 
 end

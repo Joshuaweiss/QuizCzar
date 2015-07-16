@@ -1,12 +1,12 @@
 class Api::QuestionsController < ApplicationController
 
   before_action :redirect_unless_logged_in
-  before_action :redirect_unless_owner, only: :update
+  before_action :redirect_unless_owner, only: [:update, :destroy]
 
   def redirect_unless_owner
     @question = Question.includes(:quiz, quiz: :user).find(params[:id])
     unless (current_user?(@question.user))
-      redirect_to root_url
+      render json: {}, status: 401
     end
   end
 
@@ -28,6 +28,11 @@ class Api::QuestionsController < ApplicationController
     else
       render json: @question.errors, status: :unprocessable_entity
     end
+  end
+
+  def destroy
+    @question.destroy
+    render json: {}
   end
 
   private
