@@ -15,4 +15,13 @@ class Question < ActiveRecord::Base
   has_many :answers, dependent: :destroy
   has_one :user, through: :quiz
 
+  def add_default_answers()
+    self.answers.create!({answer: "Correct Answer", correct: true});
+    3.times do
+      self.answers.create!({answer: "Incorrect Answer", correct: false});
+    end
+
+    self
+  end
+
 end
