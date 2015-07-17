@@ -1,0 +1,8 @@
+.quiz-table-items {
+  width: 100%;
+}
+
+.quiz-table-items th{
+  text-align: left;
+  padding-bottom: 20px;
+}

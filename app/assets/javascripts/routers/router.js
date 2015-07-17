@@ -4,7 +4,8 @@ QuizCzar.Routers.Router = Backbone.Router.extend({
     },
     routes: {
       "" : "recentQuizzes",
-      "quizzes/new" : "newQuiz"
+      "quizzes/new" : "newQuiz",
+      "quizzes/:id/edit" : "editQuiz"
     },
     recentQuizzes: function() {
       QuizCzar.myQuizzes.fetch();
@@ -12,9 +13,19 @@ QuizCzar.Routers.Router = Backbone.Router.extend({
       this._swap_views(view);
     },
     newQuiz: function() {
-      // var quiz = new QuizCzar.Models.Quiz();
       var router = this;
-      var quiz = new QuizCzar.Models.Quiz({id: 1})
+      var quiz = new QuizCzar.Models.Quiz({})
+
+      quiz.save({},{
+        success: function() {
+          var view = new QuizCzar.Views.QuizForm({model: quiz});
+          router._swap_views(view);
+        }
+      })
+    },
+    editQuiz: function(id) {
+      var router = this;
+      var quiz = new QuizCzar.Models.Quiz({id: id})
 
       quiz.fetch({
         success: function() {
@@ -22,7 +33,6 @@ QuizCzar.Routers.Router = Backbone.Router.extend({
           router._swap_views(view);
         }
       })
-
     },
     _swap_views: function(view) {
       this._currentView && this._currentView.remove();

@@ -25,6 +25,11 @@ class Api::QuizzesController < ApplicationController
 
   end
 
+  def create
+    @quiz = current_user.quizzes.create({name: "Quiz Name"});
+    render 'show';
+  end
+
   private
 
   def quiz_params
