@@ -11,6 +11,24 @@
   width: 200px;
 }
 
+.quiz-show-bar > ul > li > figure{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: block;
+  background-color: rgb(58, 233, 181);
+  margin: auto;
+}
+
+.quiz-show-bar > ul > li > figure:hover{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: block;
+  background-color: rgb(96, 240, 197);
+  margin: auto;
+}
+
 .quiz-show-score {
   font-size: 40px;
   margin: auto;
@@ -30,4 +48,8 @@
   margin: auto;
   display: block;
   margin-top: 5px;
+}
+
+.quiz-show-content {
+  margin-left: 200px;
 }
