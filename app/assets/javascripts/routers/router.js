@@ -7,6 +7,7 @@ QuizCzar.Routers.Router = Backbone.Router.extend({
       "quizzes/new" : "newQuiz",
       "quizzes/:id/edit" : "editQuiz",
       "quizzes/:id/delete" : "deleteQuiz",
+      "quizzes/:id/play" : "playQuiz",
       "quizzes/:id" : "showQuiz"
     },
     recentQuizzes: function() {
@@ -49,6 +50,19 @@ QuizCzar.Routers.Router = Backbone.Router.extend({
           Backbone.history.navigate("#",{trigger: true});
         }
       })
+    },
+    playQuiz: function(id) {
+      var router = this;
+      QuizCzar.myQuizzes.getOrFetch(id,function(quiz){
+        var view = new QuizCzar.Views.QuizPlay({model: quiz});
+        router._place_model(view);
+      });
+    },
+    _place_model: function(view) {
+      var model = $('<div class="model">')
+      model.html(view.render().$el);
+      this.$rootEl.append(model);
+      this._modelView = model;
     },
     _swap_views: function(view) {
       this._currentView && this._currentView.remove();
