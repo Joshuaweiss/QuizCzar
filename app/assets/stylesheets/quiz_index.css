@@ -2,7 +2,15 @@
   width: 100%;
 }
 
+.quiz-table-items {
+  border-collapse: collapse;
+
+}
 .quiz-table-items th{
   text-align: left;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
+}
+
+.quiz-index-headers {
+  border-bottom: 1px solid black;
 }

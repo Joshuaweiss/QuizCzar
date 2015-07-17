@@ -20,6 +20,7 @@ QuizCzar.Views.QuizIndex = Backbone.CompositeView.extend({
   render: function() {
     this.$el.html(this.template({quizzes: this.collection}));
     this.attachSubviews();
+    this.$(".quiz-table-items").prepend(JST["quiz/index_headers"]());
     return this;
   }
 });
