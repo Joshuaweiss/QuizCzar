@@ -8,16 +8,20 @@ QuizCzar.Views.QuestionsThumbIndex = Backbone.CompositeView.extend({
     this.listenTo(this.collection, "remove", this.render);
   },
   addQuestion: function(event){
+    var questions = this.collection;
+    var view = this;
+
     event.preventDefault;
     var question = new QuizCzar.Models.Question({
       quiz_id: this.collection.quiz.id,
       question: "Default Question"
     });
+    debugger;
     question.save({},{
       success: function() {
-        this.collection.add(question);
-        this.render();
-      }.bind(this)
+        questions.add(question);
+        view.render();
+      }
     });
   },
   render: function(){

@@ -14,10 +14,17 @@ class Api::QuestionsController < ApplicationController
   def create
     @question = Question.new(question_params)
 
-    redirect_to(root_url) unless current_user?(@question.user)
+    unless current_user?(@question.user)
+      render json: {}, status: :unprocessable_entity
+      return
+    end
 
     if @question.save
-      render json: @question
+      @question.answers.create!({answer: "", correct: true});
+      3.times do
+        @question.answers.create!({answer: "", correct: false});
+      end
+      render 'show'
     else
       render json: @question.errors, status: :unprocessable_entity
     end

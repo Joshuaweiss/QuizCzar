@@ -11,15 +11,6 @@ class Api::AnswersController < ApplicationController
     end
   end
 
-  def create
-    @answer = Answer.new(answer_params);
-    if @answer.save
-      render json: @answer
-    else
-      render json: @answer.errors, status: :unprocessable_entity
-    end
-  end
-
   def update
     if @answer.update(answer_params)
       render json:@answer

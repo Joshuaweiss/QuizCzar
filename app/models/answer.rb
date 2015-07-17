@@ -10,7 +10,7 @@
 
 class Answer < ActiveRecord::Base
 
-  validates :answer, :question_id, presence: true
+  validates :question_id, presence: true
   validates :correct, inclusion: [true, false]
   validate :fourOrLess
 
@@ -18,7 +18,6 @@ class Answer < ActiveRecord::Base
   has_one :user, through: :question
 
   def fourOrLess()
-    debugger;
     if !self.id && self.question.answers.length >= 4
       errors.add(:answers, "too many answers");
     end
