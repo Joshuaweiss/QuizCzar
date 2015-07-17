@@ -1,7 +1,18 @@
 .question-thumbs {
   width: 200px;
   padding: 0px;
+  padding-top: 100px;
   float: left;
+}
+
+.delete-quiz-button {
+  margin-right: 20px;
+  float: right;
+  margin-top: 20px;
+}
+
+.delete-quiz-button:hover {
+  color: rgb(143, 143, 143);
 }
 
 .question-thumbs > li > a{
@@ -46,20 +57,27 @@
 .quiz-name-edit {
   line-height: 0.9;
   font-size: 30px;
-  width: 500px;
+  width: 400px;
+  height: 30px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  padding: 5px;
+  float: left;
+  border: 1px solid rgb(204, 204, 204);
 }
 
-.quiz-name-edit:hover {
-  font-size: 30px;
-  width: 500px;
+.quiz-name-edit:focus, .quiz-name-edit:hover {
   color: rgb(92, 92, 92);
+  border: 1px solid black;
 }
 
 .card-form {
   border: 1px solid rgb(143, 143, 143);
-  position: relative;
+  position: fixed;
   margin-left: 80px;
   width: 500px;
+  top: 130px;
+  left: 450px;
   float: left;
 }
 
