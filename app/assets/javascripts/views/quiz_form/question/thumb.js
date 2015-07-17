@@ -1,5 +1,5 @@
 QuizCzar.Views.QuestionThumb = Backbone.View.extend({
-  template: JST["question/thumb"],
+  template: JST["quiz_form/question/thumb"],
   tagName: "li",
   className: "question-thumb group",
   events: {

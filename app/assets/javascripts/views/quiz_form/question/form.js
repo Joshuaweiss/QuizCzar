@@ -1,5 +1,5 @@
 QuizCzar.Views.QuestionForm = Backbone.CompositeView.extend({
-  template: JST["question/form"],
+  template: JST["quiz_form/question/form"],
   tagName: "section",
   className: "question-form",
   events: {
