@@ -34,6 +34,12 @@ class Api::QuizzesController < ApplicationController
     render 'show'
   end
 
+  def destroy
+    @quiz = current_user.quizzes.find(params[:id])
+    @quiz.destroy()
+    render json:{}
+  end
+
   private
 
   def quiz_params

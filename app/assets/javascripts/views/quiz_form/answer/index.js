@@ -9,5 +9,6 @@ QuizCzar.Views.AnswerFormsIndex = Backbone.CompositeView.extend({
   className: "group",
   render: function() {
     this.attachSubviews();
+    return this;
   }
 })

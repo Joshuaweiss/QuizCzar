@@ -1,4 +1,7 @@
-<textarea class="quiz-name-edit unstyled"><%= quiz.escape("name") %></textarea>
+<section class="group">
+  <textarea class="quiz-name-edit unstyled"><%= quiz.escape("name") %></textarea>
+  <a href="#quizzes/<%= quiz.id %>/delete" class="delete-quiz-button">Delete Quiz</a>
+<section>
 
 <div class="quiz-cards"></div>
 <div class="card-form"></div>
