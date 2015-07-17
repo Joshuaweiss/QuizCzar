@@ -1,0 +1,33 @@
+.quiz-show-view {
+}
+
+.quiz-show-bar {
+  background-color: white;
+  border-right: 1px solid rgb(158, 158, 158);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 220px;
+  width: 200px;
+}
+
+.quiz-show-score {
+  font-size: 40px;
+  margin: auto;
+  display: block;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.show-bar-line {
+  height: 1px;
+  background-color: grey;
+  margin: 20px 15px;
+}
+
+.quiz-show-bar label {
+  text-align: center;
+  margin: auto;
+  display: block;
+  margin-top: 5px;
+}
