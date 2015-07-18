@@ -1,4 +1,5 @@
 json.name @quiz.name
+json.id @quiz.id
 json.updated_at @quiz.updated_at
 json.questions @quiz.questions do |question|
   json.id question.id
