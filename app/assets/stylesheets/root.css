@@ -70,3 +70,22 @@ html {
   display: block;
   padding: 0px 80px 55px 0px;
 }
+
+#model > * {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+}
+
+#model {
+  display: block;
+  position: fixed;
+  content: "";
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+}

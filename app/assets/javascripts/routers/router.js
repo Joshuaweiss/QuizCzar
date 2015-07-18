@@ -59,9 +59,9 @@ QuizCzar.Routers.Router = Backbone.Router.extend({
       });
     },
     _place_model: function(view) {
-      var model = $('<div class="model">')
+      var model = $('<div id="model">')
       model.html(view.render().$el);
-      this.$rootEl.append(model);
+      $("#root").append(model);
       this._modelView = model;
     },
     _swap_views: function(view) {
