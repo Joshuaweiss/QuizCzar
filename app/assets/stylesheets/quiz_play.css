@@ -1,2 +1,7 @@
-.quiz-play-view {
+.quiz-play {
+  width: 600px;
+  height: 400px;
+  margin: auto;
+  margin-top: 40px;
+  background-color: white;
 }

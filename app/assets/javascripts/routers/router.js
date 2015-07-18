@@ -55,8 +55,14 @@ QuizCzar.Routers.Router = Backbone.Router.extend({
       var router = this;
       QuizCzar.myQuizzes.getOrFetch(id,function(quiz){
         var view = new QuizCzar.Views.QuizPlay({model: quiz});
-        router._place_model(view);
+        router._swap_views(view, {hideNav: true, background: "black"});
       });
+    },
+    _hide_nav: function() {
+      this.$rootEl.addClass("cover-nav");
+    },
+    _show_nav: function() {
+      this.$rootEl.removeClass("cover-nav");
     },
     _place_model: function(view) {
       var model = $('<div id="model">')
@@ -64,8 +70,23 @@ QuizCzar.Routers.Router = Backbone.Router.extend({
       $("#root").append(model);
       this._modelView = model;
     },
-    _swap_views: function(view) {
+    _swap_views: function(view, options) {
       $('#model').remove();
+
+      if (options && options.hideNav) {
+        this._hide_nav();
+      } else {
+        this._show_nav();
+      }
+
+      if (options && options.background === "black") {
+        $("body").addClass("black");
+        this.$rootEl.addClass("black");
+      } else {
+        $("body").removeClass("black");
+        this.$rootEl.removeClass("black");
+      }
+
       this._currentView && this._currentView.remove();
       this._currentView = view;
       this.$rootEl.html(view.render().$el);

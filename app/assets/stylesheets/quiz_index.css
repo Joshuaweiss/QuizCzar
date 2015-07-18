@@ -4,11 +4,15 @@
 
 .quiz-table-items {
   border-collapse: collapse;
-
 }
+
+.quiz-table-items td{
+  padding-top: 8px;
+}
+
 .quiz-table-items th{
   text-align: left;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
 }
 
 .quiz-index-headers {
