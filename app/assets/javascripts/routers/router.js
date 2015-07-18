@@ -65,6 +65,7 @@ QuizCzar.Routers.Router = Backbone.Router.extend({
       this._modelView = model;
     },
     _swap_views: function(view) {
+      $('#model').remove();
       this._currentView && this._currentView.remove();
       this._currentView = view;
       this.$rootEl.html(view.render().$el);
