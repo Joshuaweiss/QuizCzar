@@ -1,1 +1,11 @@
-<h1><%= question.escape("question") %></h1>
+<section class="quiz-play-question">
+    <h1><%= question.escape("question")%></h1>
+  <% QuizCzar.Util.shuffle(question.answers()).each(function(answer){ %>
+
+    <label>
+      <input type="radio" name="question[<%= question.id %>]" value="<%= answer.id %>">
+      <%= answer.escape("answer")%>
+    </label>
+
+  <% }) %>
+</section>

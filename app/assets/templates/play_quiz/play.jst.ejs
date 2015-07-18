@@ -1,4 +1,4 @@
-<h1><%= quiz.escape("name") %></h1>
+<h1 class="quiz-play-title"><%= quiz.escape("name") %></h1>
 
 <form>
   <% QuizCzar.Util.shuffle(quiz.questions()).each(function(question){ %>

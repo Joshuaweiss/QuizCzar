@@ -1,7 +1,25 @@
 .quiz-play {
-  width: 600px;
-  height: 400px;
-  margin: auto;
-  margin-top: 40px;
+  width: 400px;
+  margin: 50px auto;
   background-color: white;
+  padding: 40px;
+}
+
+.quiz-play-title {
+  display: block;
+  margin-bottom: 30px;
+  font-size: 30px;
+}
+
+.quiz-play-question {
+  margin-bottom: 40px;
+}
+
+.quiz-play-question > h1 {
+  margin-bottom: 15px;
+}
+
+.quiz-play-question > label{
+  display: block;
+  margin: 10px 0;
 }
