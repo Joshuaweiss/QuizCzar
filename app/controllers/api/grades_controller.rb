@@ -2,7 +2,10 @@ class Api::GradesController < ApplicationController
 
   def create
     quiz = Quiz.find(params[:quiz_id])
-    render json: {correct_answers: quiz.grade(params[:answers])}
+    grade = quiz.grade(params[:answers])
+    grade.user = current_user
+    grade.save!
+    render json:grade
   end
 
   def index

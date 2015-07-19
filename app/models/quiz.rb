@@ -27,7 +27,13 @@ class Quiz < ActiveRecord::Base
       answer = question.answers.find_by(id: answer_id)
       correct_answers += 1 if answer && answer.correct
     end
-    return correct_answers
+
+    grade = grades.new(
+      correct_answers: correct_answers,
+      number_of_questions: question_count
+    )
+
+    return grade
   end
 
 end
