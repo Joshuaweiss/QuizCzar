@@ -22,7 +22,6 @@ class Api::QuizzesController < ApplicationController
     else
       render json: {}, status: :unprocessable_entity
     end
-
   end
 
   def create

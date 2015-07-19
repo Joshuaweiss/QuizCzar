@@ -3,7 +3,7 @@
   <% QuizCzar.Util.shuffle(question.answers()).each(function(answer){ %>
 
     <label>
-      <input type="radio" name="question[<%= question.id %>]" value="<%= answer.id %>">
+      <input type="radio" name="answers[<%= question.id %>]" value="<%= answer.id %>">
       <%= answer.escape("answer")%>
     </label>
 

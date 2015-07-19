@@ -18,6 +18,7 @@ class User < ActiveRecord::Base
   before_validation :session_token_exists
 
   has_many :quizzes, dependent: :destroy
+  has_many :grades, dependent: :destroy
 
   attr_reader :password
 

@@ -3,7 +3,7 @@
 # Table name: answers
 #
 #  id          :integer          not null, primary key
-#  answer      :string           not null
+#  answer      :string
 #  correct     :boolean          not null
 #  question_id :integer          not null
 #
