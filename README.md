@@ -11,7 +11,7 @@ QuizCzar is a StudyBlue clone, built on Rails and Backbone. Users can:
 
 - [X] Create accounts
 - [X] Create sessions (log in)
-- [ ] Create quizzes with questions
+- [X] Create quizzes with questions
 - [ ] Play quizzes
 - [ ] See progress
 - [ ] Bookmark quizzes
