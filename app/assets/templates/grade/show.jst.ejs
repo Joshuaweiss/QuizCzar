@@ -1,12 +1,12 @@
-<h1 class="quiz-grade-title">Quiz Results</h1>
-<section class="quiz-grade-show group">
-  <section class="score">
+<h1 class="grade-show-title">Quiz Results</h1>
+<section class="grade-show-info group">
+  <section class="grade-show-score">
     <label>Score</label>
     <h1>
-      <%= Math.floor((grade.escape("number_of_questions") /  grade.escape("correct_answers")) * 100) %>
+      <%= Math.floor((grade.escape("number_of_questions") /  grade.escape("correct_answers")) * 100) %>%
     </h1>
   </section>
-  <section class="stats">
+  <section class="grade-show-stats">
     <ul>
       <li>
         <%= grade.escape("number_of_questions") %> Questions
