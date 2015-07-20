@@ -16,7 +16,7 @@ QuizCzar.Routers.Router = Backbone.Router.extend({
       "quizzes/:id" : "showQuiz"
     },
     myQuizzes: function() {
-      QuizCzar.current_user.fetch();
+      QuizCzar.current_user.quizzes().fetch({reset: true});
       var view = new QuizCzar.Views.QuizIndex({
         viewOptions: {
           title: "My Quizzes",

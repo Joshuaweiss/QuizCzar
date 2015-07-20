@@ -5,7 +5,16 @@ class Api::QuizzesController < ApplicationController
   def index
 
     @user = current_user
-    @quizzes = Quiz.joins(:user)
+
+    @quizzes = nil
+    user_id = params[:user_id]
+    if (user_id)
+      @quizzes = User.find(user_id).quizzes
+    else
+      @quizzes = Quiz.joins(:user)
+    end
+
+
     @search_keywords = params[:search_keywords]
 
     if @search_keywords.presence

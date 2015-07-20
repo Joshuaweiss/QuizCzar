@@ -7,6 +7,13 @@ QuizCzar.Collections.Quizzes = Backbone.Collection.extend({
   comparator: function(quiz){
     return -quiz.get("updated_at");
   },
+  fetch: function(options){
+    if (this.user) {
+      options.data = options.data || {};
+      options.data.user_id = this.user.id
+    }
+    Backbone.Collection.prototype.fetch.call(this, options);
+  },
   getOrFetch: function(id, callback){
     var quizzes = this;
     var quiz = quizzes.get(id);
