@@ -3,12 +3,19 @@ QuizCzar.Models.Quiz = Backbone.Model.extend({
   parse: function(data) {
     if (data.questions) {
       this.questions().set(data.questions, {parse: true});
+      delete data.questions;
     }
     if (data.high_score) {
       this.high_score = new QuizCzar.Models.Grade();
       this.high_score.set(data.high_score);
+      delete data.high_score;
     }
-    delete data.questions;
+    if (data.user) {
+      QuizCzar.recentlyViewedUsers.set(data.user);
+      this.user = QuizCzar.recentlyViewedUsers.get(data.user.id);
+      this.user.quizzes().add(this, {merge: true});
+      delete data.user;
+    }
     return data;
   },
   toJSON: function() {

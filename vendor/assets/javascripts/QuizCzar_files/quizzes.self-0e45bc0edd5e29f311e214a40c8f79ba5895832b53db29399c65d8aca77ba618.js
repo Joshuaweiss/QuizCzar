@@ -3,4 +3,4 @@ QuizCzar.Collections.Quizzes = Backbone.Collection.extend({
   model: QuizCzar.Models.Quiz
 });
 
-QuizCzar.myQuizzes = new QuizCzar.Collections.Quizzes();
+QuizCzar.recentlyViewedQuizzes = new QuizCzar.Collections.Quizzes();

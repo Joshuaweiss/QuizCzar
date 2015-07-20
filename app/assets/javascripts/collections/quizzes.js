@@ -1,4 +1,7 @@
 QuizCzar.Collections.Quizzes = Backbone.Collection.extend({
+  initialize: function(options){
+    if (options && options.user) this.user = options.user;
+  },
   url: "/api/quizzes",
   model: QuizCzar.Models.Quiz,
   comparator: function(quiz){
@@ -28,4 +31,4 @@ QuizCzar.Collections.Quizzes = Backbone.Collection.extend({
   }
 });
 
-QuizCzar.myQuizzes = new QuizCzar.Collections.Quizzes();
+QuizCzar.recentlyViewedQuizzes = new QuizCzar.Collections.Quizzes();

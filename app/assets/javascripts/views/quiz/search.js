@@ -10,7 +10,8 @@ QuizCzar.Views.QuizSearch = Backbone.CompositeView.extend({
   },
   reload: function(){
     this.collection.fetch({
-      data: {search_keywords: this.$(".quiz-search").val()}
+      data: {search_keywords: this.$(".quiz-search").val()},
+      reset: true
     })
   },
   render: function(){

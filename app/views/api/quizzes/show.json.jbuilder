@@ -13,6 +13,11 @@ if @high_score
   end
 end
 
+json.user do
+  json.id @quiz.user.id
+  json.name @quiz.user.name
+end
+
 json.questions @quiz.questions do |question|
   json.id question.id
   json.question question.question

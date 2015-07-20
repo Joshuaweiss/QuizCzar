@@ -87,6 +87,12 @@ body {
   padding: 0px 80px 55px 0px;
 }
 
+.subheader {
+  font-size: 18px;
+  padding-left: 14px;
+  padding-top: 4px;
+}
+
 #model > * {
   position: fixed;
   left: 50%;

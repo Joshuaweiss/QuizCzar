@@ -14,6 +14,7 @@ Rails.application.routes.draw do
     end
     resources :questions, only: [:update, :create, :destroy]
     resources :answers, only: [:update, :create]
+    resource :session
   end
 
 end

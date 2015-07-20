@@ -6,7 +6,7 @@ QuizCzar.Routers.Router = Backbone.Router.extend({
       $("#root").on("click", "#model", this._dismiss_modal.bind(this));
     },
     routes: {
-      "" : "recentQuizzes",
+      "" : "myQuizzes",
       "quizzes/:id/edit" : "editQuiz",
       "quizzes/:id/delete" : "deleteQuiz",
       "quizzes/:id/play" : "playQuiz",
@@ -15,19 +15,20 @@ QuizCzar.Routers.Router = Backbone.Router.extend({
       "quizzes/search" : "searchQuizzes",
       "quizzes/:id" : "showQuiz"
     },
-    recentQuizzes: function() {
-      QuizCzar.myQuizzes.fetch();
-      var view = new QuizCzar.Views.QuizIndex({collection: QuizCzar.myQuizzes});
+    myQuizzes: function() {
+      QuizCzar.current_user.fetch();
+      var view = new QuizCzar.Views.QuizIndex({collection: QuizCzar.current_user.quizzes()});
       this._swap_views(view);
     },
     searchQuizzes: function() {
-      QuizCzar.myQuizzes.fetch();
-      var view = new QuizCzar.Views.QuizSearch({collection: QuizCzar.myQuizzes});
+      var quizSearch = new QuizCzar.Collections.Quizzes();
+      quizSearch.fetch();
+      var view = new QuizCzar.Views.QuizSearch({collection: quizSearch});
       this._swap_views(view);
     },
     showQuiz: function(id) {
       var router = this;
-      var quiz = QuizCzar.myQuizzes.getOrFetch(id);
+      var quiz = QuizCzar.recentlyViewedQuizzes.getOrFetch(id);
       var view = new QuizCzar.Views.QuizShow({model: quiz});
       this._swap_views(view);
     },
@@ -44,7 +45,7 @@ QuizCzar.Routers.Router = Backbone.Router.extend({
     },
     editQuiz: function(id) {
       var router = this;
-      var quiz = QuizCzar.myQuizzes.getOrFetch(id);
+      var quiz = QuizCzar.current_user.quizzes().getOrFetch(id);
 
       quiz.fetch({
         success: function() {
@@ -63,7 +64,7 @@ QuizCzar.Routers.Router = Backbone.Router.extend({
     },
     playQuiz: function(id) {
       var router = this;
-      QuizCzar.myQuizzes.getOrFetch(id,function(quiz){
+      QuizCzar.recentlyViewedQuizzes.getOrFetch(id,function(quiz){
         var view = new QuizCzar.Views.QuizPlay({model: quiz});
         router._swap_views(view, {hideNav: true, background: "black"});
       });
@@ -81,7 +82,7 @@ QuizCzar.Routers.Router = Backbone.Router.extend({
         QuizCzar.lastGrades = undefined;
       } else {
         QuizCzar.lastGrades = new QuizCzar.Collections.Grades({
-          quiz: QuizCzar.myQuizzes.getOrFetch(quiz_id)
+          quiz: QuizCzar.recentlyViewedQuizzes.getOrFetch(quiz_id)
         })
         QuizCzar.lastGrades.fetch({
           success: function(){

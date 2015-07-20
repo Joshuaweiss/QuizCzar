@@ -6,14 +6,26 @@ window.QuizCzar = {
   initialize: function($rootEl) {
     $rootEl.empty();
 
-    ///fetch feeds
-    var navBar = new QuizCzar.Views.Navbar();
-    $rootEl.append(navBar.render().$el);
+    $.ajax({
+      url: "/api/session",
+      success: function(data){
 
-    var contentView = $('<section id="content">');
-    $rootEl.append(contentView);
+        QuizCzar.current_user = new QuizCzar.Models.User(data, {parse: true});
+        QuizCzar.recentlyViewedUsers.add(QuizCzar.current_user);
+        QuizCzar.recentlyViewedQuizzes.add(QuizCzar.current_user.quizzes());
 
-    new QuizCzar.Routers.Router({$rootEl: contentView});
-    Backbone.history.start();
+        ///fetch feeds
+        var navBar = new QuizCzar.Views.Navbar();
+        $rootEl.append(navBar.render().$el);
+
+
+        var contentView = $('<section id="content">');
+        $rootEl.append(contentView);
+
+        new QuizCzar.Routers.Router({$rootEl: contentView});
+        Backbone.history.start();
+
+      }
+    })
   }
 };

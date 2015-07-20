@@ -21,5 +21,10 @@
 </nav>
 
 <section class="quiz-show-content">
-  <h1 class="page-header"><%= quiz.escape("name") %></h1>
+  <section class="page-header">
+    <%= quiz.escape("name") %>
+    <% if (quiz.user) { %>
+      <h5 class="subheader"><%= quiz.user.escape("name") %></h1>
+    <% } %>
+  </section>
 </section>
