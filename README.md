@@ -54,7 +54,7 @@ a certain tag.
 [Details][phase-four]
 
 ### Phase 5: User Feeds (~2 days)
-I will create a quiz results page which allows users to see there score history and a recent quizzes page which shows recent quizzes viewed by the user.
+I will create a quiz results page which allows users to see their score history and a recent quizzes page which shows recent quizzes viewed by the user.
 
 [Details][phase-five]
 
