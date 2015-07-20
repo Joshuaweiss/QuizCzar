@@ -5,11 +5,13 @@ class Api::GradesController < ApplicationController
     grade = quiz.grade(params[:answers])
     grade.user = current_user
     grade.save!
-    render json:grade
+    @quizzes = current_user.grades.where(quiz_id: params[:quiz_id])
+    render json: @quizzes
   end
 
   def index
-
+    @quizzes = current_user.grades.where(quiz_id: params[:quiz_id])
+    render json: @quizzes
   end
 
 end

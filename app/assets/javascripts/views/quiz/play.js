@@ -13,8 +13,12 @@ QuizCzar.Views.QuizPlay = Backbone.View.extend({
       method: "post",
       data: data,
       success: function(data) {
-        console.log(data)
-      }
+        QuizCzar.lastGrades = new QuizCzar.Collections.Grades(data);
+        Backbone.history.navigate(
+          "#quizzes/" + this.model.id + "/grades",
+          {trigger: true}
+        )
+      }.bind(this)
     })
   },
   render: function(){

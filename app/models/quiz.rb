@@ -22,10 +22,12 @@ class Quiz < ActiveRecord::Base
     questions = self.questions.all
     question_count = questions.count
     correct_answers = 0
-    questions.each do |question|
-      answer_id = answers[question.id.to_s].to_i
-      answer = question.answers.find_by(id: answer_id)
-      correct_answers += 1 if answer && answer.correct
+    if answers
+      questions.each do |question|
+        answer_id = answers[question.id.to_s].to_i
+        answer = question.answers.find_by(id: answer_id)
+        correct_answers += 1 if answer && answer.correct
+      end
     end
 
     grade = grades.new(
