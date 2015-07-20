@@ -3,6 +3,7 @@ class Api::QuizzesController < ApplicationController
   before_action :redirect_unless_logged_in
 
   def index
+    @user = current_user
     @quizzes = current_user.quizzes
   end
 

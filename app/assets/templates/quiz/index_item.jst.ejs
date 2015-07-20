@@ -1,0 +1,13 @@
+<td><a href="#quizzes/<%= quiz.id %>"><%= quiz.escape("name")%></a></td>
+<td>
+  <% if (high_score) { %>
+    <%= Math.floor(
+      (
+        parseInt(high_score.get("correct_answers")) /
+        parseInt(high_score.get("number_of_questions"))
+      )
+      * 100
+    )%>%
+  <% } %>
+</td>
+<td><a href="#quizzes/<%= quiz.id %>/edit" class="quiz-table-edit">Edit</a></td>
