@@ -61,9 +61,9 @@ QuizCzar.Routers.Router = Backbone.Router.extend({
     },
     showGrade: function(quiz_id) {
       this.showQuiz(quiz_id);
+      var router = this;
 
       ////Check if grades are already loaded from quiz play
-      console.log(QuizCzar.lastGrades);
       if (QuizCzar.lastGrades) {
         var view = new QuizCzar.Views.GradeShow({
           collection: QuizCzar.lastGrades
@@ -71,7 +71,14 @@ QuizCzar.Routers.Router = Backbone.Router.extend({
         this._place_model(view);
         QuizCzar.lastGrades = undefined;
       } else {
-        console.log("Grade Not Loaded!");
+        QuizCzar.lastGrades = new QuizCzar.Collections.Grades({
+          quiz: QuizCzar.myQuizzes.getOrFetch(quiz_id)
+        })
+        QuizCzar.lastGrades.fetch({
+          success: function(){
+            router.showGrade(quiz_id);
+          }
+        });
       }
     },
     _hide_nav: function() {

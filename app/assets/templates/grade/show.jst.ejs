@@ -1,1 +1,23 @@
-<h1><%= grade.escape("correct_answers") %>/<%= grade.escape("number_of_questions") %></h1>
+<h1 class="quiz-grade-title">Quiz Results</h1>
+<section class="quiz-grade-show group">
+  <section class="score">
+    <label>Score</label>
+    <h1>
+      <%= Math.floor((grade.escape("number_of_questions") /  grade.escape("correct_answers")) * 100) %>
+    </h1>
+  </section>
+  <section class="stats">
+    <ul>
+      <li>
+        <%= grade.escape("number_of_questions") %> Questions
+      </li>
+      <li class="correct">
+        <%= grade.escape("correct_answers") %> Right
+      </li>
+      <li class="wrong">
+        <%= grade.escape("number_of_questions") -
+            grade.escape("correct_answers") %> Wrong
+      </li>
+    </ul>
+  </section>
+</section>
