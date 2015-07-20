@@ -1,10 +1,18 @@
 <h1>SHOW</h1>
 
 <nav class="quiz-show-bar">
-  <figure class="quiz-show-score">
-    80%
-  </figure>
-  <label>My High Score</label>
+  <% if (high_score) { %>
+    <figure class="quiz-show-score">
+      <%= Math.floor(
+        (
+          parseInt(high_score.get("correct_answers")) /
+          parseInt(high_score.get("number_of_questions"))
+        )
+        * 100
+      )%>
+    </figure>
+    <label>My High Score</label>
+  <% } %>
   <figure class="show-bar-line"></figure>
   <ul>
     <li>

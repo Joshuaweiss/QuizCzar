@@ -4,6 +4,10 @@ QuizCzar.Models.Quiz = Backbone.Model.extend({
     if (data.questions) {
       this.questions().set(data.questions, {parse: true});
     }
+    if (data.high_score) {
+      this.high_score = new QuizCzar.Models.Grade();
+      this.high_score.set(data.high_score);
+    }
     delete data.questions;
     return data;
   },

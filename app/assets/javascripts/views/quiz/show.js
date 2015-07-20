@@ -12,7 +12,10 @@ QuizCzar.Views.QuizShow = Backbone.View.extend({
     this.listenTo(this.model, "sync", this.render);
   },
   render: function() {
-    this.$el.html(this.template({quiz: this.model}));
+    this.$el.html(this.template({
+      quiz: this.model,
+      high_score: this.model.high_score
+    }));
     return this;
   }
 });
