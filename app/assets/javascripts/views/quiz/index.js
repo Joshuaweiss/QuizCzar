@@ -1,6 +1,8 @@
 QuizCzar.Views.QuizIndex = Backbone.CompositeView.extend({
   template: JST["quiz/index"],
-  initialize: function() {
+  initialize: function(options) {
+    this.viewOptions = options.viewOptions;
+
     this.setQuizzes()
 
     this.listenTo(this.collection, "add", this.addQuiz);
@@ -10,17 +12,18 @@ QuizCzar.Views.QuizIndex = Backbone.CompositeView.extend({
   setQuizzes: function(){
     this.removeSubviews(".quiz-table-items")
     this.collection.each(this.addQuiz.bind(this));
+    this.$(".quiz-table-items").prepend(JST["quiz/index_headers"]({options: this.viewOptions}));
   },
   addQuiz: function(quiz) {
-    this.addSubview(".quiz-table-items", new QuizCzar.Views.QuizIndexItem({model: quiz}));
+    this.addSubview(".quiz-table-items", new QuizCzar.Views.QuizIndexItem({model: quiz, viewOptions: this.viewOptions}));
   },
   removeQuiz: function(quiz) {
     this.removeModelSubview(".quiz-table-items", quiz);
   },
   render: function() {
-    this.$el.html(this.template({quizzes: this.collection}));
+    this.$el.html(this.template({quizzes: this.collection, options: this.viewOptions}));
     this.attachSubviews();
-    this.$(".quiz-table-items").prepend(JST["quiz/index_headers"]());
+    this.$(".quiz-table-items").prepend(JST["quiz/index_headers"]({options: this.viewOptions}));
     return this;
   }
 });

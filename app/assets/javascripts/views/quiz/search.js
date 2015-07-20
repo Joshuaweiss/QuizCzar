@@ -2,7 +2,13 @@ QuizCzar.Views.QuizSearch = Backbone.CompositeView.extend({
   template: JST["quiz/search"],
   initialize: function() {
     this.addSubview( ".quiz-index-container",
-      new QuizCzar.Views.QuizIndex({collection: this.collection})
+      new QuizCzar.Views.QuizIndex({
+        viewOptions: {
+          title: "Search Quizzes",
+          edit: false
+        },
+        collection: this.collection
+      })
     );
   },
   events: {

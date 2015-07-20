@@ -17,7 +17,13 @@ QuizCzar.Routers.Router = Backbone.Router.extend({
     },
     myQuizzes: function() {
       QuizCzar.current_user.fetch();
-      var view = new QuizCzar.Views.QuizIndex({collection: QuizCzar.current_user.quizzes()});
+      var view = new QuizCzar.Views.QuizIndex({
+        viewOptions: {
+          title: "My Quizzes",
+          edit: true
+        },
+        collection: QuizCzar.current_user.quizzes()
+      });
       this._swap_views(view);
     },
     searchQuizzes: function() {

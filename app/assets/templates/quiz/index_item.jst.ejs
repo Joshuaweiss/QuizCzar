@@ -7,4 +7,6 @@
     )%>%
   <% } %>
 </td>
-<td><a href="#quizzes/<%= quiz.id %>/edit" class="quiz-table-edit">Edit</a></td>
+<% if (options.edit) { %>
+  <td><a href="#quizzes/<%= quiz.id %>/edit" class="quiz-table-edit">Edit</a></td>
+<% } %>
