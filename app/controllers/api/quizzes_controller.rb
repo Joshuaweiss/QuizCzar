@@ -3,8 +3,18 @@ class Api::QuizzesController < ApplicationController
   before_action :redirect_unless_logged_in
 
   def index
+    @search_keywords = params[:search_keywords].split
+
+    # @search_keywords.map! do |keyword|
+    #   ".*#{keyword}.*"
+    # end
+
     @user = current_user
-    @quizzes = current_user.quizzes
+    if @search_keywords.presence
+      @quizzes = current_user.quizzes.joins(:user).where("quizzes.name ~* ? OR users.name ~* ?", @search_keywords, @search_keywords);
+    else
+      @quizzes = current_user.quizzes
+    end
   end
 
   def show
@@ -40,6 +50,7 @@ class Api::QuizzesController < ApplicationController
     @quiz.destroy()
     render json:{}
   end
+
 
   private
 

@@ -7,16 +7,22 @@ QuizCzar.Routers.Router = Backbone.Router.extend({
     },
     routes: {
       "" : "recentQuizzes",
-      "quizzes/new" : "newQuiz",
       "quizzes/:id/edit" : "editQuiz",
       "quizzes/:id/delete" : "deleteQuiz",
       "quizzes/:id/play" : "playQuiz",
       "quizzes/:quiz_id/grades" : "showGrade",
+      "quizzes/new" : "newQuiz",
+      "quizzes/search" : "searchQuizzes",
       "quizzes/:id" : "showQuiz"
     },
     recentQuizzes: function() {
       QuizCzar.myQuizzes.fetch();
       var view = new QuizCzar.Views.QuizIndex({collection: QuizCzar.myQuizzes});
+      this._swap_views(view);
+    },
+    searchQuizzes: function() {
+      QuizCzar.myQuizzes.fetch();
+      var view = new QuizCzar.Views.QuizSearch({collection: QuizCzar.myQuizzes});
       this._swap_views(view);
     },
     showQuiz: function(id) {
