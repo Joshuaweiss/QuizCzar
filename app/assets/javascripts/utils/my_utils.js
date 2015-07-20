@@ -15,3 +15,8 @@ QuizCzar.Util.shuffle = function(array) {
   }
   return _(output);
 };
+
+QuizCzar.calculate_percentage = function(n, out_of) {
+  if (n === 0) return 0;
+  return Math.floor( ( n / out_of ) * 100 )
+}

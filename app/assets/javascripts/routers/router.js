@@ -1,6 +1,9 @@
 QuizCzar.Routers.Router = Backbone.Router.extend({
     initialize: function(options){
       this.$rootEl = options.$rootEl;
+      this._model_leave_path = [];
+
+      $("#root").on("click", "#model", this._dismiss_modal.bind(this));
     },
     routes: {
       "" : "recentQuizzes",
@@ -68,7 +71,7 @@ QuizCzar.Routers.Router = Backbone.Router.extend({
         var view = new QuizCzar.Views.GradeShow({
           collection: QuizCzar.lastGrades
         })
-        this._place_model(view);
+        this._place_model(view, "#quizzes/" + quiz_id);
         QuizCzar.lastGrades = undefined;
       } else {
         QuizCzar.lastGrades = new QuizCzar.Collections.Grades({
@@ -81,16 +84,21 @@ QuizCzar.Routers.Router = Backbone.Router.extend({
         });
       }
     },
+    _dismiss_modal: function(event) {
+      if (event.currentTarget === event.target)
+        Backbone.history.navigate(this._model_leave_path.pop(), {trigger: true});
+    },
     _hide_nav: function() {
       this.$rootEl.addClass("cover-nav");
     },
     _show_nav: function() {
       this.$rootEl.removeClass("cover-nav");
     },
-    _place_model: function(view) {
+    _place_model: function(view, leave_path) {
       var model = $('<div id="model">')
       model.html(view.render().$el);
       $("#root").append(model);
+      this._model_leave_path.push(leave_path)
       this._modelView = model;
     },
     _swap_views: function(view, options) {

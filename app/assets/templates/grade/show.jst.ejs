@@ -3,7 +3,10 @@
   <section class="grade-show-score">
     <label>Score</label>
     <h1>
-      <%= Math.floor((grade.escape("number_of_questions") /  grade.escape("correct_answers")) * 100) %>%
+      <%= QuizCzar.calculate_percentage(
+        parseInt(grade.get("correct_answers")),
+        parseInt(grade.get("number_of_questions"))
+      )%>%
     </h1>
   </section>
   <section class="grade-show-stats">
