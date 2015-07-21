@@ -20,7 +20,8 @@ QuizCzar.Routers.Router = Backbone.Router.extend({
       var view = new QuizCzar.Views.QuizIndex({
         viewOptions: {
           title: "My Quizzes",
-          edit: true
+          edit: true,
+          delete: true
         },
         collection: QuizCzar.current_user.quizzes()
       });
@@ -71,7 +72,7 @@ QuizCzar.Routers.Router = Backbone.Router.extend({
       };
 
       var cancel = function() {
-        Backbone.history.navigate("#quizzes/" + id,{trigger: true});
+        window.history.back();
       };
 
       var view = new QuizCzar.Views.Confirmation({
