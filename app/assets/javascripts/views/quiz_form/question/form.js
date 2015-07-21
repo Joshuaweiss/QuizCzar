@@ -5,13 +5,31 @@ QuizCzar.Views.QuestionForm = Backbone.CompositeView.extend({
   events: {
     "input .question-display" : "submit"
   },
-  initialize: function() {
-    this.addSubview(".answers", new QuizCzar.Views.AnswerFormsIndex({collection: this.model.answers()}));
+  initialize: function(options) {
+    this._saving = options._saving;
+    this.addSubview(".answers", new QuizCzar.Views.AnswerFormsIndex({
+      collection: this.model.answers(),
+      _saving: this._saving
+    }));
   },
   submit: function(){
     this.model.set({question: this.$(".question-display").val() });
     //// Set not saved message on error
-    this.model.save();
+
+    this._saving.saving();
+
+    var handleError = function(){
+      setTimeout(function () {
+        this.model.save({error: handleError});
+      }, 500);
+    }.bind(this)
+
+    this.model.save({},{
+      success: function() {
+        this._saving.saved();
+      }.bind(this),
+      error: handleError
+    });
   },
   render: function() {
     this.$el.html(this.template({question: this.model}));

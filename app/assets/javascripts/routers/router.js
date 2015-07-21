@@ -41,7 +41,6 @@ QuizCzar.Routers.Router = Backbone.Router.extend({
     newQuiz: function() {
       var router = this;
       var quiz = new QuizCzar.Models.Quiz({})
-
       quiz.save({},{
         success: function() {
           var view = new QuizCzar.Views.QuizForm({model: quiz});

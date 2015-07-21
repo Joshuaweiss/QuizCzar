@@ -15,6 +15,24 @@
   color: rgb(143, 143, 143);
 }
 
+.save-message {
+  padding-top: 37px;
+  padding-left: 20px;
+  float: left;
+}
+
+.saved-notification {
+  font-size: 20px;
+  color: rgb(66, 236, 17);
+  font-weight: bold;
+}
+
+.saving-notification {
+  font-size: 20px;
+  color: rgb(56, 56, 56);
+  font-weight: normal;
+}
+
 .question-thumbs > li > a{
   display: block;
   float: left;
