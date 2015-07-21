@@ -38,7 +38,7 @@
   float: left;
   height: 60px;
   width: 155px;
-  padding: 15px 0 0 15px;
+  padding: 8px 0 0 8px;
   box-sizing: border-box;
 }
 
@@ -60,6 +60,15 @@
   height: 60px;
   float: right;
   background: transparent;
+  font: inherit;
+}
+
+.delete-question::after {
+  font-weight: 300;
+  font-size: 27px;
+  transform: rotate(45deg);
+  display: block;
+  content: "+"
 }
 
 .delete-question:hover {
@@ -67,9 +76,32 @@
 }
 
 .question-thumbs .add-question-button {
-  background-color: rgb(180, 233, 175);
-  height: 30px;
-  padding: 15px;
+  background-color: rgb(87, 237, 75);
+  padding: 15px 15px;
+  color: white;
+  border: 1px solid transparent;
+  text-align: center;
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  position: relative;
+}
+
+.question-thumbs .add-question-button:hover {
+  background-color: rgb(70, 227, 56);
+}
+
+.question-thumbs .add-question-button::before {
+  content: "+";
+  position: absolute;
+  display: block;
+  left: 14px;
+  top: 5px;
+  color: white;
+  font-weight: 300;
+  font-size: 30px;
+  text-align: center;
+  vertical-align: middle;
 }
 
 .quiz-name-edit {
@@ -108,29 +140,27 @@
   font-size: 25px;
   height: 100px;
   background: transparent;
-  border-top: 1px dotted rgb(60, 60, 60);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
   resize: none;
 }
 
-.question-thumbs .add-question-button:hover {
-  background-color: rgb(171, 221, 167);
-}
 
 .answers textarea:focus, .answers textarea:hover {
   background-color: rgb(245, 245, 245);
 }
 
 .answers textarea:nth-child(1) {
-  background-color: rgb(180, 233, 175);
-  border-right: 1px dotted rgb(60, 60, 60);
+  background-color: rgb(87, 237, 75);
+  color: white;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .answers textarea:nth-child(1):focus, .answers textarea:nth-child(1):hover {
-  background-color: rgb(172, 227, 167);
+  background-color: rgb(70, 227, 56);
 }
 
 .answers textarea:nth-child(3) {
-  border-right: 1px dotted rgb(60, 60, 60);
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 

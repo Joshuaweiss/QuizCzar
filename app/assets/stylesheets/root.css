@@ -16,6 +16,7 @@ body {
   top: 0px;
   position: fixed;
   width: 880px;
+  z-index: 1000;
   background-color: white;
 }
 
