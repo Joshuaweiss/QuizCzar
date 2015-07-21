@@ -3,32 +3,84 @@
   background-color: grey;
   height: 500px;
   padding: 20px;
+  margin: auto;
+  max-width: 1000px;
 }
 
 .splash-nav {
+  position: relative;
 }
 
 
-.sign-in-link {
+.sign-in-link{
   float: right;
+  position: relative;
+  color: white;
+}
+
+.sign-in-link{
+  background-color: rgb(98, 122, 255);
+  padding: 8px 15px;
+  display: block;
+}
+
+.sign-in-link:hover {
+  background-color: rgb(76, 100, 235);
 }
 
 .sign-in-form {
   background-color: white;
-  padding: 30px;
+  padding: 20px 25px;
+  right: 0px;
+  top: 50px;
+  position: absolute;
 }
 
-.sign-in-form input {
+.sign-in-form label {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 18px;
+  color: black;
   display: block;
-  margin: 20px;
+  font-size: 14px;
+}
+
+.sign-in-form input:focus {
+  border: 1px solid rgb(98, 122, 255);
+}
+
+
+.sign-in-form input {
+  margin: 0;
+  padding: 0;
+  display: block;
+  font: inherit;
+  outline: none;
+  font-size: 20px;
+  border: 1px solid #ccc;
+}
+
+.sign-in-form button {
+  padding: 8px 15px;
+  border: 0;
+  background-color: rgb(98, 122, 255);
+  color: white;
+}
+
+.sign-in-form button:hover {
+  background-color: rgb(76, 100, 235);
 }
 
 .sign-up-button {
+  font: inherit;
   display: block;
   position: absolute;
   width: 200px;
   height: 40px;
   bottom: 50px;
   left: 50%;
+  background-color: rgb(41, 240, 126);
+  border: 0;
+  color: white;
   transform: translate(-50%);
 }
