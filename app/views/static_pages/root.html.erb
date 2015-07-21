@@ -5,6 +5,10 @@
   <%= link_to "Sign Out", {controller: :sessions, action: 'destroy'}, method: :delete %>
 </script>
 
+<script id="logo" type="template">
+  <figure data-mask="<%= asset_url("QuizCzarHorizontal.svg")%>" ></figure>
+</script>
+
 <script>
   $(document).ready(function(){
     var $rootEl = $("#root")
