@@ -1,13 +1,13 @@
-<figure class="splash-image">
+<figure class="splash-image" style="background-image:url(<%= asset_url("shutterstock_134752781.png") %>);" >
+  <%= image_tag("QuizCzar.png")%>
   <nav class="splash-nav group">
     <a class="sign-in-link">
       Sign In
     </a>
-    <div class="sign-in">
+    <div class="sign-in hidden">
       <%= render "session/new" %>
     </div>
   </nav>
-
   <button class="sign-up-button">Sign Up</button>
 </figure>
 
@@ -16,5 +16,9 @@
   $('.sign-up-button').on("click", function(event){
     event.preventDefault()
     window.location.href =  "<%= new_user_url %>"
+  });
+
+  $('.sign-in-link').on("click", function(event){
+    $(".sign-in").toggleClass("hidden");
   });
 </script>

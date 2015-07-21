@@ -1,10 +1,20 @@
 .splash-image {
-  position: relative;
-  background-color: grey;
-  height: 500px;
-  padding: 20px;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 30px;
   margin: auto;
-  max-width: 1000px;
+  background-size: cover;
+}
+
+.hidden {
+  display: none;
+}
+
+.splash-image > img{
+  width: 120px;
+  float: left;
 }
 
 .splash-nav {
@@ -76,11 +86,17 @@
   display: block;
   position: absolute;
   width: 200px;
-  height: 40px;
+  height: 50px;
   bottom: 50px;
   left: 50%;
   background-color: rgb(41, 240, 126);
-  border: 0;
+  border: 1px solid white;
   color: white;
+  font-weight: bold;
   transform: translate(-50%);
+  -webkit-transform: translate(-50%);
+}
+
+.sign-up-button:hover {
+  background-color: rgb(30, 228, 114);
 }
