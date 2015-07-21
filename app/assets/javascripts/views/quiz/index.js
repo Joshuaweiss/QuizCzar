@@ -12,6 +12,7 @@ QuizCzar.Views.QuizIndex = Backbone.CompositeView.extend({
   setQuizzes: function(){
     this.removeSubviews(".quiz-table-items");
     this.collection.each(this.addQuiz.bind(this));
+    this.render();
   },
   addQuiz: function(quiz) {
     this.addSubview(".quiz-table-items", new QuizCzar.Views.QuizIndexItem({model: quiz, viewOptions: this.viewOptions}));
