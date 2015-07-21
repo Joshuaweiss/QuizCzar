@@ -17,6 +17,10 @@
   <button class="sign-in-button">
     Submit
   </button>
+
+  <button class="guest-sign-in-button">
+    Guest Sign-in
+  </button>
 </form>
 
 
@@ -30,6 +34,24 @@
         accepts: "json",
         method: "post",
         data: signindata,
+        success: function() {
+          window.location.href = "<%= root_url %>";
+        },
+        error: function() {
+          $(".sign-in-fail").html("Failed to sign in");
+        }
+      });
+    });
+
+    $('.guest-sign-in-button').on("click", function(event){
+      event.preventDefault();
+      $.ajax("<%= session_url %>",{
+        accepts: "json",
+        method: "post",
+        data: {
+          "user[email]": "Guest@User.com",
+          "user[password]": "aaaaaa"
+        },
         success: function() {
           window.location.href = "<%= root_url %>";
         },
