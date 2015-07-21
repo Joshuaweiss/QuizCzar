@@ -9,7 +9,7 @@ class Api::QuizzesController < ApplicationController
     @quizzes = nil
     user_id = params[:user_id]
     if (user_id)
-      @quizzes = User.find(user_id).quizzes
+      @quizzes = User.find(user_id).quizzes.joins(:user)
     else
       @quizzes = Quiz.joins(:user)
     end
@@ -18,8 +18,8 @@ class Api::QuizzesController < ApplicationController
     @search_keywords = params[:search_keywords]
 
     if @search_keywords.presence
-      @search_keywords = params[:search_keywords].split
-      @quizzes = current_user.quizzes.joins(:user).where("quizzes.name ~* ? OR users.name ~* ?", @search_keywords, @search_keywords);
+      @search_keywords = @search_keywords.split
+      @quizzes = @quizzes.where("quizzes.name ~* ? OR users.name ~* ?", @search_keywords, @search_keywords);
     end
 
   end
