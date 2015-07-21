@@ -50,6 +50,11 @@
   margin-top: 5px;
 }
 
+.quiz-show-bar label:hover {
+  color: grey;
+}
+
+
 .quiz-show-content {
   margin-left: 200px;
 }
