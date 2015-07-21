@@ -10,7 +10,8 @@ QuizCzar.Collections.Quizzes = Backbone.Collection.extend({
   fetch: function(options){
     if (this.user) {
       options.data = options.data || {};
-      options.data.user_id = this.user.id
+      options.data.user_id = this.user.id;
+      options.parse = true;
     }
     Backbone.Collection.prototype.fetch.call(this, options);
   },

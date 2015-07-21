@@ -2,6 +2,7 @@ QuizCzar.Views.GradeIndex = Backbone.View.extend({
   template: JST["grade/index"],
   initialize: function(){
     this.render();
+    this.listenTo(this.collection, "reset", this.render);
   },
   render: function(){
     grades = this.collection.map(function(grade){

@@ -1,4 +1,4 @@
-QuizCzar.Views.QuizShow = Backbone.View.extend({
+QuizCzar.Views.QuizShow = Backbone.CompositeView.extend({
   template: JST["quiz/show"],
   className: "quiz-show-view",
   events: {
@@ -10,12 +10,17 @@ QuizCzar.Views.QuizShow = Backbone.View.extend({
   },
   initialize: function(){
     this.listenTo(this.model, "sync", this.render);
+
+    this.addSubview(".quiz-show-grades", new QuizCzar.Views.GradeIndex({
+      collection: this.model.grades()
+    }));
   },
   render: function() {
     this.$el.html(this.template({
       quiz: this.model,
       high_score: this.model.high_score
     }));
+    this.attachSubviews();
     return this;
   }
 });
