@@ -1,7 +1,7 @@
 QuizCzar.Views.AnswerForm = Backbone.View.extend({
   initialize: function(options){
     this._saving = options._saving;
-    this.model.set({answer: this.$el.val()});
+    this.listenTo(this.model, "sync", this.render);
   },
   tagName: "textarea",
   className: "unstyled",
@@ -10,6 +10,7 @@ QuizCzar.Views.AnswerForm = Backbone.View.extend({
   },
   submit: function(){
 
+    this.model.set({answer: this.$el.val()});
     this._saving.saving();
 
     var handleError = function(){
