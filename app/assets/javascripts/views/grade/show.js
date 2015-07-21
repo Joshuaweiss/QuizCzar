@@ -3,12 +3,16 @@ QuizCzar.Views.GradeShow = Backbone.CompositeView.extend({
   className:"grade-show",
   initialize: function(){
     this.addSubview(
-      ".past-grades",
+      ".grades-index-info",
       new QuizCzar.Views.GradeIndex({
         collection: this.collection
       })
-    )
+    );
     this.model = this.collection.last();
+  },
+  exit: function(){
+    Backbone.history.navigate("#quizzes/" + this.collection.quiz.id,
+      {trigger: true})
   },
   render: function(){
     this.$el.html(this.template({grade: this.model}));

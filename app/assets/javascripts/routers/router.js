@@ -101,7 +101,7 @@ QuizCzar.Routers.Router = Backbone.Router.extend({
         var view = new QuizCzar.Views.GradeShow({
           collection: QuizCzar.lastGrades
         })
-        this._place_model(view, "#quizzes/" + quiz_id);
+        this._place_model(view);
         QuizCzar.lastGrades = undefined;
       } else {
         QuizCzar.lastGrades = new QuizCzar.Collections.Grades({

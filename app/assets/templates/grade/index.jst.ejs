@@ -1,0 +1,18 @@
+<canvas id="Chart" width="590" height="200"></canvas>
+
+<%
+
+  setTimeout(function () {
+    var ctx = $("#Chart").get(0).getContext("2d");
+    ctx.width = 590;
+    ctx.height = 200;
+    var lineChart = new Chart(ctx).Line(data, {
+      scaleOverride: true,
+      scaleStartValue: 0,
+      scaleSteps: 5,
+      scaleStepWidth: 20
+    });
+  }, 0);
+
+
+%>

@@ -34,9 +34,9 @@
 }
 
 .grade-show-stats .correct {
-  color: green;
+  color: rgb(33, 233, 70);
 }
 
 .grade-show-stats .wrong {
-  color: red;
+  color: rgb(246, 37, 37);
 }

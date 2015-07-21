@@ -13,6 +13,7 @@ QuizCzar.Views.QuizPlay = Backbone.View.extend({
       method: "post",
       data: data,
       success: function(data) {
+        data.quiz = this.model;
         QuizCzar.lastGrades = new QuizCzar.Collections.Grades(data);
         Backbone.history.navigate(
           "#quizzes/" + this.model.id + "/grades",

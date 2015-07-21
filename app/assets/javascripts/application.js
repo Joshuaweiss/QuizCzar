@@ -15,6 +15,8 @@
 //= require jquery.serializejson
 //= require underscore
 //= require backbone
+//= require jquery-dateFormat
+//= require Chart
 //= require quiz_czar
 //= require_tree ./utils
 //= require_tree ../templates
