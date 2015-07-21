@@ -12,6 +12,7 @@ class Api::QuizzesController < ApplicationController
       @quizzes = User.find(user_id).quizzes.joins(:user)
     else
       @quizzes = Quiz.joins(:user)
+      @quizzes = @quizzes.where(edited: true);
     end
 
 
