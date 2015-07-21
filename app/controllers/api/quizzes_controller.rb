@@ -27,7 +27,8 @@ class Api::QuizzesController < ApplicationController
 
   def show
     @quiz = Quiz.includes(questions: :answers).find(params[:id])
-    @high_score = current_user.grades.where({quiz_id: @quiz.id}).order("correct_answers DESC").first
+    @high_score = current_user.grades.where({quiz_id: @quiz.id}).order("correct_answers DESC").first;
+    @grades = current_user.grades.where({quiz_id: @quiz.id});
   end
 
   def update

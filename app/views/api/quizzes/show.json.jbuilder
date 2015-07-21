@@ -13,6 +13,14 @@ if @high_score
   end
 end
 
+if @grades
+  json.grades do
+    json.array! @grades do |grade|
+      json.partial! "api/grade", grade: grade
+    end
+  end
+end
+
 json.user do
   json.id @quiz.user.id
   json.name @quiz.user.name

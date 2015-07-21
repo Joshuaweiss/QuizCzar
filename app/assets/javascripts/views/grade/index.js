@@ -9,7 +9,7 @@ QuizCzar.Views.GradeIndex = Backbone.View.extend({
                 parseInt(grade.get("correct_answers")),
                 parseInt(grade.get("number_of_questions"))
               )
-              });
+            });
 
     dates = this.collection.map(function(grade){
                 return jQuery.format.prettyDate(Date.parse(grade.escape("created_at")));
