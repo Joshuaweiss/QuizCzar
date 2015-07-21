@@ -36,7 +36,7 @@ class Api::QuizzesController < ApplicationController
       return
     end
 
-    if @quiz.update(quiz_params)
+    if @quiz.update(quiz_params.merge({edited: true}))
       render json: @quiz
     else
       render json: {}, status: :unprocessable_entity
@@ -44,11 +44,13 @@ class Api::QuizzesController < ApplicationController
   end
 
   def create
-    @quiz = current_user.quizzes.create({name: "Quiz Name"})
-    @quiz.save!
-    question = @quiz.questions.create!({question: "Question Name"});
-    question.add_default_answers
-
+    @quiz = current_user.quizzes.find_by(edited: false)
+    unless @quiz
+      @quiz = current_user.quizzes.create({name: "Quiz Name"}.merge({edited: false}))
+      @quiz.save!
+      question = @quiz.questions.create!({question: "Question Name"});
+      question.add_default_answers
+    end
     render 'show'
   end
 
