@@ -10,6 +10,10 @@
   padding-top: 8px;
 }
 
+.quiz-table-items a:hover{
+  color: grey;
+}
+
 .quiz-table-items th{
   text-align: left;
   padding-bottom: 5px;

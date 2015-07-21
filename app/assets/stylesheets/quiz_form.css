@@ -98,7 +98,7 @@
   background-color: rgb(171, 221, 167);
 }
 
-.answers textarea:focus {
+.answers textarea:focus, .answers textarea:hover {
   background-color: rgb(245, 245, 245);
 }
 
@@ -107,7 +107,7 @@
   border-right: 1px dotted rgb(60, 60, 60);
 }
 
-.answers textarea:nth-child(1):focus {
+.answers textarea:nth-child(1):focus, .answers textarea:nth-child(1):hover {
   background-color: rgb(172, 227, 167);
 }
 
@@ -129,6 +129,6 @@
   padding: 15px 20px;
 }
 
-.question-display:focus{
+.question-display:focus, .question-display:hover{
   background-color: rgb(245, 245, 245);
 }
