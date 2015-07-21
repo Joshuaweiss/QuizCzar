@@ -123,3 +123,26 @@ body {
   content: "";
   background-color: rgba(0, 0, 0, 0.5);
 }
+
+.confirmation-view {
+  padding: 30px;
+}
+
+.confirmation-view h1 {
+  font-size: 30px;
+  margin-bottom: 70px;
+}
+
+.confirmation-view button {
+  background-color: rgb(98, 122, 255);
+  padding: 8px 15px;
+  display: block;
+  border: 0;
+  font: inherit;
+  color: white;
+  margin-top: 20px;
+}
+
+.confirmation-view button:hover {
+  background-color: rgb(75, 99, 233);
+}

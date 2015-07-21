@@ -60,12 +60,29 @@ QuizCzar.Routers.Router = Backbone.Router.extend({
       })
     },
     deleteQuiz: function(id) {
-      var quiz = new QuizCzar.Models.Quiz({id: id})
-      quiz.destroy({
-        success: function(){
-          Backbone.history.navigate("#",{trigger: true});
-        }
+      quiz = QuizCzar.current_user.quizzes().getOrFetch(id)
+
+      var deleteQuiz = function() {
+        quiz.destroy({
+          success: function(){
+            Backbone.history.navigate("#",{trigger: true});
+          }
+        });
+      };
+
+      var cancel = function() {
+        Backbone.history.navigate("#quizzes/" + id,{trigger: true});
+      };
+
+      var view = new QuizCzar.Views.Confirmation({
+        title: ("Delete " + '"' + quiz.escape("name") + '"'),
+        message: "Are you sure?",
+        button_title: "Delete",
+        confirm: deleteQuiz,
+        leave: cancel
       })
+
+      this._place_model(view);
     },
     playQuiz: function(id) {
       var router = this;
@@ -98,7 +115,7 @@ QuizCzar.Routers.Router = Backbone.Router.extend({
     },
     _dismiss_modal: function(event) {
       if (event.currentTarget === event.target)
-        Backbone.history.navigate(this._model_leave_path.pop(), {trigger: true});
+        this._modelView.exit();
     },
     _hide_nav: function() {
       this.$rootEl.addClass("cover-nav");
@@ -106,12 +123,11 @@ QuizCzar.Routers.Router = Backbone.Router.extend({
     _show_nav: function() {
       this.$rootEl.removeClass("cover-nav");
     },
-    _place_model: function(view, leave_path) {
+    _place_model: function(view) {
       var model = $('<div id="model">')
       model.html(view.render().$el);
       $("#root").append(model);
-      this._model_leave_path.push(leave_path)
-      this._modelView = model;
+      this._modelView = view;
     },
     _swap_views: function(view, options) {
       $('#model').remove();
