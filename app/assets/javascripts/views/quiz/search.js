@@ -5,7 +5,8 @@ QuizCzar.Views.QuizSearch = Backbone.CompositeView.extend({
       new QuizCzar.Views.QuizIndex({
         viewOptions: {
           title: "Search Quizzes",
-          edit: false
+          edit: false,
+          author: true
         },
         collection: this.collection
       })

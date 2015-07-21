@@ -1,4 +1,11 @@
 <td><a href="#quizzes/<%= quiz.id %>"><%= quiz.escape("name")%></a></td>
+
+
+<% if (options.author) { %>
+  <td><%= quiz.user.escape("name") %></td>
+<% } %>
+
+
 <td>
   <% if (high_score) { %>
     <%= QuizCzar.calculate_percentage(
@@ -7,6 +14,9 @@
     )%>%
   <% } %>
 </td>
+
+
+
 <% if (options.edit) { %>
   <td><a href="#quizzes/<%= quiz.id %>/edit" class="quiz-table-edit">Edit</a></td>
 <% } %>
