@@ -1,8 +1,14 @@
 .question-thumbs {
+  position: absolute;
+  left: 25px;
+  top: 0px;
+  bottom: 0px;
   width: 200px;
   padding: 0px;
-  padding-top: 100px;
-  float: left;
+  padding-top: 125px;
+  padding-right: 700px;
+  padding-bottom: 60px;
+  overflow: scroll;
 }
 
 .delete-quiz-button {

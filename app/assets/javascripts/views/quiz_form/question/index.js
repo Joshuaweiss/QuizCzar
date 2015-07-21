@@ -39,9 +39,6 @@ QuizCzar.Views.QuestionsThumbIndex = Backbone.CompositeView.extend({
     var ul = this.$el;
     ul.empty();
 
-    var addButton = $('<li class="add-question-button">Add a Question</li>');
-    ul.append(addButton);
-
     this.collection.each(function(question) {
       var subview = new QuizCzar.Views.QuestionThumb({
         model: question,
@@ -49,6 +46,9 @@ QuizCzar.Views.QuestionsThumbIndex = Backbone.CompositeView.extend({
       });
       ul.append(subview.render().$el);
     }.bind(this));
+
+    var addButton = $('<li class="add-question-button">Add a Question</li>');
+    ul.append(addButton);
 
     return this;
   }
