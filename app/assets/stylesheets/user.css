@@ -9,7 +9,6 @@
 .user-show > img{
   float: left;
   width: 150px;
-  margin-bottom: 30px;
 }
 
 .user-show > h1{
@@ -20,7 +19,15 @@
 }
 
 .user-show-quizzes {
+  padding-top: 35px;
   display: block;
   float: none;
   clear: both;
+}
+
+
+.picture-input {
+  display: block;
+  clear: both;
+  padding-top: 12px;
 }

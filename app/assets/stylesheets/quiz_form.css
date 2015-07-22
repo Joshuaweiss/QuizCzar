@@ -46,6 +46,7 @@
   width: 120px;
   font-size: 9px;
   overflow: hidden;
+  animation: font-size 2s;
 }
 
 .question-thumbs > li{

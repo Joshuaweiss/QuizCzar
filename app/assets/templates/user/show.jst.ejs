@@ -1,3 +1,6 @@
 <img src="<%= user.escape("picture_url") %>">
 <h1><%= user.escape("name") %></h1>
+<% if (current_user) { %>
+  <input class="picture-input" type="file">
+<% } %>
 <section class="user-show-quizzes"></section>

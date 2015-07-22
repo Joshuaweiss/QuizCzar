@@ -26,13 +26,13 @@ gem 'bcrypt', '~> 3.1.7'
 
 gem 'backbone-on-rails'
 
-gem 'aws-sdk'
+gem 'aws-sdk', '~> 1.6'
 
 gem 'rails_12factor'
 
 gem 'figaro'
 
-gem "paperclip", "~> 4.3"
+gem "paperclip"
 
 
 # Use Unicorn as the app server

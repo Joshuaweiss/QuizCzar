@@ -15,7 +15,7 @@ Rails.application.routes.draw do
     resources :questions, only: [:update, :create, :destroy]
     resources :answers, only: [:update, :create]
     resource :session
-    resources :users, only: [:show]
+    resources :users, only: [:show, :update]
   end
 
 end
