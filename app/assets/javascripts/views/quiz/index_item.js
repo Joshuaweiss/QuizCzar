@@ -2,7 +2,7 @@ QuizCzar.Views.QuizIndexItem = Backbone.View.extend({
   template: JST["quiz/index_item"],
   tagName: "tr",
   initialize: function(options){
-    this.viewOptions = options.viewOptions
+    this.viewOptions = options.viewOptions || {};
     this.listenTo(this.model, "sync", this.render);
   },
   render: function() {

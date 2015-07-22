@@ -8,7 +8,7 @@ json.array! quizzes do |quiz|
     json.id quiz.user.id
     json.name quiz.user.name
   end
-  
+
   high_score = user.grades.where({quiz_id: quiz.id}).order("correct_answers DESC").first
 
   if high_score

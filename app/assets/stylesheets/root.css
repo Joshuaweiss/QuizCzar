@@ -82,17 +82,17 @@ body {
   padding: 0;
 }
 
-.bar-items > li{
+.bar-items li{
   display: block;
   margin: 0px 0px;
 }
 
-.bar-items > li > a{
+.bar-items li > a{
   display: block;
   padding: 15px;
 }
 
-.bar-items > li:hover{
+.bar-items li:hover{
   background-color: #e7e7e7;
 }
 
@@ -162,5 +162,26 @@ body {
 }
 
 .user-info-item {
-  height: 100px;
+  padding: 20px;
+}
+
+.link {
+  color: rgb(43, 43, 43);
+}
+
+.link:hover {
+  color: rgb(120, 120, 120);
+}
+
+.user-info-item > img{
+  display: block;
+  width: 60px;
+  height: 60px;
+  float: left;
+}
+
+.user-info-item > h1{
+  font-size: 18px;
+  padding-left: 15px;
+  float: left;
 }

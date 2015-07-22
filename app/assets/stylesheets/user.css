@@ -1,0 +1,25 @@
+.user-show {
+  width: 700px;
+  padding: 70px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  max-height: 800px;
+}
+
+.user-show > img{
+  float: left;
+  width: 150px;
+  margin-bottom: 30px;
+}
+
+.user-show > h1{
+  float: left;
+  margin: 0 30px;
+  font-size: 30px;
+}
+
+.user-show-quizzes {
+  display: block;
+  float: none;
+  clear: both;
+}

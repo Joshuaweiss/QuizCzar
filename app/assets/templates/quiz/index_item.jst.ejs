@@ -2,7 +2,7 @@
 
 
 <% if (options.author) { %>
-  <td><%= quiz.user.escape("name") %></td>
+  <td><a href="#users/<%= quiz.user.id %>"><%= quiz.user.escape("name") %></a></td>
 <% } %>
 
 

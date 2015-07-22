@@ -22,7 +22,9 @@
   <section class="page-header">
     <%= quiz.escape("name") %>
     <% if (quiz.user) { %>
-      <h5 class="subheader"><%= quiz.user.escape("name") %></h1>
+      <a class="link" href="#users/<%= quiz.user.id %>">
+        <h5 class="subheader"><%= quiz.user.escape("name") %></h1>
+      </a>
     <% } %>
   </section>
 

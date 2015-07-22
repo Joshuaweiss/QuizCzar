@@ -11,6 +11,7 @@ QuizCzar.Views.QuizIndex = Backbone.CompositeView.extend({
   },
   setQuizzes: function(){
     this.removeSubviews(".quiz-table-items");
+    this.addSubview(".quiz-table-items", new QuizCzar.Views.QuizIndexHeader(this.viewOptions));
     this.collection.each(this.addQuiz.bind(this));
     this.render();
   },
@@ -26,7 +27,6 @@ QuizCzar.Views.QuizIndex = Backbone.CompositeView.extend({
   render: function() {
     this.$el.html(this.template({quizzes: this.collection, options: this.viewOptions}));
     this.attachSubviews();
-    this.$(".quiz-table-items").prepend(JST["quiz/index_headers"]({options: this.viewOptions}));
     return this;
   }
 });

@@ -7,6 +7,7 @@ QuizCzar.Routers.Router = Backbone.Router.extend({
     },
     routes: {
       "" : "myQuizzes",
+      "users/:id" : "showUser",
       "quizzes/:id/edit" : "editQuiz",
       "quizzes/:id/delete" : "deleteQuiz",
       "quizzes/:id/play" : "playQuiz",
@@ -14,6 +15,11 @@ QuizCzar.Routers.Router = Backbone.Router.extend({
       "quizzes/new" : "newQuiz",
       "quizzes/search" : "searchQuizzes",
       "quizzes/:id" : "showQuiz"
+    },
+    showUser: function(id){
+      var user = QuizCzar.recentlyViewedUsers.getOrFetch(id);
+      var view = new QuizCzar.Views.UserShow({model: user});
+      this._place_model(view.render());
     },
     myQuizzes: function() {
       QuizCzar.current_user.quizzes().fetch({reset: true});

@@ -8,8 +8,11 @@
 </ul>
 
 <ul class="user-bar-items bar-items">
-  <li class="user-info">
-    <img src="<%= user.image_url %>">
-  </li>
+  <a href="#users/<%= user.id %>">
+    <li class="user-info-item group">
+      <img src="<%= user.escape("picture_url") %>">
+      <h1><%= user.escape("name")%></h1>
+    </li>
+  </a>
   <li class="signout"></li>
 </ul>
