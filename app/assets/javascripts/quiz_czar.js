@@ -15,7 +15,7 @@ window.QuizCzar = {
         QuizCzar.recentlyViewedQuizzes.add(QuizCzar.current_user.quizzes());
 
         ///fetch feeds
-        var navBar = new QuizCzar.Views.Navbar();
+        var navBar = new QuizCzar.Views.Navbar({model: QuizCzar.current_user});
         $rootEl.append(navBar.render().$el);
 
 

@@ -42,17 +42,18 @@
 .question-thumbs > li > div{
   display: block;
   float: left;
-  height: 60px;
-  width: 155px;
+  height: 44px;
+  width: 120px;
   font-size: 9px;
-  padding: 8px;
-  box-sizing: border-box;
   overflow: hidden;
 }
 
 .question-thumbs > li{
+  overflow: hidden;
   margin: 0px 0px 20px;
+  padding: 8px;
   border: 1px solid rgb(143, 143, 143);
+  position: relative;
 }
 
 .question-thumbs > li:hover {
@@ -66,7 +67,9 @@
   padding: 0;
   width: 40px;
   height: 60px;
-  float: right;
+  position: absolute;
+  right: 0;
+  top: 0;
   background: transparent;
   font: inherit;
 }

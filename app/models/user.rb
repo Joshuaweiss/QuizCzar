@@ -12,6 +12,11 @@
 include BCrypt
 
 class User < ActiveRecord::Base
+
+  has_attached_file :picture, :styles => { :medium => "300x300>", :thumb => "100x100>" }, :default_url => "missing.png"
+  validates_attachment_content_type :picture, :content_type => /\Aimage\/.*\Z/
+  validates_attachment_size :picture, { :in => 0..8.megabytes }
+
   validates :email, :name, :password_digest, :session_token, presence: true
   validates :email, :session_token, uniqueness: true
   validates :password, length: {minimum: 6, maximum: 20, allow_nil: true}
