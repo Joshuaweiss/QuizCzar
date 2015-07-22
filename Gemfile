@@ -36,6 +36,9 @@ gem 'figaro'
 
 gem "paperclip"
 
+gem 'omniauth'
+
+gem 'omniauth-facebook'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
@@ -62,9 +65,5 @@ group :development, :test do
   gem "rspec-rails"
 
   gem 'shoulda-matchers'
-
-  gem 'omniauth'
-
-  gem 'omniauth-facebook'
 
 end
