@@ -8,7 +8,7 @@ class Api::UsersController < ApplicationController
   def update
     @user = current_user
     if @user.update(user_params)
-      render render "api/user/show"
+      render "api/user/show"
     else
       render json: @user.errors
     end

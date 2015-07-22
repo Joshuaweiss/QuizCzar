@@ -24,7 +24,11 @@ QuizCzar.Views.UserShow = Backbone.CompositeView.extend({
       method: "put",
       data: formData,
       processData: false,
-      contentType: false
+      contentType: false,
+      success: function(data) {
+        this.model.set(data);
+        this.render();
+      }.bind(this)
     });
   },
   exit: function(){
