@@ -71,6 +71,7 @@ body {
   background-color: white;
   position: fixed;
   z-index: 0;
+  overflow: scroll;
 }
 
 #root #content.cover-nav {
