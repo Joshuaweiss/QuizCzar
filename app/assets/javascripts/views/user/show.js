@@ -7,7 +7,7 @@ QuizCzar.Views.UserShow = Backbone.CompositeView.extend({
       new QuizCzar.Views.QuizIndex({
         collection: this.model.quizzes(),
         viewOptions: {
-          title: "Quizzes"
+          hideTitle: true
         }
       })
     )

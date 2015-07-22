@@ -28,10 +28,17 @@
   font-size: 30px;
   width: 400px;
   height: 30px;
-  margin-top: 30px;
+  margin-top: 4px;
   margin-bottom: 40px;
   padding: 5px;
   border: 1px solid rgb(204, 204, 204);
+  display: block;
+}
+
+.quiz-search-label {
+  font-size: 14px;
+  font-weight: bold;
+  display: blo
 }
 
 .quiz-search:focus, .quiz-search:hover {

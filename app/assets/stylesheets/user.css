@@ -14,8 +14,9 @@
 
 .user-show > h1{
   float: left;
-  margin: 0 30px;
+  margin: 0 50px;
   font-size: 30px;
+  text-transform: capitalize;
 }
 
 .user-show-quizzes {
