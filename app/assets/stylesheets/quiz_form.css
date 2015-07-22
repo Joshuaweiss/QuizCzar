@@ -129,6 +129,11 @@
   border: 1px solid rgb(204, 204, 204);
 }
 
+.fg-like {
+  right: 10px;
+  position: absolute;
+}
+
 .quiz-name-edit:focus, .quiz-name-edit:hover {
   color: rgb(92, 92, 92);
   border: 1px solid black;

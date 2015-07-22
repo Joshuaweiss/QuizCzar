@@ -18,6 +18,7 @@
 //= require jquery-dateFormat
 //= require Chart
 //= require jquery.textfill
+//= require facebook
 //= require quiz_czar
 //= require_tree ./utils
 //= require_tree ../templates

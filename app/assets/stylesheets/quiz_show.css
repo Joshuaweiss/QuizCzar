@@ -54,6 +54,11 @@
   color: grey;
 }
 
+.fb-like-container {
+  position: absolute;
+  top: 10px;
+  right: 30px;
+}
 
 .quiz-show-content {
   margin-left: 200px;
