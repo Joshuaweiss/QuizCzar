@@ -73,6 +73,7 @@
   font-weight: 300;
   font-size: 27px;
   transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
   display: block;
   content: "+"
 }
