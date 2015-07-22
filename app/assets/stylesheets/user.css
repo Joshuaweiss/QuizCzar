@@ -1,6 +1,6 @@
 .user-show {
-  width: 650px;
-  padding: 70px;
+  width: 600px;
+  padding: 30px;
   overflow-y: auto;
   overflow-x: hidden;
   max-height: 800px;
@@ -23,6 +23,7 @@
   display: block;
   float: none;
   clear: both;
+  padding-bottom:30px;
 }
 
 
