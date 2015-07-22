@@ -5,6 +5,11 @@ QuizCzar.Views.QuestionThumb = Backbone.View.extend({
   events: {
     "click .delete-question" : "delete"
   },
+  attributes: function(){
+    return {
+      "data-id": this.model.id
+    }
+  },
   initialize: function (options) {
     this._saving = options._saving;
     this.listenTo(this.model, "sync", this.render);

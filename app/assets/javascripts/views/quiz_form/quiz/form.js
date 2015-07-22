@@ -3,7 +3,7 @@ QuizCzar.Views.QuizForm = Backbone.CompositeView.extend({
   tagName: "form",
   className: "quiz-form group",
   events: {
-    "click .quiz-cards .question-thumb a" : "chooseQuestion",
+    "click .quiz-cards .question-thumb" : "chooseQuestion",
     "input .quiz-name-edit" : "changeName"
   },
   initialize: function() {

@@ -17,6 +17,7 @@
 //= require backbone
 //= require jquery-dateFormat
 //= require Chart
+//= require jquery.textfill
 //= require quiz_czar
 //= require_tree ./utils
 //= require_tree ../templates

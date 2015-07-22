@@ -20,7 +20,8 @@ QuizCzar.Views.QuestionForm = Backbone.CompositeView.extend({
 
     var handleError = function(){
       setTimeout(function () {
-        this.model.save({error: handleError});
+        if (this.model)
+          this.model.save({error: handleError});
       }, 500);
     }.bind(this)
 

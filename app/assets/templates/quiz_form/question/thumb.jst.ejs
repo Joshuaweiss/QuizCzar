@@ -1,2 +1,15 @@
-<a data-id="<%= question.id %>" ><%= question.escape("question") %></a>
+<div class="resizing">
+  <span>
+    <%= question.escape("question") %>
+  </span>
+</div>
 <button class="delete-question"></button>
+
+<%
+  setTimeout(function(){
+    $(".resizing").textfill({
+      maxFontPixels: 23,
+      minFontPixels: 9
+    });
+  }, 0);
+%>

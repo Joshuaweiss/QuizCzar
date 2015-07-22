@@ -39,13 +39,15 @@
   font-weight: normal;
 }
 
-.question-thumbs > li > a{
+.question-thumbs > li > div{
   display: block;
   float: left;
   height: 60px;
   width: 155px;
-  padding: 8px 0 0 8px;
+  font-size: 9px;
+  padding: 8px;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 .question-thumbs > li{
