@@ -7,7 +7,7 @@
 #  user_id    :integer          not null
 #  created_at :datetime
 #  updated_at :datetime
-#  edited     :boolean          default(FALSE), not null
+#  edited     :boolean          default(TRUE), not null
 #
 
 class Quiz < ActiveRecord::Base

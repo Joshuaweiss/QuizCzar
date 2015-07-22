@@ -22,21 +22,19 @@
 }
 
 
-.sign-in-link{
+.sign-in-link, .sign-in-facebook{
   float: right;
   position: relative;
   color: white;
-}
-
-.sign-in-link{
   background-color: rgb(98, 122, 255);
   padding: 8px 15px;
   display: block;
 }
 
-.sign-in-link:hover {
+.sign-in-link:hover, .sign-in-facebook:hover {
   background-color: rgb(76, 100, 235);
 }
+
 
 .sign-in-form {
   background-color: white;

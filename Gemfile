@@ -28,6 +28,8 @@ gem 'backbone-on-rails'
 
 gem 'aws-sdk', '~> 1.6'
 
+gem 'open_uri_redirections'
+
 gem 'rails_12factor'
 
 gem 'figaro'
@@ -60,5 +62,9 @@ group :development, :test do
   gem "rspec-rails"
 
   gem 'shoulda-matchers'
+
+  gem 'omniauth'
+
+  gem 'omniauth-facebook'
 
 end

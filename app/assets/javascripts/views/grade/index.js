@@ -12,9 +12,12 @@ QuizCzar.Views.GradeIndex = Backbone.View.extend({
               )
             });
 
+    grades = grades.slice(Math.max(grades.length - 5, 1))
+
     dates = this.collection.map(function(grade){
                 return jQuery.format.prettyDate(Date.parse(grade.escape("created_at")));
               });
+    dates = dates.slice(Math.max(dates.length - 5, 1))
 
     var data = {
       labels: dates,

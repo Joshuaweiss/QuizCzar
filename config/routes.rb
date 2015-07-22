@@ -17,5 +17,6 @@ Rails.application.routes.draw do
     resource :session
     resources :users, only: [:show, :update]
   end
+  get '/auth/:provider/callback', to: 'sessions#auth_create'
 
 end

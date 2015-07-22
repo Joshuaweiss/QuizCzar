@@ -2,11 +2,15 @@
 #
 # Table name: users
 #
-#  id              :integer          not null, primary key
-#  email           :string           not null
-#  name            :string           not null
-#  password_digest :string           not null
-#  session_token   :string           not null
+#  id                   :integer          not null, primary key
+#  email                :string           not null
+#  name                 :string           not null
+#  password_digest      :string           not null
+#  session_token        :string           not null
+#  picture_file_name    :string
+#  picture_content_type :string
+#  picture_file_size    :integer
+#  picture_updated_at   :datetime
 #
 
 include BCrypt
@@ -19,13 +23,16 @@ class User < ActiveRecord::Base
   validates_attachment_content_type :picture, :content_type => /\Aimage\/.*\Z/
   validates_attachment_size :picture, { :in => 0..8.megabytes }
 
-  validates :email, :name, :password_digest, :session_token, presence: true
-  validates :email, :session_token, uniqueness: true
+  validates :name, :password_digest, :session_token, presence: true
+  validates :email, :session_token, {uniqueness: true, allow_nil: true}
   validates :password, length: {minimum: 6, maximum: 20, allow_nil: true}
   before_validation :session_token_exists
 
+  validate :has_auth_or_email
+
   has_many :quizzes, dependent: :destroy
   has_many :grades, dependent: :destroy
+  has_many :auths, inverse_of: :user
 
   attr_reader :password
 
@@ -38,6 +45,12 @@ class User < ActiveRecord::Base
     return nil unless user && user.is_password?(password)
 
     return user
+  end
+
+  def has_auth_or_email
+    unless (auths.size > 0) || email.presence
+      errors.add(:email, "accounts must have an Email");
+    end
   end
 
   def reset_session_token
