@@ -23,3 +23,13 @@
   display: block;
   margin: 10px 0;
 }
+
+.quiz-play button {
+  background-color: rgb(98, 122, 255);
+  padding: 8px 15px;
+  display: block;
+  border: 0;
+  font: inherit;
+  color: white;
+  margin-top: 20px;
+}

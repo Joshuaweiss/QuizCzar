@@ -57,6 +57,7 @@
   position: relative;
 }
 
+
 .question-thumbs > li:hover {
   background-color: rgb(241, 241, 241);
 }

@@ -17,6 +17,9 @@
   border-radius: 50%;
   display: block;
   background-color: rgb(58, 233, 118);
+  border: 0px solid white;
+  box-sizing: border-box;
+  transition: border 0.2s;
   margin: auto;
 }
 
@@ -26,6 +29,7 @@
   border-radius: 50%;
   display: block;
   background-color: rgb(46, 223, 85);
+  border: 5px solid rgb(255, 255, 255);
   margin: auto;
 }
 

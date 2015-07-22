@@ -22,6 +22,9 @@ QuizCzar.Views.QuizPlay = Backbone.View.extend({
       }.bind(this)
     })
   },
+  exit: function() {
+    window.history.back();
+  },
   render: function(){
     this.$el.html(this.template({quiz: this.model}));
     return this;
