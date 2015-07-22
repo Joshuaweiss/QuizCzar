@@ -1,7 +1,7 @@
 .user-show {
-  width: 700px;
+  width: 650px;
   padding: 70px;
-  overflow-y: scroll;
+  overflow-y: auto;
   overflow-x: hidden;
   max-height: 800px;
 }

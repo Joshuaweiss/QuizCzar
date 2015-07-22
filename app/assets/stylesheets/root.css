@@ -71,7 +71,7 @@ body {
   background-color: white;
   position: fixed;
   z-index: 0;
-  overflow-y: scroll;
+  overflow-y: auto;
   overflow-x: hidden;
 }
 
