@@ -1,5 +1,6 @@
 QuizCzar.Views.QuizIndex = Backbone.CompositeView.extend({
   template: JST["quiz/index"],
+  className: "quiz-index-container",
   initialize: function(options) {
     this.viewOptions = options.viewOptions || {};
 

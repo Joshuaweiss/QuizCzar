@@ -12,7 +12,8 @@ QuizCzar.Views.QuizForm = Backbone.CompositeView.extend({
 
     this.addSubview(".quiz-cards", new QuizCzar.Views.QuestionsThumbIndex({
       collection: this.model.questions(),
-      _saving: this._saving
+      _saving: this._saving,
+      _quizShow: this
     }));
 
     if (this.model.questions().first()) {
@@ -42,6 +43,19 @@ QuizCzar.Views.QuizForm = Backbone.CompositeView.extend({
     } else {
       question = this.model.questions().get(event.id);
     }
+
+    this._questionView && this._questionView.remove()
+    this._questionView = new QuizCzar.Views.QuestionForm({
+      model: question,
+      _saving: this._saving
+    });
+
+    this.removeSubviews(".card-form");
+    this.addSubview(".card-form", this._questionView);
+  },
+  chooseLastQuestion: function(){
+
+    var question = this.model.questions().last()
 
     this._questionView && this._questionView.remove()
     this._questionView = new QuizCzar.Views.QuestionForm({

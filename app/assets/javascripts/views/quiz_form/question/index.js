@@ -6,6 +6,7 @@ QuizCzar.Views.QuestionsThumbIndex = Backbone.CompositeView.extend({
   },
   initialize: function(options) {
     this._saving = options._saving;
+    this._quizShow = options._quizShow;
     this.listenTo(this.collection, "remove", this.render);
   },
   addQuestion: function(event){
@@ -31,6 +32,7 @@ QuizCzar.Views.QuestionsThumbIndex = Backbone.CompositeView.extend({
         this._saving.saved();
         questions.add(question);
         view.render();
+        this._quizShow.chooseQuestion({id: question.id});
       }.bind(this),
       error: handleError
     });
@@ -42,7 +44,8 @@ QuizCzar.Views.QuestionsThumbIndex = Backbone.CompositeView.extend({
     this.collection.each(function(question) {
       var subview = new QuizCzar.Views.QuestionThumb({
         model: question,
-        _saving: this._saving
+        _saving: this._saving,
+        _quizShow: this._quizShow
       });
       ul.append(subview.render().$el);
     }.bind(this));

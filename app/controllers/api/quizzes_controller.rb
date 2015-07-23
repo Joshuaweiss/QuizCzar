@@ -51,7 +51,7 @@ class Api::QuizzesController < ApplicationController
   def create
     @quiz = current_user.quizzes.find_by(edited: false)
     unless @quiz
-      @quiz = current_user.quizzes.create({name: "Quiz Name"}.merge({edited: false}))
+      @quiz = current_user.quizzes.create({name: "Quiz Name", edited: false})
       @quiz.save!
       question = @quiz.questions.create!({question: "Question Name"});
       question.add_default_answers

@@ -21,6 +21,10 @@
   padding-bottom: 5px;
 }
 
+.quiz-index-container{
+  padding-bottom: 80px;
+}
+
 .quiz-index-headers {
   border-bottom: 1px solid rgb(228, 228, 228);
 }

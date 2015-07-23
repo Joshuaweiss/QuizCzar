@@ -13,6 +13,7 @@ QuizCzar.Views.QuestionThumb = Backbone.View.extend({
   initialize: function (options) {
     this._saving = options._saving;
     this.listenTo(this.model, "sync", this.render);
+    this._quizShow = options._quizShow;
   },
   delete: function(event) {
     event.preventDefault();
@@ -28,6 +29,7 @@ QuizCzar.Views.QuestionThumb = Backbone.View.extend({
     var success = function() {
       this._saving.saved();
       this.render();
+      this._quizShow.chooseLastQuestion();
     }.bind(this);
 
     this.model.destroy({
