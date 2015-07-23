@@ -30,7 +30,7 @@
 .saved-notification {
   font-size: 20px;
   color: rgb(66, 236, 17);
-  font-weight: bold;
+  font-weight: 300;
 }
 
 .saving-notification {
@@ -77,16 +77,17 @@
 }
 
 .delete-question::after {
-  font-weight: 300;
-  font-size: 27px;
+  font-size: 30px;
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
   display: block;
-  content: "+"
+  content: "+";
+  font-weight: 100;
+  color: black;
 }
 
 .delete-question:hover {
-  background: rgb(201, 201, 201);
+  background: rgb(215, 215, 215);
 }
 
 .question-thumbs .add-question-button {
@@ -99,6 +100,7 @@
   font-size: 16px;
   font-weight: bold;
   position: relative;
+    font-weight: 300;
 }
 
 .question-thumbs .add-question-button:hover {
@@ -112,7 +114,7 @@
   left: 14px;
   top: 5px;
   color: white;
-  font-weight: 300;
+  font-weight: 100;
   font-size: 30px;
   text-align: center;
   vertical-align: middle;
@@ -162,6 +164,7 @@
   background: transparent;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   resize: none;
+  font-weight: 300;
 }
 
 
@@ -195,6 +198,7 @@
   border: 2px solid transparent;
   outline: none;
   padding: 15px 20px;
+  font-weight: 100;
 }
 
 .question-display:focus, .question-display:hover{
