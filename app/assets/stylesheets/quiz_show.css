@@ -21,6 +21,7 @@
   box-sizing: border-box;
   transition: border 0.2s;
   margin: auto;
+  position: relative;
 }
 
 .quiz-show-bar > ul > li > figure:hover{
@@ -31,6 +32,19 @@
   background-color: rgb(46, 223, 85);
   border: 5px solid rgb(255, 255, 255);
   margin: auto;
+}
+
+.quiz-show-bar > ul > li > figure > img {
+  width: 40px;
+  position: absolute;
+  left: 52%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.2s;
+}
+
+.quiz-show-bar > ul > li > figure:hover > img{
+  width: 35px;
 }
 
 .quiz-show-score {

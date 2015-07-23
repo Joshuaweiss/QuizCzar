@@ -1,17 +1,19 @@
 <nav class="quiz-show-bar">
-  <% if (high_score) { %>
+  <%% if (high_score) { %>
     <figure class="quiz-show-score">
-      <%= QuizCzar.calculate_percentage(
+      <%%= QuizCzar.calculate_percentage(
         parseInt(high_score.get("correct_answers")),
         parseInt(high_score.get("number_of_questions"))
       )%>%
     </figure>
     <label>My High Score</label>
-  <% } %>
+  <%% } %>
   <figure class="show-bar-line"></figure>
   <ul>
     <li>
-      <figure class="take-quiz-icon"></figure>
+      <figure class="take-quiz-icon">
+        <img src="<%= asset_url("take_quiz.svg") %>">
+      </figure>
       <label>Take Quiz</label>
     </li>
   </ul>
@@ -20,22 +22,22 @@
 
 <section class="quiz-show-content">
   <div class="fb-like-container">
-    <div class="fb-like" data-href="http://www.QuizCzar.io/#/quizzes/<%= quiz.id %>" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+    <div class="fb-like" data-href="http://www.QuizCzar.io/#/quizzes/<%%= quiz.id %>" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
   </div>
   <section class="page-header">
-    <%= quiz.escape("name") %>
-    <% if (quiz.user) { %>
-      <a class="subheader" href="#users/<%= quiz.user.id %>">
-        <%= quiz.user.escape("name") %>
+    <%%= quiz.escape("name") %>
+    <%% if (quiz.user) { %>
+      <a class="subheader" href="#users/<%%= quiz.user.id %>">
+        <%%= quiz.user.escape("name") %>
       </a>
-    <% } %>
+    <%% } %>
   </section>
 
   <section class="quiz-show-grades"></section>
 </section>
 
 
-<%
+<%%
   setTimeout(function(){
     FB.XFBML.parse(document.getElementById('containerX'));
   },10);
