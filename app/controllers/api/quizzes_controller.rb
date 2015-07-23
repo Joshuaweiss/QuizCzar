@@ -5,6 +5,7 @@ class Api::QuizzesController < ApplicationController
   def index
 
     @user = current_user
+    @page = params[:page] || 0
 
     @quizzes = nil
     user_id = params[:user_id]
@@ -22,6 +23,8 @@ class Api::QuizzesController < ApplicationController
       @search_keywords = @search_keywords.split
       @quizzes = @quizzes.where("quizzes.name ~* ? OR users.name ~* ?", @search_keywords, @search_keywords);
     end
+
+    @quizzes.page(@page).per(50);
 
   end
 

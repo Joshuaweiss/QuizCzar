@@ -20,6 +20,7 @@ QuizCzar.Routers.Router = Backbone.Router.extend({
     showUser: function(id){
       var user = QuizCzar.recentlyViewedUsers.getOrFetch(id);
       var view = new QuizCzar.Views.UserShow({model: user});
+      console.log(user.cid + " ROUTER");
       this._place_model(view.render());
     },
     myQuizzes: function() {

@@ -15,7 +15,7 @@ QuizCzar.Models.Quiz = Backbone.Model.extend({
       delete data.high_score;
     }
     if (data.user) {
-      QuizCzar.recentlyViewedUsers.set(data.user);
+      QuizCzar.recentlyViewedUsers.add(data.user);
       this.user = QuizCzar.recentlyViewedUsers.get(data.user.id);
       this.user.quizzes().add(this, {merge: true});
       delete data.user;

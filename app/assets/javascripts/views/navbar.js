@@ -5,6 +5,8 @@ QuizCzar.Views.Navbar = Backbone.View.extend({
   initialize: function(){
     this.listenTo(this.model, "sync", this.render);
     this.listenTo(QuizCzar.current_user, "sync change:picture_url", this.render);
+
+    console.log(this.model.cid + "SIDE BAR");
   },
   events: {
     "click .signout" : "logout"
@@ -16,7 +18,7 @@ QuizCzar.Views.Navbar = Backbone.View.extend({
     this.$el.html(this.template({user: this.model}));
 
     var buttonTemplate = _.template($("#signout-button").html());
-    this.$el.find(".signout").html(buttonTemplate());
+    this.$(".signout").html(buttonTemplate());
 
     return this;
   }

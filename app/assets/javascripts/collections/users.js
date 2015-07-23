@@ -4,22 +4,16 @@ QuizCzar.Collections.Users = Backbone.Collection.extend({
   getOrFetch: function(id, callback){
     var users = this;
     var user = users.get(id);
-    if (user) {
-      user.fetch({
-        success: function(){
-          users.add(user);
-          if (callback) callback(quiz);
-        }
-      });
-    } else {
+    if (!user) {
       user = new QuizCzar.Models.User({id: id});
-      user.fetch({
-        success: function(){
-          users.add(user);
-          if (callback) callback(quiz);
-        }
-      });
     }
+    console.log(user.cid + " USERS");
+    user.fetch({
+      success: function(){
+        users.add(user);
+        if (callback) callback(quiz);
+      }
+    });
 
     return user;
   }

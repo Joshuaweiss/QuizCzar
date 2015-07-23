@@ -40,6 +40,8 @@ gem 'omniauth'
 
 gem 'omniauth-facebook'
 
+gem 'kaminari'
+
 # Use Unicorn as the app server
 # gem 'unicorn'
 

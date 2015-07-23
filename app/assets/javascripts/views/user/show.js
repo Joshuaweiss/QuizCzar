@@ -6,6 +6,7 @@ QuizCzar.Views.UserShow = Backbone.CompositeView.extend({
   },
   initialize: function(){
     this.listenTo(this.model, "sync", this.render)
+    console.log(this.model.cid + "USER SHOW");
     this.addSubview(".user-show-quizzes",
       new QuizCzar.Views.QuizIndex({
         collection: this.model.quizzes(),
