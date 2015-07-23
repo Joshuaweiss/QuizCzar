@@ -104,8 +104,6 @@ body {
 
 .subheader {
   font-size: 18px;
-  padding-left: 14px;
-  padding-top: 4px;
 }
 
 #model > * {
@@ -179,12 +177,12 @@ body {
   float: left;
 }
 
-.quiz-table-items a {
+a {
   padding: 4px 8px;
   box-sizing: border-box;
 }
 
-.quiz-table-items a:hover{
+a:hover{
   background-color: rgba(0, 0, 0, 0.05);
   border-radius: 1px;
 }
