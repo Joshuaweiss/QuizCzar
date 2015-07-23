@@ -7,14 +7,13 @@
 }
 
 .quiz-table-items td{
-  padding: 6px;
   box-sizing: border-box;
 }
-
 
 .quiz-table-items th{
   text-align: left;
   font-weight: 400;
+  padding: 8px;
   padding-bottom: 5px;
 }
 
@@ -73,5 +72,4 @@ a.x-link:hover {
   width: 25px;
   height: 25px;
   padding: 10px;
-  border-radius: 16px;
 }

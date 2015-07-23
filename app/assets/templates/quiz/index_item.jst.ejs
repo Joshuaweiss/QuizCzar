@@ -8,10 +8,12 @@
 
 <td>
   <% if (high_score) { %>
-    <%= QuizCzar.calculate_percentage(
-      parseInt(high_score.get("correct_answers")),
-      parseInt(high_score.get("number_of_questions"))
-    )%>%
+    <a href="#users/<%= quiz.user.id %>" class="quiz-table-edit">
+      <%= QuizCzar.calculate_percentage(
+        parseInt(high_score.get("correct_answers")),
+        parseInt(high_score.get("number_of_questions"))
+      )%>%
+    </a>
   <% } %>
 </td>
 

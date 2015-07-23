@@ -4,6 +4,7 @@ QuizCzar.Views.Navbar = Backbone.View.extend({
   id: "navbar",
   initialize: function(){
     this.listenTo(this.model, "sync", this.render);
+    this.listenTo(QuizCzar.current_user, "sync change:picture_url", this.render);
   },
   events: {
     "click .signout" : "logout"
