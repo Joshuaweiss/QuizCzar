@@ -20,5 +20,9 @@
 <% } %>
 
 <% if (options.delete) { %>
-  <td><a href="#quizzes/<%= quiz.id %>/delete" class="quiz-table-delete">Delete</a></td>
+  <td>
+    <a class="x-link" href="#quizzes/<%= quiz.id %>/delete" class="quiz-table-delete">
+      <figure class="x">+</figure>
+    </a>
+  </td></a>
 <% } %>

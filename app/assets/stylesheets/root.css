@@ -10,6 +10,7 @@ body {
   width: 100%;
   height: 100%;
   overflow-x: visible;
+  font-weight: 300;
 }
 
 .black {
@@ -176,6 +177,16 @@ body {
   width: 60px;
   height: 60px;
   float: left;
+}
+
+.quiz-table-items a {
+  padding: 4px 8px;
+  box-sizing: border-box;
+}
+
+.quiz-table-items a:hover{
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 1px;
 }
 
 .user-info-item > h1{

@@ -7,20 +7,23 @@
 }
 
 .quiz-table-items td{
-  padding-top: 8px;
+  padding: 6px;
+  box-sizing: border-box;
 }
 
-.quiz-table-items a:hover{
-  color: grey;
-}
 
 .quiz-table-items th{
   text-align: left;
+  font-weight: 400;
   padding-bottom: 5px;
 }
 
 .quiz-index-headers {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid rgb(228, 228, 228);
+}
+
+.quiz-table-items tr:nth-child(2n+3) {
+  background-color: rgb(247, 247, 247);
 }
 
 .quiz-search {
@@ -44,4 +47,31 @@
 .quiz-search:focus, .quiz-search:hover {
   color: rgb(92, 92, 92);
   border: 1px solid black;
+}
+
+.x {
+  font-size: 24px;
+  position: absolute;
+  top: 46%;
+  left: 50%;
+  transform: translate(-45%, -50%) rotate(45deg) ;
+  display: block;
+  font-weight: 300;
+  color: rgb(83, 83, 83);
+}
+
+a.x-link {
+  display: block;
+  position: relative;
+  width: 25px;
+  height: 25px;
+  box-sizing: border-box;
+  padding: 6px;
+}
+
+a.x-link:hover {
+  width: 25px;
+  height: 25px;
+  padding: 10px;
+  border-radius: 16px;
 }
