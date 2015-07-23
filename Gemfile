@@ -36,8 +36,6 @@ gem 'figaro'
 
 gem "paperclip"
 
-gem 'omniauth'
-
 gem 'omniauth-facebook'
 
 gem 'kaminari'

@@ -65,15 +65,41 @@
 
 a.x-link {
   display: block;
-  position: relative;
+  position: absolute;
   width: 25px;
   height: 25px;
   box-sizing: border-box;
   padding: 6px;
+  top: 50%;
+  left: 0%;
+  transform: translate(-0%, -50%);
 }
 
 a.x-link:hover {
   width: 25px;
   height: 25px;
   padding: 10px;
+}
+
+
+
+.name-column {
+  width: 600px;
+}
+
+.author-column {
+  width: 140px;
+}
+
+.high-score-column {
+  width: 120px;
+}
+
+.edit-column {
+  width: 80px;
+}
+
+.delete-column {
+  width: 40px;
+  position: relative;
 }

@@ -12,7 +12,6 @@ window.QuizCzar = {
 
         QuizCzar.current_user = new QuizCzar.Models.User();
         QuizCzar.recentlyViewedUsers.add(QuizCzar.current_user);
-        debugger;
         QuizCzar.current_user.set(QuizCzar.current_user.parse(data));
         QuizCzar.recentlyViewedQuizzes.add(QuizCzar.current_user.quizzes());
 
