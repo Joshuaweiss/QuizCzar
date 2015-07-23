@@ -17,6 +17,7 @@
 .grade-show-score {
   float: left;
   display: block;
+  font-weight: 100;
 }
 
 .grade-show-score h1 {
@@ -24,13 +25,18 @@
 }
 
 .grade-show-score label{
-  font-size: 20px;
+  font-size: 15px;
+  font-weight: 300;
 }
 
 .grade-show-info .grade-show-stats {
   float: right;
   display: block;
   font-size: 20px;
+}
+
+.grade-show-stats {
+  font-weight: 100;
 }
 
 .grade-show-stats .correct {
