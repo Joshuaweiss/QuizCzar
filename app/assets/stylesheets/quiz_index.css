@@ -10,6 +10,10 @@
   box-sizing: border-box;
 }
 
+.quiz-table-items td a{
+  display: block;
+}
+
 .quiz-table-items th{
   text-align: left;
   font-weight: 400;

@@ -8,7 +8,8 @@
   padding-top: 125px;
   padding-right: 700px;
   padding-bottom: 60px;
-  overflow: scroll;
+  overflow: auto;
+  overflow-x:hidden;
 }
 
 .delete-quiz-button {
@@ -92,7 +93,7 @@
 }
 
 .question-thumbs .add-question-button {
-  background-color: rgb(87, 237, 75);
+  background-color: rgb(117, 231, 107);
   padding: 15px 15px;
   color: white;
   border: 1px solid transparent;
@@ -174,7 +175,7 @@
 }
 
 .answers textarea:nth-child(1) {
-  background-color: rgb(87, 237, 75);
+  background-color: rgb(117, 231, 107);
   color: white;
   border-right: 1px solid rgba(0, 0, 0, 0.1);
 }
