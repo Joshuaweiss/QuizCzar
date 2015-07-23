@@ -24,7 +24,7 @@ class User < ActiveRecord::Base
   validates_attachment_size :picture, { :in => 0..8.megabytes }
 
   validates :name, :password_digest, :session_token, presence: true
-  validates :email, :session_token, {uniqueness: true, allow_nil: true}
+  validates :email, :session_token, {uniqueness: true, allow_blank: true}
   validates :password, length: {minimum: 6, maximum: 20, allow_nil: true}
   before_validation :session_token_exists
 
