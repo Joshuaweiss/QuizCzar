@@ -12,19 +12,24 @@
   <button class="sign-up-button">Sign Up</button>
 </figure>
 
-<%= render "user/new" %>
+<%= render "users/new" %>
 
 <script>
+
+  var template = _.template($("#SignUp").html());
+  var user = {};
+  var errors = _({});
+
   $('.sign-up-button').on("click", function(event){
     event.preventDefault()
-    var model = $("<div id="model">");
-    var content = $("<div id="model-content">")
-    content.html(_.template($("#SignUp").html());
-    model.add()
-    $("#root").
+    var model = $('<div id="model">');
+    var content = $('<div id="model-content">');
+    content.html(template({user: user, errors: errors}));
+    model.append(content)
+    $("body").append(model);
   });
 
-  $('.sign-in-link').on("click", function(event){
+  $('.sign-in-link').on("click", function(event) {
     $(".sign-in").toggleClass("hidden");
   });
 </script>

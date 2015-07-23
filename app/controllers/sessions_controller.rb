@@ -22,8 +22,8 @@ class SessionsController < ApplicationController
                                    request.env['omniauth.auth'].uid)
 
     if @user_auth
-      sign_in(@user_auth.user)
-      redirect_to ""
+      @user = @user_auth.user
+      sign_in(@user)
     else
       @user = User.new({
         name: request.env['omniauth.auth'].extra.raw_info.name,
@@ -34,18 +34,21 @@ class SessionsController < ApplicationController
         provider: request.env['omniauth.auth'].provider,
         provider_id: request.env['omniauth.auth'].uid
       })
-      url = request.env['omniauth.auth'].info.image
-      url = url.gsub("­http","htt­ps")
-      open(url, :allow_redirections => :safe) do |r|
-        @user.picture = r.base_uri.to_s
-      end
-      if (@user.save)
-        sign_in(@user);
-        redirect_to ""
-      else
-        render json: @user.errors
-      end
     end
+
+    url = request.env['omniauth.auth'].info.image
+    url = url.gsub("­http","htt­ps")
+    url += "?type=large"
+    open(url, :allow_redirections => :safe) do |r|
+      @user.picture = r.base_uri.to_s
+    end
+    if (@user.save)
+      sign_in(@user);
+    else
+      render json: @user.errors
+    end
+
+    redirect_to ""
   end
 
   private
