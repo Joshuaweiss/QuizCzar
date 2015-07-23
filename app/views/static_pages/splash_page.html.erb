@@ -12,11 +12,16 @@
   <button class="sign-up-button">Sign Up</button>
 </figure>
 
+<%= render "user/new" %>
 
 <script>
   $('.sign-up-button').on("click", function(event){
     event.preventDefault()
-    window.location.href =  "<%= new_user_url %>"
+    var model = $("<div id="model">");
+    var content = $("<div id="model-content">")
+    content.html(_.template($("#SignUp").html());
+    model.add()
+    $("#root").
   });
 
   $('.sign-in-link').on("click", function(event){

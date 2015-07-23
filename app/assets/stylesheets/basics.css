@@ -33,7 +33,7 @@ ul {
   box-shadow: none;
 }
 
-.unstyled {
+a.unstyled {
   border: 0 !important;
   margin: 0 !important;
   padding: 0 !important;
