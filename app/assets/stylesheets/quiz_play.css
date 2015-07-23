@@ -1,8 +1,24 @@
-.quiz-play {
-  width: 400px;
-  margin: 50px auto;
+#root .quiz-play {
+  position: absolute;
+  height: 100%;
+  background-color: transparent;
+  overflow: auto;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.quiz-play > section {
   background-color: white;
-  padding: 40px;
+  padding: 40px 40px;
+  width: 400px;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.spacer {
+  height: 40px;
+  background-color: transparent;
+  display: block;
 }
 
 .quiz-play-title {
@@ -32,4 +48,8 @@
   font: inherit;
   color: white;
   margin-top: 20px;
+}
+
+.quiz-play button:hover {
+  background-color: rgb(63, 90, 241);
 }

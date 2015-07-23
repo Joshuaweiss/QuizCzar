@@ -1,9 +1,17 @@
-<h1 class="quiz-play-title"><%= quiz.escape("name") %></h1>
+<div class="spacer"></div>
 
-<form>
-  <% QuizCzar.Util.shuffle(quiz.questions()).each(function(question){ %>
-    <%= JST["play_quiz/question"]({question: question}) %>
-  <% }) %>
+<section>
 
-  <button>Submit</button>
-</form>
+  <h1 class="quiz-play-title"><%= quiz.escape("name") %></h1>
+
+  <form>
+    <% QuizCzar.Util.shuffle(quiz.questions()).each(function(question){ %>
+      <%= JST["play_quiz/question"]({question: question}) %>
+    <% }) %>
+
+    <button>Submit</button></div>
+  </form>
+
+</section>
+
+<div class="spacer"></div>

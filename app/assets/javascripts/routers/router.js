@@ -4,6 +4,7 @@ QuizCzar.Routers.Router = Backbone.Router.extend({
       this._model_leave_path = [];
 
       $("#root").on("click", "#model", this._dismiss_modal.bind(this));
+      $("#root").on("click", ".quiz-play", this._dismiss_modal.bind(this));
     },
     routes: {
       "" : "myQuizzes",
