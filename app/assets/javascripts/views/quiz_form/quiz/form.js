@@ -16,34 +16,48 @@ QuizCzar.Views.QuizForm = Backbone.CompositeView.extend({
       _quizShow: this
     }));
 
+    this.currentlySaving = false
+
     if (this.model.questions().first()) {
       this.chooseQuestion({id: this.model.questions().first().id})
     }
   },
   changeName: function() {
-    this._saving.saving();
     this.model.set({name: this.$(".quiz-name-edit").val()});
 
     var view = this;
 
-    var handleError = function(){
-      view = this;
-      setTimeout(function () {
-        view.model.save({},{
-          success: function() {
-            view._saving.saved();
-          },
-          error: handleError
-        });
-      }, 3000);
-    }.bind(this);
+    if (this.currentlySaving) return;
 
-    this.model.save({},{
-      success: function() {
-        this._saving.saved();
-      }.bind(this),
-      error: handleError
-    });
+    this._saving.saving();
+    this.currentlySaving = true;
+
+    setTimeout( function() {
+
+      var handleError = function(){
+        if (currentNum < this.saveNum) return;
+        view = this;
+        setTimeout(function () {
+          view.model.save({},{
+            success: function() {
+              this.saveNum++;
+              view._saving.saved();
+              this.currentlySaving = false;
+            },
+            error: handleError
+          });
+        }, 3000);
+      }.bind(this);
+
+      this.model.save({},{
+        success: function() {
+          this._saving.saved();
+          this.currentlySaving = false;
+        }.bind(this),
+        error: handleError
+      });
+
+    }.bind(this), 1000);
   },
   chooseQuestion: function(event){
     var question;
