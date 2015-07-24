@@ -14,10 +14,16 @@ QuizCzar.Views.AnswerForm = Backbone.View.extend({
     this._saving.saving();
 
     var handleError = function(){
+      view = this;
       setTimeout(function () {
-        this.model.save({error: handleError});
-      }, 500);
-    }.bind(this)
+        view.model.save({},{
+          success: function() {
+            view._saving.saved();
+          },
+          error: handleError
+        });
+      }, 3000);
+    }.bind(this);
 
     this.model.save({},{
       success: function() {

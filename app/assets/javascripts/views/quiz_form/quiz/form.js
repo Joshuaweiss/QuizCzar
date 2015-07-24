@@ -29,14 +29,14 @@ QuizCzar.Views.QuizForm = Backbone.CompositeView.extend({
     var handleError = function(){
       view = this;
       setTimeout(function () {
-        view.model.save({
+        view.model.save({},{
           success: function() {
             view._saving.saved();
           },
-          error: handleError.bind(view)
+          error: handleError
         });
-      }, 1);
-    }.bind(this)
+      }, 3000);
+    }.bind(this);
 
     this.model.save({},{
       success: function() {
