@@ -17,6 +17,7 @@ QuizCzar.Views.QuestionForm = Backbone.CompositeView.extend({
     this.model.set({question: this.$(".question-display").val() });
     //// Set not saved message on error
 
+    if (this.currentlySaving) return;
     this._saving.saving();
     this.currentlySaving = true;
 

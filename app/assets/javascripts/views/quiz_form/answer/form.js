@@ -17,6 +17,9 @@ QuizCzar.Views.AnswerForm = Backbone.View.extend({
   submit: function(){
 
     this.model.set({answer: this.$el.val()});
+
+    if (this.currentlySaving) return;
+
     this._saving.saving();
     this.currentlySaving = true;
 
