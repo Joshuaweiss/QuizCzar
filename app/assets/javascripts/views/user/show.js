@@ -20,6 +20,8 @@ QuizCzar.Views.UserShow = Backbone.CompositeView.extend({
     var formData = new FormData();
     formData.append("user[picture]", event.target.files[0]);
 
+    var spinner = new QuizCzar.Spinner();
+    spinner.place();
     $.ajax({
       url: "/api/users/" + this.model.id,
       method: "put",
@@ -30,7 +32,10 @@ QuizCzar.Views.UserShow = Backbone.CompositeView.extend({
         this.model.set(data, {parse: true});
         this.model.trigger("sync");
         this.render();
-      }.bind(this)
+      }.bind(this),
+      complete: function(){
+        spinner.remove();
+      }
     });
   },
   exit: function(){
