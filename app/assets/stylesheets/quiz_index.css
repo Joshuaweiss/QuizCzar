@@ -61,6 +61,7 @@
   top: 46%;
   left: 50%;
   transform: translate(-45%, -50%) rotate(45deg) ;
+  -webkit-transform: translate(-45%, -50%) rotate(45deg) ;
   display: block;
   font-weight: 300;
   color: rgb(83, 83, 83);
