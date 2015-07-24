@@ -21,7 +21,7 @@ QuizCzar.Views.AnswerForm = Backbone.View.extend({
     if (this.currentlySaving) return;
     this._saving.saving();
     this.currentlySaving = true;
-    this.saveNum = this.saveNum
+    this.saveNum = this.saveNum++;
 
     setTimeout( function() {
 
@@ -35,7 +35,6 @@ QuizCzar.Views.AnswerForm = Backbone.View.extend({
           this.currentlySaving = false;
           view.model.save({},{
             success: function() {
-              this.saveNum++;
               view._saving.saved();
             },
             error: handleError
@@ -46,7 +45,6 @@ QuizCzar.Views.AnswerForm = Backbone.View.extend({
       this.currentlySaving = false;
       this.model.save({},{
         success: function() {
-          this.saveNum++;
           this._saving.saved();
         }.bind(this),
         error: handleError
