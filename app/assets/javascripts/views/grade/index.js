@@ -6,18 +6,18 @@ QuizCzar.Views.GradeIndex = Backbone.View.extend({
   },
   render: function(){
     grades = this.collection.map(function(grade){
-              return QuizCzar.calculate_percentage(
-                parseInt(grade.get("correct_answers")),
-                parseInt(grade.get("number_of_questions"))
-              )
-            });
+               return QuizCzar.calculate_percentage(
+                 parseInt(grade.get("correct_answers")),
+                 parseInt(grade.get("number_of_questions"))
+               )
+             });
 
-    grades = grades.slice(Math.max(grades.length - 5, 1))
+    grades = grades.slice(0, Math.min(5, grades.length));
 
     dates = this.collection.map(function(grade){
                 return jQuery.format.prettyDate(Date.parse(grade.escape("created_at")));
               });
-    dates = dates.slice(Math.max(dates.length - 5, 1))
+    dates = dates.slice(0, Math.min(5, dates.length));
 
     var data = {
       labels: dates,

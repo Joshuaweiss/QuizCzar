@@ -1,6 +1,4 @@
 #root .quiz-play {
-  position: absolute;
-  height: 100%;
   background-color: transparent;
   overflow: auto;
   overflow-x: hidden;

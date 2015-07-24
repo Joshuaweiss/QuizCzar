@@ -1,6 +1,7 @@
 QuizCzar.Views.Confirmation = Backbone.View.extend({
   template: JST["confirmation"],
   className: "confirmation-view",
+  tagName: "section",
   initialize: function(options){
     this.title = options.title;
     this.message = options.message;

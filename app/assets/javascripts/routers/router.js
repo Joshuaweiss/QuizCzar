@@ -134,7 +134,9 @@ QuizCzar.Routers.Router = Backbone.Router.extend({
     },
     _place_model: function(view) {
       var model = $('<div id="model">')
-      model.html(view.render().$el);
+      model.append($('<div class="spacer">'));
+      model.append(view.render().$el);
+      model.append($('<div class="spacer">'));
       $("#root").append(model);
       this._modelView = view;
     },

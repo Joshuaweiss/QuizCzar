@@ -33,6 +33,7 @@
 
 .sign-in-link:hover, .sign-in-facebook:hover {
   background-color: rgb(76, 100, 235);
+  color: white;
 }
 
 

@@ -21,7 +21,7 @@ end
 catagorys = Hash.new { |hash,key| hash[key] = [] }
 
 # These code snippets use an open-source library. http://unirest.io/ruby
-(0...3).each do |topic_id|
+(0...topics.count).each do |topic_id|
   response = Unirest.get "https://pareshchouhan-trivia-v1.p.mashape.com/v1/getQuizQuestionsByCategory?categoryId=#{topic_id}&limit=20&page=1",
   headers:{
     "X-Mashape-Key" => "R4g1NTnlk7mshLVy1yqqmebQ88p0p1SX2DijsnBlBgRDvwpLUx",

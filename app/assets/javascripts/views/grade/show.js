@@ -1,6 +1,7 @@
 QuizCzar.Views.GradeShow = Backbone.CompositeView.extend({
   template: JST["grade/show"],
   className:"grade-show",
+  tagName:"section",
   initialize: function(){
     this.addSubview(
       ".grades-index-info",

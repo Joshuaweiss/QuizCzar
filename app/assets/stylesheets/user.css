@@ -3,7 +3,8 @@
   padding: 30px;
   overflow-y: auto;
   overflow-x: hidden;
-  max-height: 800px;
+  top: 0;
+  bottom: 0;
 }
 
 .user-show > img{

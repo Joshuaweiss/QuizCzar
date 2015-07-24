@@ -1,5 +1,6 @@
 QuizCzar.Models.User = Backbone.Model.extend({
   urlRoot: "/api/users",
+  className: "user-show",
   parse: function(data) {
     this.quizzes().set(data.quizzes, {parse: true});
     delete data.quizzes;
