@@ -38,3 +38,12 @@ a.unstyled {
   margin: 0 !important;
   padding: 0 !important;
 }
+
+button:hover {
+  background-color: rgb(76, 100, 235);
+  color: white;
+}
+
+button:active {
+  top: 1px;
+}

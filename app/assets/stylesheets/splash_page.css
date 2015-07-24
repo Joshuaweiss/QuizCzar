@@ -70,14 +70,9 @@
 }
 
 .sign-in-form button {
-  padding: 8px 15px;
-  border: 0;
-  background-color: rgb(98, 122, 255);
-  color: white;
-}
-
-.sign-in-form button:hover {
-  background-color: rgb(76, 100, 235);
+  float: left;
+  margin: 0;
+  margin-right: 8px;
 }
 
 .sign-up-button {

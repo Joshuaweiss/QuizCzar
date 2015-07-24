@@ -19,10 +19,6 @@
   font-weight: 300;
 }
 
-.delete-quiz-button:hover {
-  color: rgb(143, 143, 143);
-}
-
 .save-message {
   padding-top: 40px;
   padding-left: 20px;

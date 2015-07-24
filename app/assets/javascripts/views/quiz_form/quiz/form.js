@@ -23,10 +23,19 @@ QuizCzar.Views.QuizForm = Backbone.CompositeView.extend({
   changeName: function() {
     this._saving.saving();
     this.model.set({name: this.$(".quiz-name-edit").val()});
+
+    var view = this;
+
     var handleError = function(){
+      view = this;
       setTimeout(function () {
-        this.model.save({error: handleError});
-      }, 500);
+        view.model.save({
+          success: function() {
+            view._saving.saved();
+          },
+          error: handleError.bind(view)
+        });
+      }, 1);
     }.bind(this)
 
     this.model.save({},{

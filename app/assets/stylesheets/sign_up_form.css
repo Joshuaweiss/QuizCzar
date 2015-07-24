@@ -1,28 +1,20 @@
-.sign-up {
-  position: absolute;
-  display: block;
-  top: 20%;
-  left: 50%;
-  transform: translate(-50%);
-  -webkit-transform: translate(-50%);
-  width: 500px;
+
+.sign-up-page > h1{
+  margin: 20px;
+  font-size: 30px;
+  font-weight: 100;
 }
 
-.sign-up > h1{
+
+.sign-up-page > ul{
   margin: 20px;
 }
 
-
-.sign-up > ul{
-  margin: 20px;
+.sign-up-page label {
+  display: block;
+  margin: 30px
 }
 
-.sign-up-form label {
-  display: block;
-  margin: 15px
-}
-
-.sign-up-form button {
-  display: block;
-  margin: 15px
+.sign-up-page {
+ width: 300px;
 }

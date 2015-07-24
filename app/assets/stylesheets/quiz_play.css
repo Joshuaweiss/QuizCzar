@@ -39,15 +39,8 @@
 }
 
 .quiz-play button {
-  background-color: rgb(98, 122, 255);
-  padding: 8px 15px;
-  display: block;
-  border: 0;
-  font: inherit;
-  color: white;
+  margin-left: 0;
   margin-top: 20px;
-}
-
-.quiz-play button:hover {
-  background-color: rgb(63, 90, 241);
+  margin-bottom: 0;
+  font-size: 16px;
 }

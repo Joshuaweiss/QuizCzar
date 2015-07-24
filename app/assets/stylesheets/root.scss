@@ -20,7 +20,7 @@ body {
 .above-content {
   top: 0px;
   position: fixed;
-  width: 880px;
+  width: 850px;
   z-index: 1000;
   background-color: white;
 }
@@ -123,27 +123,22 @@ body {
 }
 
 .confirmation-view {
-  padding: 30px;
+  padding: 20px;
   width: 400px;
 }
 
 .confirmation-view h1 {
   font-size: 30px;
-  margin-bottom: 70px;
+}
+
+.confirmation-view p {
+  min-height: 80px;
+  padding-left: 8px;
 }
 
 .confirmation-view button {
-  background-color: rgb(98, 122, 255);
-  padding: 8px 15px;
-  display: block;
-  border: 0;
-  font: inherit;
-  color: white;
-  margin-top: 20px;
-}
-
-.confirmation-view button:hover {
-  background-color: rgb(75, 99, 233);
+  margin-left: 8px;
+  margin-bottom: 0;
 }
 
 .user-bar-items {
@@ -188,6 +183,7 @@ a {
   box-sizing: border-box;
   position: relative;
   display: inline;
+  transition: top 0.2s;
 }
 
 .user-info-items a {
@@ -200,9 +196,48 @@ a:hover{
   color: rgb(10, 163, 249);
 }
 
+a:active {
+
+  top: 2px;
+}
+
+
+button {
+  font: inherit;
+
+  border: none;
+  overflow: none;
+  outline: none;
+
+  resize: none;
+
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+
+  display: block;
+  margin: 20px;
+  font: inherit;
+  font-size: 12px;
+  position: relative;
+  border: 0;
+  color: white;
+  background-color: rgb(98, 122, 255);
+  padding: 8px 15px;
+  display: block;
+  transition: top 0.2s;
+}
+
 .user-info-item > h1{
   font-size: 18px;
   padding: 4px 10px;
   font-weight: 300;
   float: left;
+}
+
+.sign-up-page {
+  width: 600px;
+  display: block;
+  margin: auto;
+  padding: 30px;
 }

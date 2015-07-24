@@ -23,9 +23,11 @@
   $('.sign-up-button').on("click", function(event){
     event.preventDefault()
     var model = $('<div id="model">');
-    var content = $('<div id="model-content">');
+    model.append($('<div class="spacer">'));
+    var content = $('<section class="sign-up-page">');
     content.html(template({user: user, errors: errors}));
     model.append(content)
+    model.append($('<div class="spacer">'));
     $("body").append(model);
   });
 
