@@ -46,7 +46,6 @@ body {
 #navbar logo{
   color: rgb(50, 50, 50);
   background-color: #54aef7;
-  border-bottom: 1px solid white;
   color: white;
   display: block;
   padding: 14px;
@@ -94,7 +93,7 @@ body {
 }
 
 .bar-items li:hover{
-  background-color: #e7e7e7;
+  /*background-color: #e7e7e7;*/
 }
 
 .page-header {
@@ -158,14 +157,21 @@ body {
   padding: 0 0 70px;
   background-color: #f5f5f5;
   width: 100%;
-  border-top: 1px solid rgb(227, 227, 227);
   padding-top: 0px;
 }
 
 .user-info-item {
   max-height: 80px;
   overflow: hidden;
-  border-bottom: 1px solid rgb(227, 227, 227);
+  transition: box-shadow 0.2s;
+  position: relative;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.20);
+}
+
+.user-info-item:hover {
+  top: 1px;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.0);
+  background-color: rgb(240, 240, 240);
 }
 
 .link {
@@ -185,18 +191,18 @@ body {
 a {
   padding: 4px 8px;
   box-sizing: border-box;
+  position: relative;
+  display: inline;
 }
 
 .user-info-items a {
   padding: 0;
   border: 0;
   margin: 0;
-  display: block;
 }
 
 a:hover{
-  background-color: rgba(0, 0, 0, 0.05);
-  border-radius: 1px;
+  color: rgb(10, 163, 249);
 }
 
 .user-info-item > h1{
