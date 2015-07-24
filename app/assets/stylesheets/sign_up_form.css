@@ -1,20 +1,43 @@
 
 .sign-up-page > h1{
-  margin: 20px;
-  font-size: 30px;
+  font-size: 40px;
   font-weight: 100;
+  margin-bottom: 30px;
 }
 
 
 .sign-up-page > ul{
-  margin: 20px;
+}
+
+.sign-up-page input{
+  margin: 0;
+  padding: 0;
+  display: block;
+  font: inherit;
+  outline: none;
+  font-size: 20px;
+  border: 1px solid #ccc;
+}
+
+.sign-up-page input:focus {
+  border: 1px solid rgb(98, 122, 255);
 }
 
 .sign-up-page label {
+  margin: 0;
+  padding: 0;
+  color: black;
   display: block;
-  margin: 30px
+  font-size: 14px;
+  margin-bottom: 20px;
 }
 
 .sign-up-page {
- width: 300px;
+ width: 250px;
+}
+
+.sign-up-page button {
+  margin-left: 0;
+  margin-top: 40px;
+  margin-bottom: 0;
 }

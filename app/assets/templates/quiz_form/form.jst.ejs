@@ -1,5 +1,7 @@
 <section class="above-content group">
-  <textarea class="quiz-name-edit unstyled"><%= quiz.escape("name") %></textarea>
+  <textarea
+    class="quiz-name-edit unstyled"
+    placeholder="Quiz Name"><%= quiz.escape("name") %></textarea>
   <a href="#quizzes/<%= quiz.id %>/delete" class="delete-quiz-button">Delete Quiz</a>
   <section class="save-message"></section>
 </section>

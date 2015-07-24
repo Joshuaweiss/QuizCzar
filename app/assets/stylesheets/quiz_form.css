@@ -98,11 +98,17 @@
   font-size: 16px;
   font-weight: bold;
   position: relative;
-    font-weight: 300;
+  font-weight: 300;
+  transition: top 0.2s;
 }
 
 .question-thumbs .add-question-button:hover {
   background-color: rgb(70, 227, 56);
+}
+
+.question-thumbs .add-question-button:active {
+  background-color: rgb(70, 227, 56);
+  top: 1px;
 }
 
 .question-thumbs .add-question-button::before {
@@ -201,4 +207,13 @@
 
 .question-display:focus, .question-display:hover{
   background-color: rgb(245, 245, 245);
+}
+
+
+textarea::-webkit-input-placeholder,
+.answers textarea:nth-child(1):-moz-placeholder,  /* older Firefox*/
+.answers textarea:nth-child(1)::-moz-placeholder,  /* Firefox 19+ */
+.answers textarea:nth-child(1):-ms-input-placeholder,
+.answers textarea:nth-child(1):placeholder{
+  color: rgb(0, 0, 0);
 }

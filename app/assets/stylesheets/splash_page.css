@@ -86,11 +86,16 @@
   background-color: rgb(17, 238, 139);
   border: 0;
   color: white;
-  font-size: 20px;
+  font-size: 22px;
   letter-spacing: 2px;
   font-weight: 300;
   transform: translate(-50%);
   -webkit-transform: translate(-50%);
+}
+
+.sign-up-button:active {
+  bottom: 12.8%;
+  top: auto;
 }
 
 .sign-up-button:hover {

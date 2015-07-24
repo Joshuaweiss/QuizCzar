@@ -8,6 +8,11 @@ QuizCzar.Views.AnswerForm = Backbone.View.extend({
   events: {
     "input" : "submit"
   },
+  attributes: function(){
+    return {
+      "placeholder": (this.model.get("correct") ? "Correct Answer" : "Incorrect Answer")
+    }
+  },
   submit: function(){
 
     this.model.set({answer: this.$el.val()});
