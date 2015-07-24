@@ -1,5 +1,4 @@
 require 'unirest'
-require 'byebug'
 require 'cgi'
 
 def remove_noise(text)
