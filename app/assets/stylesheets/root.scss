@@ -58,7 +58,7 @@ body {
   height: 30px;
   background-color: white;
 
-  -webkit-mask-image: url("http://localhost:3000/assets/QuizCzarHorizontal-b0b1121ad84a728063a04f2709027fbace1f175ee49d6fc0eca5a36aed3f3219.svg");
+  -webkit-mask-image: url(asset-path("QuizCzarHorizontal.svg"));
   -webkit-mask-size: 100% 100%;
 }
 
