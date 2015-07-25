@@ -9,6 +9,11 @@
   <figure data-mask="<%= asset_url("QuizCzarHorizontal.svg")%>" ></figure>
 </script>
 
+<script type="template" id="facebook-login-button">
+  <%= button_to "Log in with Facebook", "/auth/facebook", class: "sign-in-facebook" %>
+</script>
+
+
 <script>
   $(document).ready(function(){
     var $rootEl = $("#root")

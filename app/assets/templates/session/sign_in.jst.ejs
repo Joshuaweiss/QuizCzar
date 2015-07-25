@@ -1,0 +1,27 @@
+<h1 class="sign-in-header">Sign In<h1>
+
+<h5 class="sign-in-fail"></h5>
+
+<label>
+  Email
+  <input type="string" name="user[email]">
+</label>
+
+<label>
+  Password
+  <input type="password" name="user[password]">
+</label>
+
+<section class="buttons">
+
+  <button class="sign-in-button">
+    Log In
+  </button>
+
+  <%= _.template($("#facebook-login-button").html())() %>
+
+  <button class="guest-sign-in-button">
+    Guest Log In
+  </button>
+
+<section>

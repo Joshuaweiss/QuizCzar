@@ -7,8 +7,9 @@ QuizCzar.Routers.Router = Backbone.Router.extend({
       $("#root").on("click", ".quiz-play", this._dismiss_modal.bind(this));
     },
     routes: {
-      "" : "myQuizzes",
+      "" : "signIn",
       "users/:id" : "showUser",
+      "quizzes" : "myQuizzes",
       "quizzes/:id/edit" : "editQuiz",
       "quizzes/:id/delete" : "deleteQuiz",
       "quizzes/:id/play" : "playQuiz",
@@ -17,10 +18,20 @@ QuizCzar.Routers.Router = Backbone.Router.extend({
       "quizzes/search" : "searchQuizzes",
       "quizzes/:id" : "showQuiz"
     },
+    redirectUnlessLoggedIn: function(callback){
+      if (!this.current_user.id) {
+        this.SignIn();
+      } else {
+        callback();
+      }
+    },
+    signIn: function(){
+      var view = new QuizCzar.Views.SignIn();
+      this._place_model(view);
+    },
     showUser: function(id){
       var user = QuizCzar.recentlyViewedUsers.getOrFetch(id);
       var view = new QuizCzar.Views.UserShow({model: user});
-      console.log(user.cid + " ROUTER");
       this._place_model(view.render());
     },
     myQuizzes: function() {

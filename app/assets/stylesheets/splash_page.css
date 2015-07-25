@@ -1,54 +1,28 @@
-.splash-image {
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  box-sizing: border-box;
-  padding: 30px;
-  margin: auto;
-  background-size: cover;
-}
+
 
 .hidden {
   display: none;
 }
 
-.splash-image > img{
-  width: 120px;
-  float: left;
+
+
+.sign-in-header {
+  font-size: 30px;
+  font-weight: 100;
+  margin-bottom: 30px;
 }
 
-.splash-nav {
-  position: relative;
-}
-
-
-.sign-in-link, .sign-in-facebook{
-  float: right;
-  position: relative;
-  color: white;
-  background-color: rgb(98, 122, 255);
-  padding: 8px 15px;
-  display: block;
-}
-
-.sign-in-link:hover, .sign-in-facebook:hover {
-  background-color: rgb(76, 100, 235);
-  color: white;
-}
-
-
-.sign-in-form {
+.sign-in {
   background-color: white;
+  margin: auto;
   padding: 20px 25px;
-  right: 0px;
-  top: 50px;
-  position: absolute;
+  width: 250px;
 }
 
 .sign-in-form label {
   margin: 0;
   padding: 0;
-  margin-bottom: 18px;
+  margin-bottom: 25px;
   color: black;
   display: block;
   font-size: 14px;
@@ -69,35 +43,10 @@
   border: 1px solid #ccc;
 }
 
-.sign-in-form button {
+.sign-in-form button,
+.sign-in .sign-in-facebook{
   float: left;
   margin: 0;
   margin-right: 8px;
-}
-
-.sign-up-button {
-  font: inherit;
-  display: block;
-  position: absolute;
-  width: 200px;
-  height: 50px;
-  bottom: 13%;
-  left: 50%;
-  background-color: rgb(17, 238, 139);
-  border: 0;
-  color: white;
-  font-size: 22px;
-  letter-spacing: 2px;
-  font-weight: 300;
-  transform: translate(-50%);
-  -webkit-transform: translate(-50%);
-}
-
-.sign-up-button:active {
-  bottom: 12.8%;
-  top: auto;
-}
-
-.sign-up-button:hover {
-  background-color: rgb(30, 228, 114);
+  margin-top: 20px;
 }

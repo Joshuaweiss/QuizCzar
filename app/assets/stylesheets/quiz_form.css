@@ -12,6 +12,14 @@
   overflow-x:hidden;
 }
 
+.above-content {
+  top: 0px;
+  position: fixed;
+  width: 850px;
+  z-index: 1000;
+  background-color: white;
+}
+
 .delete-quiz-button {
   margin-right: 20px;
   float: right;

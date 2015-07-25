@@ -7,7 +7,6 @@ QuizCzar.Collections.Users = Backbone.Collection.extend({
     if (!user) {
       user = new QuizCzar.Models.User({id: id});
     }
-    console.log(user.cid + " USERS");
     user.fetch({
       success: function(){
         users.add(user);
