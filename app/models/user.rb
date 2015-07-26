@@ -38,12 +38,16 @@ class User < ActiveRecord::Base
   attr_reader :password
 
   def self.guest_user
-    User.create!({
+    user = User.create!({
       name: "Guest User",
       password: SecureRandom.urlsafe_base64(15),
       guest: true,
       email: ""
     })
+    quiz = user.quizzes.create!
+    question = quiz.questions.create!
+
+    user
   end
 
   def self.new_session_token

@@ -7,7 +7,7 @@ QuizCzar.Routers.Router = Backbone.Router.extend({
       $("#root").on("click", ".quiz-play", this._dismiss_modal.bind(this));
     },
     routes: {
-      "" : "myQuizzes",
+      "" : "root",
       "users/:id" : "showUser",
       "quizzes" : "myQuizzes",
       "quizzes/:id/edit" : "editQuiz",
@@ -17,16 +17,25 @@ QuizCzar.Routers.Router = Backbone.Router.extend({
       "quizzes/new" : "newQuiz",
       "quizzes/search" : "searchQuizzes",
       "quizzes/:id" : "showQuiz",
+      "logOut" : "logOut",
       "*notFound" : "searchQuizzes",
+    },
+    root: function(){
+      var router = this;
+      this.$rootEl.html("");
+      this.redirectUnlessLoggedIn(function(){
+        router.myQuizzes();
+      });
     },
     redirectUnlessLoggedIn: function(callback){
       if (!QuizCzar.current_user.id) {
-        this.signIn(callback);
+        Backbone.history.navigate("logIn");
+        this.logIn(callback);
       } else {
         callback();
       }
     },
-    signIn: function(callback){
+    logIn: function(callback){
       var view = new QuizCzar.Views.SignIn({callback: callback});
       this._place_model(view);
     },
@@ -152,6 +161,16 @@ QuizCzar.Routers.Router = Backbone.Router.extend({
           });
         }
       }.bind(this));
+    },
+    logOut: function(){
+      $.ajax({
+        url: "/api/session",
+        method: "delete",
+        success: function(data){
+          QuizCzar.current_user.clear();
+          Backbone.history.navigate("", {trigger: true});
+        }
+      });
     },
     _dismiss_modal: function(event) {
       if (event.currentTarget === event.target)

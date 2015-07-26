@@ -2,7 +2,7 @@
 
 
 <script id="signout-button" type="template">
-  <%= link_to "Sign Out", {controller: :sessions, action: 'destroy'}, method: :delete, class: "signout-button" %>
+  <%= link_to "Sign Out", "/api/session", method: :delete, class: "signout-button" %>
 </script>
 
 <script id="logo" type="template">

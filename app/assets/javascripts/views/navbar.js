@@ -7,10 +7,11 @@ QuizCzar.Views.Navbar = Backbone.View.extend({
     this.listenTo(QuizCzar.current_user, "sync change:picture_url", this.render);
   },
   events: {
-    "click .signout" : "logout"
+    "click .signout" : "logout",
+    "click .log-out" : "logOut"
   },
-  logout: function(){
-    window.location.href = "/signout"
+  logOut: function(){
+    Backbone.history.navigate("logOut",{trigger: true});
   },
   render: function(){
     this.$el.html(this.template({user: this.model}));
