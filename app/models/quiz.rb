@@ -3,7 +3,7 @@
 # Table name: quizzes
 #
 #  id         :integer          not null, primary key
-#  name       :string           not null
+#  name       :string
 #  user_id    :integer          not null
 #  created_at :datetime
 #  updated_at :datetime

@@ -9,11 +9,17 @@ class Api::SessionsController < ApplicationController
     end
   end
 
+  def guest_sign_in
+    @user = User.guest_user
+    sign_in(@user)
+    render "api/user/show"
+  end
+
   def create
-    user = User.find_by_credentials(params[:user][:email], params[:user][:password])
-    if (user)
-      sign_in(user)
-      render json: {}
+    @user = User.find_by_credentials(params[:user][:email], params[:user][:password])
+    if (@user)
+      sign_in(@user)
+      render "api/user/show"
     else
       render json: {}, status: :unprocessable_entity
     end

@@ -3,7 +3,7 @@
 # Table name: questions
 #
 #  id       :integer          not null, primary key
-#  question :string           not null
+#  question :string
 #  quiz_id  :integer          not null
 #
 

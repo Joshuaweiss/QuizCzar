@@ -3,10 +3,10 @@
 class SessionsController < ApplicationController
 
   def create
-    user = User.find_by_credentials(params[:user][:email], params[:user][:password])
+    @user = User.find_by_credentials(params[:user][:email], params[:user][:password])
     if (user)
-      sign_in(user)
-      render json: {}
+      sign_in(@user)
+      render "api/users/show"
     else
       render json: {}, status: :unprocessable_entity
     end

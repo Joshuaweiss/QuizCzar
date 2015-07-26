@@ -1,9 +1,6 @@
 <h1 class="sign-in-header">Sign In<h1>
 
-<ul class="sign-in-fail">
-  <% errors.forEach(function(error){ %>
-    <li><%= error %></li>
-  <% }) %>
+<ul class="errors">
 </ul>
 
 <form class="sign-in-info">
@@ -16,7 +13,6 @@
     Password
     <input type="password" name="user[password]">
   </label>
-
 </form>
 
 <section class="buttons">

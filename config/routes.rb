@@ -15,6 +15,7 @@ Rails.application.routes.draw do
     resources :questions, only: [:update, :create, :destroy]
     resources :answers, only: [:update, :create]
     resource :session
+    post "session/guest", to: "sessions#guest_sign_in"
     resources :users, only: [:show, :update]
   end
   get '/auth/:provider/callback', to: 'sessions#auth_create'

@@ -11,6 +11,7 @@
 #  picture_content_type :string
 #  picture_file_size    :integer
 #  picture_updated_at   :datetime
+#  guest                :boolean          default(FALSE), not null
 #
 
 require 'rails_helper'

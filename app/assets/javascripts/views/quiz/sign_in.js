@@ -1,11 +1,11 @@
 QuizCzar.Views.SignIn = Backbone.View.extend({
   initialize: function(options){
     this.callback = options.callback;
-    this.errors = [];
   },
   template: JST["session/sign_in"],
   events: {
-    "click .sign-in-button" : "signIn"
+    "click .sign-in-button" : "signIn",
+    "click .guest-sign-in-button" : "guestSignIn"
   },
   tagName: "section",
   className: "sign-in group",
@@ -17,14 +17,23 @@ QuizCzar.Views.SignIn = Backbone.View.extend({
       success: function(data){
         QuizCzar.current_user.set(data);
         if (QuizCzar.current_user.id) {
-          this.errors = [];
           this.$el.remove();
           this.callback();
         }
-      },
+      }.bind(this),
       error: function(data){
-        this.errors = ["Invalid Credentials"];
-        this.render();
+        this.$(".errors").html("Invalid Credentials");
+      }.bind(this)
+    });
+  },
+  guestSignIn: function(){
+    $.ajax({
+      url: "/api/session/guest",
+      method: "post",
+      success: function(data){
+        QuizCzar.current_user.set(data);
+        this.$el.remove();
+        this.callback();
       }.bind(this)
     });
   },

@@ -11,6 +11,7 @@
 #  picture_content_type :string
 #  picture_file_size    :integer
 #  picture_updated_at   :datetime
+#  guest                :boolean          default(FALSE), not null
 #
 
 include BCrypt
@@ -36,6 +37,15 @@ class User < ActiveRecord::Base
 
   attr_reader :password
 
+  def self.guest_user
+    User.create!({
+      name: "Guest User",
+      password: SecureRandom.urlsafe_base64(15),
+      guest: true,
+      email: ""
+    })
+  end
+
   def self.new_session_token
     SecureRandom.urlsafe_base64
   end
@@ -48,7 +58,7 @@ class User < ActiveRecord::Base
   end
 
   def has_auth_or_email
-    unless (auths.size > 0) || email.presence
+    unless guest || (auths.size > 0 || email.presence)
       errors.add(:email, "accounts must have an Email");
     end
   end
