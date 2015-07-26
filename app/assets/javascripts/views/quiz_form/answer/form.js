@@ -5,7 +5,6 @@ QuizCzar.Views.AnswerForm = Backbone.View.extend({
     this.currentlySaving = false;
   },
   tagName: "textarea",
-  className: "unstyled",
   events: {
     "input" : "submit"
   },
