@@ -16,7 +16,8 @@ QuizCzar.Routers.Router = Backbone.Router.extend({
       "quizzes/:quiz_id/grades" : "showGrade",
       "quizzes/new" : "newQuiz",
       "quizzes/search" : "searchQuizzes",
-      "quizzes/:id" : "showQuiz"
+      "quizzes/:id" : "showQuiz",
+      "*notFound" : "searchQuizzes",
     },
     redirectUnlessLoggedIn: function(callback){
       if (!QuizCzar.current_user.id) {

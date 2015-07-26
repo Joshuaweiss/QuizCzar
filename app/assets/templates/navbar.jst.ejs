@@ -7,12 +7,16 @@
   <li><a href="#quizzes/new">Make Quiz</a></li>
 </ul>
 
-<ul class="user-bar-items bar-items">
-  <a class="unstyled" href="#users/<%= user.id %>">
-    <li class="user-info-item group">
-      <img src="<%= user.escape("picture_url") %>">
-      <h1><%= user.escape("name")%></h1>
-    </li>
-  </a>
-  <li class="signout"></li>
-</ul>
+<% if (user.id) { %>
+
+  <ul class="user-bar-items bar-items">
+    <a class="unstyled" href="#users/<%= user.id %>">
+      <li class="user-info-item group">
+        <img src="<%= user.escape("picture_url") %>">
+        <h1><%= user.escape("name")%></h1>
+      </li>
+    </a>
+    <li class="signout"></li>
+  </ul>
+
+<% } %>
