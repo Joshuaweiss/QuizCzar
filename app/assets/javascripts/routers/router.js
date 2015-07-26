@@ -7,7 +7,7 @@ QuizCzar.Routers.Router = Backbone.Router.extend({
       $("#root").on("click", ".quiz-play", this._dismiss_modal.bind(this));
     },
     routes: {
-      "" : "searchQuizzes",
+      "" : "myQuizzes",
       "users/:id" : "showUser",
       "quizzes" : "myQuizzes",
       "quizzes/:id/edit" : "editQuiz",
@@ -49,7 +49,7 @@ QuizCzar.Routers.Router = Backbone.Router.extend({
           collection: QuizCzar.current_user.quizzes()
         });
         this._swap_views(view);
-      }.bing(this));
+      }.bind(this));
     },
     searchQuizzes: function() {
       this.redirectUnlessLoggedIn(function(){
