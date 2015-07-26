@@ -7,7 +7,7 @@ QuizCzar.Routers.Router = Backbone.Router.extend({
       $("#root").on("click", ".quiz-play", this._dismiss_modal.bind(this));
     },
     routes: {
-      "" : "signIn",
+      "" : "searchQuizzes",
       "users/:id" : "showUser",
       "quizzes" : "myQuizzes",
       "quizzes/:id/edit" : "editQuiz",
@@ -19,119 +19,138 @@ QuizCzar.Routers.Router = Backbone.Router.extend({
       "quizzes/:id" : "showQuiz"
     },
     redirectUnlessLoggedIn: function(callback){
-      if (!this.current_user.id) {
-        this.SignIn();
+      if (!QuizCzar.current_user.id) {
+        this.signIn(callback);
       } else {
         callback();
       }
     },
-    signIn: function(){
-      var view = new QuizCzar.Views.SignIn();
+    signIn: function(callback){
+      var view = new QuizCzar.Views.SignIn({callback: callback});
       this._place_model(view);
     },
     showUser: function(id){
-      var user = QuizCzar.recentlyViewedUsers.getOrFetch(id);
-      var view = new QuizCzar.Views.UserShow({model: user});
-      this._place_model(view.render());
+      this.redirectUnlessLoggedIn(function(){
+        var user = QuizCzar.recentlyViewedUsers.getOrFetch(id);
+        var view = new QuizCzar.Views.UserShow({model: user});
+        this._place_model(view.render());
+      }.bind(this));
     },
     myQuizzes: function() {
-      QuizCzar.current_user.quizzes().fetch({reset: true});
-      var view = new QuizCzar.Views.QuizIndex({
-        viewOptions: {
-          title: "My Quizzes",
-          edit: true,
-          delete: true
-        },
-        collection: QuizCzar.current_user.quizzes()
-      });
-      this._swap_views(view);
+      this.redirectUnlessLoggedIn(function(){
+        QuizCzar.current_user.quizzes().fetch({reset: true});
+        var view = new QuizCzar.Views.QuizIndex({
+          viewOptions: {
+            title: "My Quizzes",
+            edit: true,
+            delete: true
+          },
+          collection: QuizCzar.current_user.quizzes()
+        });
+        this._swap_views(view);
+      }.bing(this));
     },
     searchQuizzes: function() {
-      var quizSearch = new QuizCzar.Collections.Quizzes();
-      quizSearch.fetch();
-      var view = new QuizCzar.Views.QuizSearch({collection: quizSearch});
-      this._swap_views(view);
+      this.redirectUnlessLoggedIn(function(){
+        var quizSearch = new QuizCzar.Collections.Quizzes();
+        quizSearch.fetch();
+        var view = new QuizCzar.Views.QuizSearch({collection: quizSearch});
+        this._swap_views(view);
+      }.bind(this));
     },
     showQuiz: function(id) {
-      var router = this;
-      var quiz = QuizCzar.recentlyViewedQuizzes.getOrFetch(id);
-      var view = new QuizCzar.Views.QuizShow({model: quiz});
-      this._swap_views(view);
+      this.redirectUnlessLoggedIn(function(){
+        var router = this;
+        var quiz = QuizCzar.recentlyViewedQuizzes.getOrFetch(id);
+        var view = new QuizCzar.Views.QuizShow({model: quiz});
+        this._swap_views(view);
+      }.bind(this));
     },
     newQuiz: function() {
-      var router = this;
-      var quiz = new QuizCzar.Models.Quiz({})
-      quiz.save({},{
-        success: function() {
-          var view = new QuizCzar.Views.QuizForm({model: quiz});
-          router._swap_views(view);
-        }
-      })
+      this.redirectUnlessLoggedIn(function(){
+        var router = this;
+        var quiz = new QuizCzar.Models.Quiz({})
+        quiz.save({},{
+          success: function() {
+            var view = new QuizCzar.Views.QuizForm({model: quiz});
+            router._swap_views(view);
+          }
+        })
+      }.bind(this));
     },
     editQuiz: function(id) {
-      var router = this;
-      var quiz = QuizCzar.current_user.quizzes().getOrFetch(id);
+      this.redirectUnlessLoggedIn(function(){
+        var router = this;
+        var quiz = QuizCzar.current_user.quizzes().getOrFetch(id);
 
-      quiz.fetch({
-        success: function() {
-          var view = new QuizCzar.Views.QuizForm({model: quiz});
-          router._swap_views(view);
-        }
-      })
+        quiz.fetch({
+          success: function() {
+            var view = new QuizCzar.Views.QuizForm({model: quiz});
+            router._swap_views(view);
+          }
+        })
+      }.bind(this));
     },
     deleteQuiz: function(id) {
-      quiz = QuizCzar.current_user.quizzes().getOrFetch(id)
+      this.redirectUnlessLoggedIn(function(){
 
-      var deleteQuiz = function() {
-        quiz.destroy({
-          success: function(){
-            Backbone.history.navigate("#",{trigger: true});
-          }
-        });
-      };
+        quiz = QuizCzar.current_user.quizzes().getOrFetch(id)
 
-      var cancel = function() {
-        window.history.back();
-      };
+        var deleteQuiz = function() {
+          quiz.destroy({
+            success: function(){
+              Backbone.history.navigate("#",{trigger: true});
+            }
+          });
+        };
 
-      var view = new QuizCzar.Views.Confirmation({
-        title: ("Delete " + '"' + quiz.escape("name") + '"'),
-        message: "Are you sure?",
-        button_title: "Delete",
-        confirm: deleteQuiz,
-        leave: cancel
-      })
+        var cancel = function() {
+          window.history.back();
+        };
 
-      this._place_model(view);
+        var view = new QuizCzar.Views.Confirmation({
+          title: ("Delete " + '"' + quiz.escape("name") + '"'),
+          message: "Are you sure?",
+          button_title: "Delete",
+          confirm: deleteQuiz,
+          leave: cancel
+        })
+
+        this._place_model(view);
+      }.bind(this));
     },
     playQuiz: function(id) {
-      var router = this;
-      QuizCzar.recentlyViewedQuizzes.getOrFetch(id,function(quiz){
-        var view = new QuizCzar.Views.QuizPlay({model: quiz});
-        router._place_model(view, {hideNav: true, background: "black"});
-      });
+      this.redirectUnlessLoggedIn(function(){
+        var router = this;
+        QuizCzar.recentlyViewedQuizzes.getOrFetch(id,function(quiz){
+          var view = new QuizCzar.Views.QuizPlay({model: quiz});
+          router._place_model(view, {hideNav: true, background: "black"});
+        });
+      }.bind(this));
     },
     showGrade: function(quiz_id) {
-      this.showQuiz(quiz_id);
-      var router = this;
+      this.redirectUnlessLoggedIn(function(){
+        this.showQuiz(quiz_id);
+        var router = this;
 
-      ////Check if grades are already loaded from quiz play
-      if (QuizCzar.lastGrades) {
-        var view = new QuizCzar.Views.GradeShow({
-          collection: QuizCzar.lastGrades
-        })
-        this._place_model(view);
-        QuizCzar.lastGrades = undefined;
-      } else {
-        QuizCzar.lastGrades = new QuizCzar.Collections.Grades({
-          quiz: QuizCzar.recentlyViewedQuizzes.getOrFetch(quiz_id)
-        })
-        QuizCzar.lastGrades.fetch({
-          success: function(){
-            router.showGrade(quiz_id);
-          }
-        });
-      }
+        ////Check if grades are already loaded from quiz play
+        if (QuizCzar.lastGrades) {
+          var view = new QuizCzar.Views.GradeShow({
+            collection: QuizCzar.lastGrades
+          })
+          this._place_model(view);
+          QuizCzar.lastGrades = undefined;
+        } else {
+          QuizCzar.lastGrades = new QuizCzar.Collections.Grades({
+            quiz: QuizCzar.recentlyViewedQuizzes.getOrFetch(quiz_id)
+          })
+          QuizCzar.lastGrades.fetch({
+            success: function(){
+              router.showGrade(quiz_id);
+            }
+          });
+        }
+      }.bind(this));
     },
     _dismiss_modal: function(event) {
       if (event.currentTarget === event.target)

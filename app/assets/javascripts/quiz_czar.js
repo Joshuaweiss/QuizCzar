@@ -9,7 +9,6 @@ window.QuizCzar = {
     $.ajax({
       url: "/api/session",
       success: function(data){
-
         QuizCzar.current_user = new QuizCzar.Models.User();
         QuizCzar.recentlyViewedUsers.add(QuizCzar.current_user);
         QuizCzar.current_user.set(QuizCzar.current_user.parse(data));
@@ -25,7 +24,6 @@ window.QuizCzar = {
 
         new QuizCzar.Routers.Router({$rootEl: contentView});
         Backbone.history.start();
-
       }
     })
   }

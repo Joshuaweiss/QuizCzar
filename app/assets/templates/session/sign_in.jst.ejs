@@ -1,16 +1,23 @@
 <h1 class="sign-in-header">Sign In<h1>
 
-<h5 class="sign-in-fail"></h5>
+<ul class="sign-in-fail">
+  <% errors.forEach(function(error){ %>
+    <li><%= error %></li>
+  <% }) %>
+</ul>
 
-<label>
-  Email
-  <input type="string" name="user[email]">
-</label>
+<form class="sign-in-info">
+  <label>
+    Email
+    <input type="string" name="user[email]">
+  </label>
 
-<label>
-  Password
-  <input type="password" name="user[password]">
-</label>
+  <label>
+    Password
+    <input type="password" name="user[password]">
+  </label>
+
+</form>
 
 <section class="buttons">
 
