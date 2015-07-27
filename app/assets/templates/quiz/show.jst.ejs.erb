@@ -25,6 +25,9 @@ content="<%%= quiz.escape("name") || "Quiz Name" %>" />
     </li>
   </ul>
   <figure class="show-bar-line"></figure>
+  <%% if (quiz.user && quiz.user.id === QuizCzar.current_user.id) { %>
+    <figure><a href=<%%= "#/quizzes/" + quiz.id + "/edit"%>>Edit Quiz</a></figure>
+  <%% } %>
 </nav>
 
 <section class="quiz-show-content">
