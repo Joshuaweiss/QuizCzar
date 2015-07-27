@@ -14,11 +14,8 @@ QuizCzar is a StudyBlue clone, built on Rails and Backbone. Users can:
 - [X] Create quizzes with questions
 - [X] Play quizzes
 - [X] See progress
-- [ ] Bookmark quizzes
 - [X] Search for quizzes by title and author
-- [ ] Search for quizzes by topics
-- [ ] Have a profile page with there quizzes
-- [ ] See there recently viewed quizzes
+- [X] Have a profile page with there quizzes
 
 ## Design Docs
 * [View Wireframes][views]
@@ -64,12 +61,13 @@ Allow the user to search by quizzes names, authors, and there topics. The user s
 [Details][phase-six]
 
 ### Bonus Features (TBD)
+- [X] Share quizzes through social media
+- [X] Login with social media
+- [X] Improve progress tracking with more quiz history
+- [ ] Add quiz topic feeds
 - [ ] Review questions previously answered incorrectly
-- [ ] Share quizzes through social media
 - [ ] Share quiz score through social media
-- [ ] Login with social media
 - [ ] Infinite scroll in quiz search
-- [ ] Improve progress tracking with more quiz history
 
 
 [phase-one]: ./docs/phases/phase1.md
