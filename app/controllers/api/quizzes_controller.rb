@@ -12,7 +12,7 @@ class Api::QuizzesController < ApplicationController
     if (user_id)
       @quizzes = User.find(user_id).quizzes.joins(:user)
     else
-      @quizzes = Quiz.includes(:user).where(edited: true)
+      @quizzes = Quiz.includes(:user).limit(20).where(edited: true)
     end
 
     @search_keywords = params[:search_keywords]
@@ -22,7 +22,7 @@ class Api::QuizzesController < ApplicationController
       @quizzes = @quizzes.search(@search_keywords)
     end
 
-    @quizzes.page(@page).per(10)
+    @quizzes
   end
 
   def show

@@ -44,8 +44,10 @@ class User < ActiveRecord::Base
       guest: true,
       email: ""
     })
-    quiz = user.quizzes.create!(edited: false)
-    question = quiz.questions.create!
+    @quiz = user.quizzes.create({name: "", edited: false})
+    @quiz.save!
+    question = @quiz.questions.create!({question: ""});
+    question.add_default_answers
 
     user
   end

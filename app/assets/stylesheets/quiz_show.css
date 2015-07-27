@@ -11,6 +11,10 @@
   width: 200px;
 }
 
+.show-bar-link {
+  text-align: center;
+}
+
 .quiz-show-bar > ul > li > figure{
   width: 80px;
   height: 80px;
