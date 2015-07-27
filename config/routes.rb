@@ -5,7 +5,6 @@ Rails.application.routes.draw do
   root 'static_pages#root'
 
 
-
   namespace :api, defaults: {format: :json} do
     resources :quizzes, only: [:create, :index, :show, :update, :destroy] do
       resources :grades, only: [:create, :index]
