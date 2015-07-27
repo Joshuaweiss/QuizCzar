@@ -16,9 +16,6 @@ QuizCzar.Views.Navbar = Backbone.View.extend({
   render: function(){
     this.$el.html(this.template({user: this.model}));
 
-    var buttonTemplate = _.template($("#signout-button").html());
-    this.$(".signout").html(buttonTemplate());
-
     return this;
   }
 });
