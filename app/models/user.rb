@@ -44,7 +44,7 @@ class User < ActiveRecord::Base
       guest: true,
       email: ""
     })
-    quiz = user.quizzes.create!
+    quiz = user.quizzes.create!(edited: false)
     question = quiz.questions.create!
 
     user

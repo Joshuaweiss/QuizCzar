@@ -12,10 +12,15 @@
 
 class Quiz < ActiveRecord::Base
 
+  include PgSearch
+
   belongs_to :user
   has_many :questions, dependent: :destroy
   has_many :grades, dependent: :destroy
 
+  pg_search_scope :search,
+                  against: :name,
+                  associated_against: {user: :name}
 
   def grade(answers)
     questions = self.questions.all

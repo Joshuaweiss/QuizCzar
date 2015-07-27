@@ -3,29 +3,26 @@ class Api::QuizzesController < ApplicationController
   before_action :redirect_unless_logged_in
 
   def index
-
     @user = current_user
-    @page = params[:page] || 0
+    @grades = @user.grades
+    @page = params[:page] || 1
 
     @quizzes = nil
     user_id = params[:user_id]
     if (user_id)
       @quizzes = User.find(user_id).quizzes.joins(:user)
     else
-      @quizzes = Quiz.joins(:user)
-      @quizzes = @quizzes.where(edited: true);
+      @quizzes = Quiz.includes(:user).where(edited: true)
     end
-
 
     @search_keywords = params[:search_keywords]
 
     if @search_keywords.presence
       @search_keywords = @search_keywords.split
-      @quizzes = @quizzes.where("quizzes.name ~* ? OR users.name ~* ?", @search_keywords, @search_keywords);
+      @quizzes = @quizzes.search(@search_keywords)
     end
 
-    @quizzes.page(@page).per(50);
-
+    @quizzes.page(@page).per(10)
   end
 
   def show
