@@ -1,0 +1,109 @@
+.hidden {
+  display: none;
+}
+
+#root .sign-in-page {
+  background-image: asset_url("shutterstock_134752781.jpg");
+  background-size: cover;
+  position: relative;
+  width: 650px;
+}
+
+.sign-in {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(232, 232, 232);
+  margin: 0;
+  padding: 20px 25px;
+  width: 35%;
+  float: left;
+}
+
+.sign-in-header {
+  font-size: 30px;
+  font-weight: 100;
+  margin-bottom: 30px;
+}
+
+.sign-in-form button,
+.sign-in .sign-in-facebook{
+  float: left;
+  margin: 0;
+  margin-right: 8px;
+  margin-top: 20px;
+}
+
+.sign-in-button {
+  margin: 0;
+}
+
+.sign-up{
+  float: left;
+  height: 100%;
+  width: 57%;
+  position: absolute;
+  padding:10px;
+  box-sizing: border-box;
+  right: 0;
+}
+
+.sign-up h3 {
+  font-size:25px;
+}
+
+.sign-in-page .buttons {
+  margin-top: 28px;
+}
+
+
+.sign-in-page button,
+.sign-in-page .buttons input[type="submit"]{
+  float: left;
+  margin: 0;
+}
+
+.sign-in-page .buttons .guest-sign-in-button {
+  margin-top: 15px;
+  width: 100%;
+  height: 35px;
+  font-weight: 400;
+  background-color: rgb(108, 232, 139);
+}
+
+.sign-in-page .buttons .guest-sign-in-button:hover{
+  background-color: rgb(78, 222, 114);
+}
+
+.sign-in-page .buttons .sign-in-button {
+ width: 32%;
+ margin-right: 6%;
+}
+
+.sign-in-page .buttons .sign-in-page-facebook {
+ width: 30%;
+}
+
+
+.sign-up .buttons .signout-button{
+
+}
+
+.sign-up-button {
+  font-weight: 400;
+  position: absolute;
+  background-color: rgb(85, 222, 120);
+  left: 50%;
+  transform: translate(-50%, 0);
+  margin: 0;
+  bottom: 50px;
+  width: 150px;
+  height: 40px;
+}
+
+.sign-up-button:hover {
+  background-color: rgb(63, 212, 101);
+}
+
+.sign-up-button:active {
+  bottom: 49px;
+  top:auto;
+}

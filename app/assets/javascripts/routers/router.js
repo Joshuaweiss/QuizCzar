@@ -8,6 +8,7 @@ QuizCzar.Routers.Router = Backbone.Router.extend({
     },
     routes: {
       "" : "root",
+      "signUp" : "signUp",
       "users/:id" : "showUser",
       "quizzes" : "myQuizzes",
       "quizzes/:id/edit" : "editQuiz",
@@ -23,6 +24,7 @@ QuizCzar.Routers.Router = Backbone.Router.extend({
     root: function(){
       var router = this;
       this.$rootEl.html("");
+      this.$rootEl.find("#model").remove();
       this.redirectUnlessLoggedIn(function(){
         router.myQuizzes();
       });
@@ -34,6 +36,10 @@ QuizCzar.Routers.Router = Backbone.Router.extend({
       } else {
         callback();
       }
+    },
+    signUp:function(){
+      var view = new QuizCzar.Views.UserNew();
+      this._place_model(view);
     },
     logIn: function(callback){
       var view = new QuizCzar.Views.SignIn({callback: callback});

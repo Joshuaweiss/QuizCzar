@@ -23,7 +23,7 @@ class ApplicationController < ActionController::Base
   end
 
   def redirect_unless_logged_in
-    redirect_to "/main" unless logged_in?
+    render json: {}, status: 302 unless logged_in?
   end
 
   def current_user?(user)

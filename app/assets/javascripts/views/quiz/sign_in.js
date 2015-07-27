@@ -5,10 +5,11 @@ QuizCzar.Views.SignIn = Backbone.View.extend({
   template: JST["session/sign_in"],
   events: {
     "click .sign-in-button" : "signIn",
-    "click .guest-sign-in-button" : "guestSignIn"
+    "click .guest-sign-in-button" : "guestSignIn",
+    "click .sign-up-button" : "signUp"
   },
   tagName: "section",
-  className: "sign-in group",
+  className: "sign-in-page group",
   signIn: function(){
     $.ajax({
       url: "/api/session",
@@ -36,6 +37,9 @@ QuizCzar.Views.SignIn = Backbone.View.extend({
         this.callback();
       }.bind(this)
     });
+  },
+  signUp: function(){
+    Backbone.history.navigate("signUp",{trigger: true});
   },
   exit: function(){
   },

@@ -2,11 +2,9 @@ Rails.application.routes.draw do
 
   resource :session
 
-  get "/main", to: 'static_pages#splash_page', as: 'main'
   root 'static_pages#root'
 
 
-  resources :users
 
   namespace :api, defaults: {format: :json} do
     resources :quizzes, only: [:create, :index, :show, :update, :destroy] do
@@ -16,7 +14,7 @@ Rails.application.routes.draw do
     resources :answers, only: [:update, :create]
     resource :session
     post "session/guest", to: "sessions#guest_sign_in"
-    resources :users, only: [:show, :update]
+    resources :users, only: [:show, :update, :create]
   end
   get '/auth/:provider/callback', to: 'sessions#auth_create'
 

@@ -1,0 +1,28 @@
+.sign-up-page {
+  width: 275px;
+  display: block;
+  margin: auto;
+  background-color: white;
+  padding: 30px;
+}
+
+.sign-up-page > h1{
+  font-size: 40px;
+  font-weight: 100;
+  margin-bottom: 20px;
+}
+
+.sign-up-page > ul{
+}
+
+.sign-up-page input:focus {
+  border: 1px solid rgb(98, 122, 255);
+}
+
+
+
+.errors {
+  font-size: 15px;
+  font-weight: 300;
+  color: rgb(227, 96, 96)
+}
