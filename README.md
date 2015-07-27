@@ -44,7 +44,7 @@ QuizCzar is a single page app built on Rails and Backbone. Its goal is to provid
 * Users can search through all the sites quizzes.
 * Users can play each other quizzes and see there score history.
 * Users have profiles which conatin a picture and list of quizzes.
-* Facebook login a provides picture and name for user.
+* Facebook login provides a picture and name for user.
 * Quizzes can be liked or shared on Facebook.
 
 # Future Todos
