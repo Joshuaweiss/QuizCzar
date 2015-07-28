@@ -44,10 +44,43 @@ class User < ActiveRecord::Base
       guest: true,
       email: ""
     })
-    @quiz = user.quizzes.create({name: "", edited: false})
+    @quiz = user.quizzes.create({name: "Example Quiz", edited: false})
     @quiz.save!
-    question = @quiz.questions.create!({question: ""});
-    question.add_default_answers
+    question = @quiz.questions.create!({question: "How much wood would a woodchuck chuck if a woodchuck could chuck wood?"});
+    question.answers.create(answer:"All he could chuck",correct: true);
+    question.answers.create(answer:"None",correct: false);
+    question.answers.create(answer:"4 Pounds",correct: false);
+    question.answers.create(answer:"1 Pound",correct: false);
+
+    question = @quiz.questions.create!({question: "Peter piper picked a pair of?"});
+    question.answers.create(answer:"Pickled peppers",correct: true);
+    question.answers.create(answer:"Prickly Pears",correct: false);
+    question.answers.create(answer:"Porous Plums",correct: false);
+    question.answers.create(answer:"Bannanas",correct: false);
+
+    question = @quiz.questions.create!({question: "Mary had a little?"});
+    question.answers.create(answer:"Lamb",correct: true);
+    question.answers.create(answer:"Sheep",correct: false);
+    question.answers.create(answer:"Dog",correct: false);
+    question.answers.create(answer:"Cat",correct: false);
+
+    user.grades.create!(
+      quiz_id: @quiz.id,
+      correct_answers: 1,
+      number_of_questions: 3
+    )
+
+    user.grades.create!(
+      quiz_id: @quiz.id,
+      correct_answers: 3,
+      number_of_questions: 3
+    )
+
+    user.grades.create!(
+      quiz_id: @quiz.id,
+      correct_answers: 2,
+      number_of_questions: 3
+    )
 
     user
   end
