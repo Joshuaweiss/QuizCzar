@@ -2,7 +2,45 @@ require 'unirest'
 require 'cgi'
 
 def remove_noise(text)
-  CGI.unescape_html(text).gsub(/<.*>/,"").gsub("&nbsp;","")
+  CGI.unescape_html(text).gsub(/<.*>/,"").gsub("&nbsp;"," ")
+end
+
+@pics_left = 0
+@user_current = nil
+
+def make_user()
+  if (@pics_left === 0)
+
+    begin
+      user_data = Unirest.get("https://randomuser.me/api/").body["results"].first["user"]
+    rescue
+      sleep(1)
+      retry
+    end
+
+    user = User.create!({
+        name: "#{user_data["name"]["first"]} #{user_data["name"]["last"]}",
+        email: user_data["email"],
+        password: user_data["password"]
+      })
+
+    user.picture
+
+    url = user_data["picture"]["medium"]
+    url = url.gsub("­http","htt­ps")
+    url += "?type=large"
+    open(url, :allow_redirections => :safe) do |r|
+      user.picture = r.base_uri.to_s
+    end
+
+    user.save!
+
+    @pics_left = rand(10)
+    @user_current = user
+  else
+    @user_current
+    @pics_left -= 1
+  end
 end
 
 response = Unirest.get "https://pareshchouhan-trivia-v1.p.mashape.com/v1/getCategoryList",
@@ -18,7 +56,7 @@ topics.map! do |item|
 end
 
 catagorys = Hash.new { |hash,key| hash[key] = [] }
-
+# topics.count
 # These code snippets use an open-source library. http://unirest.io/ruby
 (0...topics.count).each do |topic_id|
   response = Unirest.get "https://pareshchouhan-trivia-v1.p.mashape.com/v1/getQuizQuestionsByCategory?categoryId=#{topic_id}&limit=20&page=1",
@@ -38,10 +76,11 @@ catagorys = Hash.new { |hash,key| hash[key] = [] }
   sleep(1)
 end
 
-@user = User.find_by(email: "joshua@josh.com")
 
 catagorys.each do |cat, quiz_arr|
-  quiz = @user.quizzes.create({name: cat, edited: true})
+  user = make_user
+
+  quiz = user.quizzes.create({name: cat, edited: true})
 
   quiz_arr.shuffle.take(20).each do |quiz_data|
     question = quiz.questions.create({question: remove_noise(quiz_data["q_text"])})

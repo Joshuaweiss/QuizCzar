@@ -52,4 +52,4 @@ QuizCzar is a single page app built on Rails and Backbone. Its goal is to provid
 * Add dedicated feeds for quiz topics
 * Compare users score with Facebook friends
 * Allow users to move questions between quizzes
-* Allow quizzes to be played with a smaller randomized subset of questions.
+* Allow quizzes to be played with a smaller randomized  subset of questions.
