@@ -24,6 +24,10 @@
   margin-bottom: 30px;
 }
 
+.sign-in input[type="string"], input[type="password"] {
+  max-width: 200px;
+}
+
 .sign-in-form button,
 .sign-in .sign-in-facebook{
   float: left;
@@ -93,6 +97,7 @@
   background-color: rgb(85, 222, 120);
   left: 50%;
   transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
   margin: 0;
   bottom: 50px;
   width: 150px;
