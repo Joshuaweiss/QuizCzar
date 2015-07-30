@@ -77,6 +77,7 @@ a.x-link {
   top: 50%;
   left: 0%;
   transform: translate(-0%, -50%);
+  -webkit-transform: translate(-0%, -50%);
 }
 
 a.x-link:hover {
