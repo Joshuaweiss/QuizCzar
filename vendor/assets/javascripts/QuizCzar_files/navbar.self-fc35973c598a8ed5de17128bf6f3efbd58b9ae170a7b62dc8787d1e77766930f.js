@@ -1,2 +1,0 @@
-(function() { this.JST || (this.JST = {}); this.JST["navbar"] = function(obj){var __p=[],print=function(){__p.push.apply(__p,arguments);};with(obj||{}){__p.push('<nav id="navbar">\n  <ul class="bar-items">\n    <logo>\n      QuizCzar\n    </logo>\n    <li><a href="#">Recent Quizzes</a></li>\n    <li><a>Search Quizzes</a></li>\n    <li><a href="#quizzes/new">Make Quiz</a></li>\n    <li class="signout"></li>\n  </ul>\n</nav>\n');}return __p.join('');};
-}).call(this);

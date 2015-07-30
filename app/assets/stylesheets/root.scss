@@ -9,6 +9,7 @@ body {
   height: 100%;
   overflow-x: visible;
   font-weight: 300;
+  -webkit-font-smoothing: subpixel-antialiased;
 }
 
 #root {
