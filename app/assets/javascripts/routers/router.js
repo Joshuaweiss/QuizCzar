@@ -31,7 +31,6 @@ QuizCzar.Routers.Router = Backbone.Router.extend({
     },
     redirectUnlessLoggedIn: function(callback){
       if (!QuizCzar.current_user.id) {
-        Backbone.history.navigate("logIn");
         this.logIn(callback);
       } else {
         callback();
