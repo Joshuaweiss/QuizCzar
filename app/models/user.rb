@@ -52,11 +52,11 @@ class User < ActiveRecord::Base
     question.answers.create(answer:"4 Pounds",correct: false);
     question.answers.create(answer:"1 Pound",correct: false);
 
-    question = @quiz.questions.create!({question: "Peter piper picked a pair of?"});
+    question = @quiz.questions.create!({question: "Peter Piper picked a pair of?"});
     question.answers.create(answer:"Pickled peppers",correct: true);
     question.answers.create(answer:"Prickly Pears",correct: false);
     question.answers.create(answer:"Porous Plums",correct: false);
-    question.answers.create(answer:"Bannanas",correct: false);
+    question.answers.create(answer:"Bananas",correct: false);
 
     question = @quiz.questions.create!({question: "Mary had a little?"});
     question.answers.create(answer:"Lamb",correct: true);
