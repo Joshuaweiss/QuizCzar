@@ -126,6 +126,40 @@ class User < ActiveRecord::Base
     question.answers.create(answer:"3 Sharps",correct: false);
 
 
+    @quiz = user.quizzes.create({name: "Star Wars", edited: false})
+    @quiz.save!
+
+    question = @quiz.questions.create!({question: "What were Anakin Skywalker's last words in 'Return of the Jedi'?"});
+    question.answers.create(answer:"You where right about me. Tell your sister ... You where right.",correct: true);
+    question.answers.create(answer:"I'm sorry",correct: false);
+    question.answers.create(answer:"May the force be with you",correct: false);
+    question.answers.create(answer:"You are the last of the Jedi. The force runs strong in you. Pass on ... what you have learned.",correct: false);
+
+    question = @quiz.questions.create!({question: "Which of these was not one of Darth Sidious' Sith apprentices?"});
+    question.answers.create(answer:"Darth Vader",correct: false);
+    question.answers.create(answer:"Darth Tyranus",correct: false);
+    question.answers.create(answer:"Darth Maul",correct: false);
+    question.answers.create(answer:"General Grievous",correct: true);
+
+    question = @quiz.questions.create!({question: "Who played Darth Vader on the set of the movie?"});
+    question.answers.create(answer:"David Prowse",correct: true);
+    question.answers.create(answer:"Peter Mayhew",correct: false);
+    question.answers.create(answer:"Anthony Daniels",correct: false);
+    question.answers.create(answer:"James Earl Jones",correct: false);
+
+    question = @quiz.questions.create!({question: "How old is Padme Amidala when she's elected to the position of Queen of Naboo?"});
+    question.answers.create(answer:"22",correct: false);
+    question.answers.create(answer:"14",correct: true);
+    question.answers.create(answer:"106",correct: false);
+    question.answers.create(answer:"8",correct: false);
+
+    question = @quiz.questions.create!({question: "What was Princess Leia's last name?"});
+    question.answers.create(answer:"Fisher",correct: false);
+    question.answers.create(answer:"Organa",correct: true);
+    question.answers.create(answer:"Amidala",correct: false);
+    question.answers.create(answer:"Antilles",correct: false);
+
+
     user.quizzes.all.each do |quiz|
 
       4.times do
