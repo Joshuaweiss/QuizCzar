@@ -44,8 +44,12 @@ class User < ActiveRecord::Base
       guest: true,
       email: ""
     })
+
+
+
     @quiz = user.quizzes.create({name: "Example Quiz", edited: false})
     @quiz.save!
+
     question = @quiz.questions.create!({question: "How much wood would a woodchuck chuck if a woodchuck could chuck wood?"});
     question.answers.create(answer:"All he could chuck",correct: true);
     question.answers.create(answer:"None",correct: false);
@@ -64,23 +68,53 @@ class User < ActiveRecord::Base
     question.answers.create(answer:"Dog",correct: false);
     question.answers.create(answer:"Cat",correct: false);
 
-    user.grades.create!(
-      quiz_id: @quiz.id,
-      correct_answers: 1,
-      number_of_questions: 3
-    )
 
-    user.grades.create!(
-      quiz_id: @quiz.id,
-      correct_answers: 3,
-      number_of_questions: 3
-    )
 
-    user.grades.create!(
-      quiz_id: @quiz.id,
-      correct_answers: 2,
-      number_of_questions: 3
-    )
+    @quiz = user.quizzes.create({name: "Computers", edited: false})
+    @quiz.save!
+
+    question = @quiz.questions.create!({question: "Which of the following memories is an optical memory?"});
+    question.answers.create(answer:"Floppy Disk",correct: false);
+    question.answers.create(answer:"Bubble Memories",correct: false);
+    question.answers.create(answer:"CD–ROM",correct: true);
+    question.answers.create(answer:"Core Memories",correct: false);
+
+    question = @quiz.questions.create!({question: "DNS refers to"});
+    question.answers.create(answer:"Data Number Sequence",correct: false);
+    question.answers.create(answer:"Digital Network Service",correct: true);
+    question.answers.create(answer:"Domain Name System",correct: false);
+    question.answers.create(answer:"Disk Numbering System",correct: false);
+
+    question = @quiz.questions.create!({question: "Java was originally invented by"});
+    question.answers.create(answer:"Oracle",correct: false);
+    question.answers.create(answer:"Sun",correct: true);
+    question.answers.create(answer:"Microsoft",correct: false);
+    question.answers.create(answer:"Novell",correct: false);
+
+    question = @quiz.questions.create!({question: "The unit of speed used for super computer is"});
+    question.answers.create(answer:"KELOPS",correct: false);
+    question.answers.create(answer:"GELOPS",correct: true);
+    question.answers.create(answer:"MELOPS",correct: false);
+    question.answers.create(answer:"None of these",correct: false);
+
+    question = @quiz.questions.create!({question: "Whose trademark is the operating system UNIX?"});
+    question.answers.create(answer:"Motorola",correct: false);
+    question.answers.create(answer:"Microsoft",correct: false);
+    question.answers.create(answer:"AshtonTate",correct: false);
+    question.answers.create(answer:"BELL Laboratories",correct: true);
+
+
+    user.quizzes.each do |quiz|
+
+      4.times do
+        user.grades.create!(
+          quiz_id: @quiz.id,
+          correct_answers: rand(quiz.questions.count + 1),
+          number_of_questions: quiz.questions.count
+        )
+      end
+
+    end
 
     user
   end
