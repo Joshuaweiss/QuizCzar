@@ -104,11 +104,45 @@ class User < ActiveRecord::Base
     question.answers.create(answer:"BELL Laboratories",correct: true);
 
 
-    user.quizzes.each do |quiz|
+    @quiz = user.quizzes.create({name: "Music Theory - Key Signatures", edited: false})
+    @quiz.save!
+
+    question = @quiz.questions.create!({question: "C Major"});
+    question.answers.create(answer:"1 Sharp",correct: false);
+    question.answers.create(answer:"2 Flats",correct: false);
+    question.answers.create(answer:"5 Sharps",correct: false);
+    question.answers.create(answer:"No Accidentals",correct: true);
+
+    question = @quiz.questions.create!({question: "A Major"});
+    question.answers.create(answer:"1 Sharp",correct: false);
+    question.answers.create(answer:"2 Flats",correct: false);
+    question.answers.create(answer:"5 Sharps",correct: false);
+    question.answers.create(answer:"3 Sharps",correct: true);
+
+    question = @quiz.questions.create!({question: "D Major"});
+    question.answers.create(answer:"1 Sharp",correct: false);
+    question.answers.create(answer:"2 Flats",correct: true);
+    question.answers.create(answer:"5 Sharps",correct: false);
+    question.answers.create(answer:"3 Sharps",correct: false);
+
+    question = @quiz.questions.create!({question: "G Major"});
+    question.answers.create(answer:"1 Sharp",correct: true);
+    question.answers.create(answer:"2 Flats",correct: false);
+    question.answers.create(answer:"5 Sharps",correct: false);
+    question.answers.create(answer:"3 Sharps",correct: false);
+
+    question = @quiz.questions.create!({question: "F Major"});
+    question.answers.create(answer:"1 Flat",correct: true);
+    question.answers.create(answer:"2 Flats",correct: false);
+    question.answers.create(answer:"5 Sharps",correct: false);
+    question.answers.create(answer:"3 Sharps",correct: false);
+
+
+    user.quizzes.all.each do |quiz|
 
       4.times do
         user.grades.create!(
-          quiz_id: @quiz.id,
+          quiz_id: quiz.id,
           correct_answers: rand(quiz.questions.count + 1),
           number_of_questions: quiz.questions.count
         )
