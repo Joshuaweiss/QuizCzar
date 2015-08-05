@@ -4,7 +4,7 @@
 
 [link]: http://quizczar.io
 
-QuizCzar is a clone of StudyBlue. This app allows users to create and take quizzes for education and entertainment.
+QuizCzar is a web app which allows users to create and take quizzes for education and entertainment.
 
 # Overview
 QuizCzar is a single-page app built on Rails and Backbone. Its goal is to provide a native app-like experience inside the browser, giving users a comfortable and intuitive interface with powerful features. Integration with Facebook's API allows users to share quizzes they make or find with their friends.
