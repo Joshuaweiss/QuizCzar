@@ -12,6 +12,10 @@ body {
   -webkit-font-smoothing: subpixel-antialiased;
 }
 
+button, input[type="submit"] {
+  cursor: pointer;
+}
+
 #root {
   display: block;
   top: 0;
