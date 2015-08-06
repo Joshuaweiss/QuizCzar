@@ -2,7 +2,7 @@ QuizCzar.Views.AnswerForm = Backbone.View.extend({
   initialize: function(options){
     this._saving = options._saving;
     this.listenTo(this.model, "sync", this.render);
-    this.currentlySaving = false;
+    this.autoSave = QuizCzar.makeAutoSave();
   },
   tagName: "textarea",
   events: {
@@ -15,41 +15,13 @@ QuizCzar.Views.AnswerForm = Backbone.View.extend({
   },
   submit: function(){
 
-    this.model.set({answer: this.$el.val()});
+    var view = this;
+    view.model.set({answer: view.$el.val()});
+    view.autoSave(view.model,{
+      saving: view._saving.saving.bind(view._saving),
+      saved: view._saving.saved.bind(view._saving)
+    })
 
-    if (this.currentlySaving) return;
-    this._saving.saving();
-    this.currentlySaving = true;
-    this.saveNum = this.saveNum++;
-
-    setTimeout( function() {
-
-      var handleError = function(){
-        if (currentNum < this.saveNum) {
-          view._saving.saved();
-          return;
-        }
-        view = this;
-        setTimeout(function () {
-          this.currentlySaving = false;
-          view.model.save({},{
-            success: function() {
-              view._saving.saved();
-            },
-            error: handleError
-          });
-        }, 3000);
-      }.bind(this);
-
-      this.currentlySaving = false;
-      this.model.save({},{
-        success: function() {
-          this._saving.saved();
-        }.bind(this),
-        error: handleError
-      });
-
-    }.bind(this), 1000);
   },
   render: function() {
     this.$el.html(this.model.escape("answer"));
