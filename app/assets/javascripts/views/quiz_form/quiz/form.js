@@ -16,7 +16,10 @@ QuizCzar.Views.QuizForm = Backbone.CompositeView.extend({
       _quizShow: this
     }));
 
-    this.autoSave = QuizCzar.makeAutoSave();
+    this.autoSave = window.AutoSave.makeAutoSave(this.model,{
+      saving: this._saving.saving.bind(this._saving),
+      saved: this._saving.saved.bind(this._saving)
+    });
 
     if (this.model.questions().first()) {
       this.chooseQuestion({id: this.model.questions().first().id})
@@ -25,10 +28,7 @@ QuizCzar.Views.QuizForm = Backbone.CompositeView.extend({
   changeName: function() {
     var view = this;
     view.model.set({name: this.$(".quiz-name-edit").val()});
-    view.autoSave(view.model,{
-      saving: view._saving.saving.bind(view._saving),
-      saved: view._saving.saved.bind(view._saving)
-    })
+    view.autoSave();
   },
   chooseQuestion: function(event){
     var question;

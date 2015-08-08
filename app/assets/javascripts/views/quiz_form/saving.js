@@ -1,22 +1,22 @@
 QuizCzar.Views.QuizSaving = Backbone.View.extend({
   initialize: function(){
     this._className = "saved-notification";
-    this._waitToSave = 0;
+    this.objectsSaving = {};
     this.render();
   },
   className: function(){
     return this._className;
   },
-  saved: function(){
-    if (this._waitToSave > 0) this._waitToSave--;
-    if (this._waitToSave === 0) {
+  saved: function(object, save_id){
+    delete this.objectsSaving[object.uid];
+    if (Object.keys(this.objectsSaving).length === 0) {
       this._className = "saved-notification";
       this.render();
     }
   },
-  saving: function(){
+  saving: function(object, save_id){
+    this.objectsSaving[object.uid] = true;
     this._className = "saving-notification";
-    this._waitToSave++;
     this.render();
   },
   text: function() {

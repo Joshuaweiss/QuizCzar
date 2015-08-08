@@ -2,7 +2,10 @@ QuizCzar.Views.AnswerForm = Backbone.View.extend({
   initialize: function(options){
     this._saving = options._saving;
     this.listenTo(this.model, "sync", this.render);
-    this.autoSave = QuizCzar.makeAutoSave();
+    this.autoSave = window.AutoSave.makeAutoSave(this.model,{
+      saving: this._saving.saving.bind(this._saving),
+      saved: this._saving.saved.bind(this._saving)
+    });
   },
   tagName: "textarea",
   events: {
@@ -17,10 +20,7 @@ QuizCzar.Views.AnswerForm = Backbone.View.extend({
 
     var view = this;
     view.model.set({answer: view.$el.val()});
-    view.autoSave(view.model,{
-      saving: view._saving.saving.bind(view._saving),
-      saved: view._saving.saved.bind(view._saving)
-    })
+    view.autoSave();
 
   },
   render: function() {

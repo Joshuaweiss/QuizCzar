@@ -11,15 +11,16 @@ QuizCzar.Views.QuestionForm = Backbone.CompositeView.extend({
       collection: this.model.answers(),
       _saving: this._saving
     }));
-    this.autoSave = QuizCzar.makeAutoSave();
+
+    this.autoSave = window.AutoSave.makeAutoSave(this.model,{
+      saving: this._saving.saving.bind(this._saving),
+      saved: this._saving.saved.bind(this._saving)
+    });
   },
   submit: function(){
     var view = this;
     view.model.set({question: view.$(".question-display").val() });
-    view.autoSave(view.model,{
-      saving: view._saving.saving.bind(view._saving),
-      saved: view._saving.saved.bind(view._saving)
-    })
+    view.autoSave();
   },
   render: function() {
     this.$el.html(this.template({question: this.model}));
