@@ -17,11 +17,9 @@ QuizCzar.Views.AnswerForm = Backbone.View.extend({
     }
   },
   submit: function(){
-
     var view = this;
     view.model.set({answer: view.$el.val()});
     view.autoSave();
-
   },
   render: function() {
     this.$el.html(this.model.escape("answer"));
