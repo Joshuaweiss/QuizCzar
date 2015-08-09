@@ -1,8 +1,8 @@
 (function(){
 
-	var AutoSave = window.AutoSave = {};
+  var AutoSave = window.AutoSave = {};
 
-	var mergeObjects = function(objectA, objectB){
+  var mergeObjects = function(objectA, objectB){
     var out = {};
     for (var a in objectA) {
       out[a] = objectA[a];
@@ -11,62 +11,63 @@
       out[b] = objectB[b];
     }
     return out;
-	};
+  };
 
 
-	var doNothing = function(){};
+  var doNothing = function(){};
 
-	var defaultOptions = {
-		delayBeforeSaving: 1000,
-		delayBeforeReTry: 1000,
-		saving: doNothing,
-		saved: doNothing,
-		error: doNothing
-	}
+  var defaultOptions = {
+    delayBeforeSaving: 1000,
+    delayBeforeReTry: 1000,
+    saving: doNothing,
+    saved: doNothing,
+    error: doNothing
+  }
 
-	AutoSave.makeAutoSave = function(object, options) {
-	  var saveNum = 0;
-	  var waitingToSave = false
-		var temp_default_options = mergeObjects(defaultOptions, options);
 
-	  return function autoSave(options){
+AutoSave.makeAutoSave = function(object, options) {
+    var saveNum = 0;
+    var waitingToSave = false
+    var temp_default_options = mergeObjects(defaultOptions, options);
 
-			var options = mergeObjects(temp_default_options, options || {});
+    return function autoSave(options){
 
-			if (waitingToSave) return;
-			waitingToSave = true;
-			currentNum = ++saveNum;
-			options.saving(object, currentNum);
+      var options = mergeObjects(temp_default_options, options || {});
 
-			var saved = function() {
-				options.saved(object, currentNum);
-			}
+      if (waitingToSave) return;
+      waitingToSave = true;
+      currentNum = ++saveNum;
+      options.saving(object, currentNum);
 
-			///wait until ready to save
-			setTimeout( function() {
+      var saved = function() {
+        options.saved(object, currentNum);
+      }
 
-				///on saving error
-			  var handleError = function(){
-					options.error()
-					setTimeout(function () {
-						if (currentNum < saveNum) return;
-					  object.save({},{
-							success: saved,
-							error: handleError
-					  });
-					}, options.delayBeforeReTry);
-				};
+      ///wait until ready to save
+      setTimeout( function() {
 
-				/// save
-			  waitingToSave = false;
-			  object.save({},{
-					success: saved,
-					error: handleError
-		  	});
+        ///on saving error
+        var handleError = function(){
+          options.error()
+          setTimeout(function () {
+            if (currentNum < saveNum) return;
+            object.save({},{
+              success: saved,
+              error: handleError
+            });
+          }, options.delayBeforeReTry);
+        };
 
-			}, options.delayBeforeSaving);
-  	}
-	}
+        /// save
+        waitingToSave = false;
+        object.save({},{
+          success: saved,
+          error: handleError
+        });
+
+      }, options.delayBeforeSaving);
+    }
+  }
 
 
 })();
