@@ -19,7 +19,7 @@ QuizCzar.Views.QuestionsThumbIndex = Backbone.CompositeView.extend({
       question: ""
     });
 
-    this._saving.saving();
+    this._saving.saving(question);
 
     var handleError = function(){
       setTimeout(function () {
@@ -29,7 +29,7 @@ QuizCzar.Views.QuestionsThumbIndex = Backbone.CompositeView.extend({
 
     question.save({},{
       success: function() {
-        this._saving.saved();
+        this._saving.saved(question);
         questions.add(question);
         view.render();
         this._quizShow.chooseQuestion({id: question.id});

@@ -18,7 +18,7 @@ QuizCzar.Views.QuestionThumb = Backbone.View.extend({
   delete: function(event) {
     event.preventDefault();
 
-    this._saving.saving();
+    this._saving.saving(this.model);
 
     var handleError = function(){
       setTimeout(function () {
@@ -27,7 +27,7 @@ QuizCzar.Views.QuestionThumb = Backbone.View.extend({
     }.bind(this);
 
     var success = function() {
-      this._saving.saved();
+      this._saving.saved(this.model);
       this.render();
       this._quizShow.chooseLastQuestion();
     }.bind(this);
