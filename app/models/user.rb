@@ -69,8 +69,8 @@ class User < ActiveRecord::Base
 
     question = @quiz.questions.create!({question: "DNS refers to"});
     question.answers.create(answer:"Data Number Sequence",correct: false);
-    question.answers.create(answer:"Digital Network Service",correct: true);
-    question.answers.create(answer:"Domain Name System",correct: false);
+    question.answers.create(answer:"Digital Network Service",correct: false);
+    question.answers.create(answer:"Domain Name System",correct: true);
     question.answers.create(answer:"Disk Numbering System",correct: false);
 
     question = @quiz.questions.create!({question: "Java was originally invented by"});
