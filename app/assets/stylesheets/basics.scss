@@ -10,6 +10,8 @@ html, body, h1, h2, h3 ,h4 ,h5, ul, section, figure, div, a, ul, li, input, text
   outline: none;
   box-shadow: none;
   resize: none;
+  -webkit-appearance: none;
+  border-radius: 0;
 }
 
 ul {
