@@ -109,7 +109,7 @@ class User < ActiveRecord::Base
 
     question = @quiz.questions.create!({question: "D Major"});
     question.answers.create(answer:"1 Sharp",correct: false);
-    question.answers.create(answer:"2 Flats",correct: true);
+    question.answers.create(answer:"2 Sharps",correct: true);
     question.answers.create(answer:"5 Sharps",correct: false);
     question.answers.create(answer:"3 Sharps",correct: false);
 
