@@ -22,9 +22,12 @@
 
 #navbar logo figure{
   height: 30px;
+  width: 130px;
+  left: -2px;
+  position: relative;
   background-color: white;
 
-  -webkit-mask-image: url(asset-path("QuizCzarHorizontal.svg"));
+  -webkit-mask-image: url(asset-path("QuizCzarHorizontal.png"));
   -webkit-mask-size: 100% 100%;
 }
 
